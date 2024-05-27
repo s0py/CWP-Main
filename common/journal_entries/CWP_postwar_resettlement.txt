@@ -1,0 +1,135 @@
+﻿je_german_resettlement = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		culture_percent_country = {  
+			target = cu:north_german
+			value > 0.05
+		}
+		this = c:POL
+	}
+
+	possible = {
+		culture_percent_country = {  
+			target = cu:north_german
+			value > 0.05
+		}
+		this = c:POL
+	}
+
+	immediate = {
+		set_variable = {
+			name = south_america_incorporated_population
+			value = 0
+		}
+		set_variable = {
+			name = south_america_incorporated_states
+			value = 0
+		}
+		every_scope_state = {
+			limit = {
+				is_incorporated = yes
+				state_is_in_south_america = yes
+			}
+			ROOT = {
+				change_variable = {
+					name = south_america_incorporated_population
+					add = PREV.state_population
+				}
+				change_variable = {
+					name = south_america_incorporated_states
+					add = 1
+				}
+			}
+		}
+		set_variable = {
+			name = south_america_migration_goal
+			value = var:south_america_incorporated_states
+		}
+		change_variable = {
+			name = south_america_migration_goal
+			multiply = 1500000
+		}
+	}
+
+	on_weekly_pulse = {
+		effect = {
+			set_variable = {
+				name = south_america_incorporated_population
+				value = 0
+			}
+			every_scope_state = {
+				limit = {
+					is_incorporated = yes
+					state_is_in_south_america = yes
+				}
+				ROOT = {
+					change_variable = {
+						name = south_america_incorporated_population
+						add = PREV.state_population
+					}
+				}
+			}
+			set_variable = {
+				name = south_america_incorporated_states
+				value = 0
+			}
+			every_scope_state = {
+				limit = {
+					is_incorporated = yes
+					state_is_in_south_america = yes
+				}
+				ROOT = {
+					change_variable = {
+						name = south_america_incorporated_states
+						add = 1
+					}
+				}
+			}
+			set_variable = {
+				name = south_america_migration_goal
+				value = var:south_america_incorporated_states
+			}
+			change_variable = {
+				name = south_america_migration_goal
+				multiply = 1500000
+			}
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = sa_migration_completion_tt
+			trigger_if = {
+				limit = { exists = var:south_america_incorporated_population }
+				var:south_america_incorporated_population >= var:south_america_migration_goal 
+				var:south_america_incorporated_population > 0
+				var:south_america_migration_goal > 0
+			}
+			trigger_else = {
+				always = no
+			}
+		}
+	}
+
+	on_complete = {
+		trigger_event = { id = sa_migration.3 popup = yes }
+		show_as_tooltip = {
+			add_modifier = {
+				name = populated_southamerica
+			}
+		}
+	}
+
+	invalid = {
+		has_variable = cancel_sa_migration_var
+	}
+
+	scripted_button = german_migration_button
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}
