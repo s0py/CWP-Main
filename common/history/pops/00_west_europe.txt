@@ -783,11 +783,11 @@
 		region_state:POL = {
 			create_pop = {
 				culture = north_german
-				size = 89944
+				size = 1529944
 			}
 			create_pop = {
 				culture = polish
-				size = 1726160
+				size = 1126160
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -981,12 +981,12 @@
 			create_pop = {
 				culture = north_german
 				religion = protestant
-				size = 3162019
+				size = 1662019
 			}
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 357522
+				size = 107522
 			}
 			create_pop = {
 				culture = north_german
@@ -1120,7 +1120,7 @@
 			create_pop = {
 				culture = north_german
 				religion = protestant
-				size = 4821476
+				size = 3221476
 			}
 			create_pop = {
 				culture = north_german
@@ -1194,12 +1194,12 @@
 			create_pop = {
 				culture = north_german
 				religion = protestant
-				size = 1768472
+				size = 768472
 			}
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 229449
+				size = 179449
 			}
 			create_pop = {
 				culture = north_german
