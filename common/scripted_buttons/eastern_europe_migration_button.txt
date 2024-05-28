@@ -1,100 +1,65 @@
-﻿ee_migration_button = {
+﻿german_migration_button = {
 	name = easteurope_migration_button
 	desc = easteurope_migration_button_desc
 
 	visible = { always = yes }
 
 	possible = {
-		hidden_trigger = {
-			has_variable = enable_sa_migration_button
-		}
 		# Note that this closely reflects triggers in the event. Do not change one without changing both
 		custom_tooltip = {
 			text = migration_button_cooldown_tt
-			NOT = { has_variable = sa_migration_cooldown }
+			NOT = { has_variable = german_migration_cooldown }
 		}
-		average_sol >= 10
-		any_country = {
-			country_rank <= rank_value:major_power
-			custom_tooltip = {
-				text = is_in_europe_tt
-				country_is_in_europe = yes
-			}
-			custom_tooltip = {
-				text = same_state_religion
-				religion = root.religion
-			}
-			custom_tooltip = {
-				text = average_sol_below_root_tt
-				average_sol <= root.average_sol
-			}
-			any_primary_culture = {
-				culture_can_have_mass_migration_to_country = ROOT
-			}
-			any_scope_state = {
-				is_incorporated = yes
-				custom_tooltip = {
-					text = is_in_europe_tt
-					state_is_in_europe = yes
-				}
-				count >= 3
-			}
+		culture_percent_country = {
+			target = cu:north_german
+			value > 0.05
 		}
-		any_scope_state = {
-			trigger_if = {
-				limit = {
-					owner = { has_journal_entry = je_south_america_migration }
-				}
-				custom_tooltip = {
-					text = is_in_sa_tt
-					state_is_in_south_america = yes
-				}
-			}
-			trigger_else_if = {
-				limit = {
-					owner = { has_journal_entry = je_central_america_migration }
-				}
-				OR = {
-					region = sr:region_mexico
-					region = sr:region_central_america
-				}
-			}
-			trigger_else_if = {
-				limit = {
-					owner = { has_journal_entry = je_american_west_migration }
-				}
-				OR = {
-					region = sr:region_pacific_coast
-					region = sr:region_great_plains
-				}
-			}
-			state_is_eligible_as_mass_migration_target = yes
-		}
-		OR = {
-			has_law = law_type:law_racial_segregation
-			has_law = law_type:law_cultural_exclusion
-			has_law = law_type:law_multicultural
-		}
+		this = c:POL
 		NOR = {
 			has_law = law_type:law_closed_borders
 			has_law = law_type:law_isolationism
 		}
+		c:DDR ?= {
+			any_scope_state = {
+				NOT = {
+					has_variable = german_migration_state_var
+				}
+			}
+		}
 	}
 
 	effect = {
+		random_state = {
+			limit = {
+				owner = c:DDR
+				NOT = {
+					has_variable = german_migration_state_var
+				}
+			}
+			save_temporary_scope_as = german_migration_target_state
+			set_variable = {
+				name = german_migration_state_var
+			}
+		}
+		c:POL = {
+			save_temporary_scope_as = migration_country
+		}
+		cu:north_german = {
+			save_temporary_scope_as = migration_culture
+		}
+
 		set_variable = {
-			name = sa_migration_cooldown
-			months = normal_modifier_time
+			name = german_migration_cooldown
+			months = 2
+		}
+		scope:german_migration_target_state = {
+			create_mass_migration = {
+				origin = scope:migration_country
+				culture = scope:migration_culture
+			}
 		}
 		custom_tooltip = {
 			text = mass_migration_button_tt
-		}
-		trigger_event = { id = sa_migration.1 popup = yes }
-		show_as_tooltip = {
-			add_modifier = {
-				name = sa_migration_cost
-				months = normal_modifier_time
-			}
 		}
 	}
 
