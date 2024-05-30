@@ -4,7 +4,7 @@
 	group = je_group_historical_content
 
 	is_shown_when_inactive = {
-		culture_percent_country = {  
+		culture_percent_country = {
 			target = cu:north_german
 			value > 0.05
 		}
@@ -12,7 +12,7 @@
 	}
 
 	possible = {
-		culture_percent_country = {  
+		culture_percent_country = {
 			target = cu:north_german
 			value > 0.05
 		}
@@ -21,82 +21,78 @@
 
 	immediate = {
 		set_variable = {
-			name = south_america_incorporated_population
+			name = polish_german_population_now
 			value = 0
 		}
-		set_variable = {
-			name = south_america_incorporated_states
-			value = 0
-		}
-		every_scope_state = {
-			limit = {
-				is_incorporated = yes
-				state_is_in_south_america = yes
-			}
-			ROOT = {
-				change_variable = {
-					name = south_america_incorporated_population
-					add = PREV.state_population
-				}
-				change_variable = {
-					name = south_america_incorporated_states
-					add = 1
-				}
-			}
-		}
-		set_variable = {
-			name = south_america_migration_goal
-			value = var:south_america_incorporated_states
-		}
-		change_variable = {
-			name = south_america_migration_goal
-			multiply = 1500000
-		}
+		#every_scope_state = {
+		#	limit = {
+		#		is_incorporated = yes
+		#		state_is_in_south_america = yes
+		#	}
+		#	ROOT = {
+		#		change_variable = {
+		#			name = south_america_incorporated_population
+		#			add = PREV.state_population
+		#		}
+		#		change_variable = {
+		#			name = south_america_incorporated_states
+		#			add = 1
+		#		}
+		#	}
+		#}
+		#set_variable = {
+		#	name = south_america_migration_goal
+		#	value = var:south_america_incorporated_states
+		#}
+		#change_variable = {
+		#	name = south_america_migration_goal
+		#	multiply = 1500000
+		#}
 	}
 
 	on_weekly_pulse = {
-		effect = {
-			set_variable = {
-				name = south_america_incorporated_population
-				value = 0
-			}
-			every_scope_state = {
-				limit = {
-					is_incorporated = yes
-					state_is_in_south_america = yes
-				}
-				ROOT = {
-					change_variable = {
-						name = south_america_incorporated_population
-						add = PREV.state_population
-					}
-				}
-			}
-			set_variable = {
-				name = south_america_incorporated_states
-				value = 0
-			}
-			every_scope_state = {
-				limit = {
-					is_incorporated = yes
-					state_is_in_south_america = yes
-				}
-				ROOT = {
-					change_variable = {
-						name = south_america_incorporated_states
-						add = 1
-					}
-				}
-			}
-			set_variable = {
-				name = south_america_migration_goal
-				value = var:south_america_incorporated_states
-			}
-			change_variable = {
-				name = south_america_migration_goal
-				multiply = 1500000
-			}
-		}
+		#effect = {
+		#	set_variable = {
+		#		name = south_america_incorporated_population
+		#		value = 0
+		#	}
+		#	every_scope_state = {
+		#		limit = {
+		#			is_incorporated = yes
+		#			state_is_in_south_america = yes
+		#		}
+		#		ROOT = {
+		#			change_variable = {
+		#				name = south_america_incorporated_population
+		#				add = PREV.state_population
+		#			}
+		#		}
+		#	}
+		#	set_variable = {
+		#		name = south_america_incorporated_states
+		#		value = 0
+		#	}
+		#	every_scope_state = {
+		#		limit = {
+		#			is_incorporated = yes
+		#			state_is_in_south_america = yes
+		#		}
+		#		ROOT = {
+		#			change_variable = {
+		#				name = south_america_incorporated_states
+		#				add = 1
+		#			}
+		#		}
+		#	}
+		#	set_variable = {
+		#		name = south_america_migration_goal
+		#		value = var:south_america_incorporated_states
+		#	}
+		#	change_variable = {
+		#		name = south_america_migration_goal
+		#		multiply = 1500000
+		#	}
+		#}
 	}
 
 	complete = {
@@ -132,6 +128,7 @@
 	}
 
 	scripted_button = german_migration_button
+	scripted_button = german_expulsion_10_button
 
 	weight = 100
 

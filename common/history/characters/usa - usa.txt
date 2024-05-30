@@ -115,7 +115,7 @@
 			is_agitator = yes
 			interest_group = ig_intelligentsia
 			ideology = ideology_pacifist
-			birth_date = 1904.2.18
+			birth_date = 1904.4.22
 			traits = {
 				charismatic
 				ambitious
