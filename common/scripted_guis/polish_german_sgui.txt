@@ -32,6 +32,6 @@ exile_targetlist_states = {
 
 add_state_to_resettlement_list = {
 	effect = {
-		save_scope_as = resettlement_origin
+		set_variable = resettlement_origin
 	}
 }

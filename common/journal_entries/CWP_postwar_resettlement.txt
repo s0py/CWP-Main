@@ -51,6 +51,14 @@
 	}
 
 	on_weekly_pulse = {
+		effect = {
+			random_scope_state = {
+				limit = {
+					has_variable = resettlement_origin
+				}
+				save_scope_as = resettlement_state
+			}
+		}
 		#effect = {
 		#	set_variable = {
 		#		name = south_america_incorporated_population
