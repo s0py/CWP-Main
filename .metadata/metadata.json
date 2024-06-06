@@ -1,8 +1,8 @@
 {
   "name": "Cold War Project",
   "id": "",
-  "version": "0.2.9",
-  "supported_game_version": "1.6.2",
+  "version": "0.2.10",
+  "supported_game_version": "1.6.*",
   "short_description": "",
   "tags": [],
   "relationships": [],
@@ -54,7 +54,8 @@
       "events/election_events",
       "events/expedition_events",
       "events/law_events",
-      "events/tech_events"
+      "events/tech_events",
+      "gfx/loadingscreens"
     ]
   }
 }
