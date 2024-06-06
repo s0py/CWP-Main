@@ -4906,7 +4906,7 @@ pm_modern_medicine = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_fertilizer_add = 5
-			goods_output_pharmaceuticals_add = 20
+			goods_output_pharmaceuticals_add = 40
 		}
 		level_scaled = {
 			building_employment_laborers_add = 6000
@@ -4924,48 +4924,11 @@ pm_synthetic_medicines = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_fertilizer_add = 10
-			goods_output_pharmaceuticals_add = 40
+			goods_output_pharmaceuticals_add = 80
 		}
 		level_scaled = {
 			building_employment_laborers_add = 4000
 			building_employment_technicians_add = 2000
-			building_employment_professionals_add = 2000
-		}
-	}
-}
-
-## Opiates PMG
-pm_no_opiates = {
-	texture = "gfx/interface/icons/production_method_icons/unused/disabled.dds"	# SKIP for now
-}
-
-pm_opiate_refinement = {
-	texture = "gfx/interface/icons/production_method_icons/unused/refining1.dds"	# SKIP for now
-	unlocking_technologies = {
-		all_glass_syringes
-	}
-	building_modifiers = {
-		workforce_scaled = {
-			goods_input_opium_add = 20
-			goods_output_pharmaceuticals_add = 30
-		}
-		level_scaled = {
-			building_employment_professionals_add = 1000
-		}
-	}
-}
-
-pm_opiate_enhancement = {
-	texture = "gfx/interface/icons/production_method_icons/unused/refining2.dds"	# SKIP for now
-	unlocking_technologies = {
-		synthetic_opioids
-	}
-	building_modifiers = {
-		workforce_scaled = {
-			goods_input_opium_add = 40
-			goods_output_pharmaceuticals_add = 60
-		}
-		level_scaled = {
 			building_employment_professionals_add = 2000
 		}
 	}

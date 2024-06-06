@@ -249,12 +249,6 @@ effect_remove_industry = {
 	}
 	if = {
 		limit = {
-			has_building = building_opium_plantation
-		}
-		remove_building = building_opium_plantation
-	}
-	if = {
-		limit = {
 			has_building = building_tea_plantation
 		}
 		remove_building = building_tea_plantation

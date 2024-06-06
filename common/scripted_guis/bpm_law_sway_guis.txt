@@ -91,7 +91,6 @@ bpm_blackmail_leader_sway_gui = {
 				has_trait = war_criminal
 				has_trait = romantic
 				has_trait = alcoholic
-				has_trait = opium_addiction
 				has_trait = cocaine_addiction
 				has_trait = grifter
 				has_trait = senile

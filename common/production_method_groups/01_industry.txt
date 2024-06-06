@@ -953,15 +953,6 @@ pmg_base_pharmaceuticals = {
 	}
 }
 
-pmg_opioids = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	production_methods = {
-		pm_no_opiates
-		pm_opiate_refinement
-		pm_opiate_enhancement
-	}
-}
-
 pmg_automation_pharmaceuticals = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {

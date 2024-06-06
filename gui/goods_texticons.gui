@@ -410,16 +410,6 @@ texticon = {
 }
 
 texticon = {
-	icon = opium
-	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/opium.dds"
-		size = { 25 25 }
-		offset = { 0 7 }
-		fontsize = 18
-	}
-}
-
-texticon = {
 	icon = paper
 	iconsize = {
 		texture = "gfx/interface/icons/goods_icons/paper.dds"

@@ -171,11 +171,6 @@ bg_silk_plantations = {
 	default_building = building_silk_plantation
 }
 
-bg_opium_plantations = {
-	parent_group = bg_plantations
-	default_building = building_opium_plantation
-}
-
 bg_tea_plantations = {
 	parent_group = bg_plantations
 	default_building = building_tea_plantation

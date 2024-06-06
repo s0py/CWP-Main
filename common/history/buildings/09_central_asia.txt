@@ -1228,19 +1228,6 @@
 					"pm_government_run_farm"
 				}
 			}
-
-			create_building = {
-				building = "building_opium_plantation"
-				level = 10
-				subsidized = yes
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_mechanized_harvesting_opium"
-					"pm_no_transport_plantation"
-					"pm_government_run_plantation"
-				}
-			}
 			create_building = {
 				building = "building_railway"
 				level = 1
@@ -1332,18 +1319,6 @@
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
 					"pm_synthetic_fiber_production_furniture"
-				}
-			}
-			create_building = {
-				building = "building_opium_plantation"
-				level = 10
-				subsidized = yes
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_mechanized_harvesting_opium"
-					"pm_no_transport_plantation"
-					"pm_government_run_plantation"
 				}
 			}
 			create_building = {
@@ -1498,18 +1473,6 @@
 				}
 			}
 			create_building = {
-				building = "building_opium_plantation"
-				level = 20
-				subsidized = yes
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_mechanized_harvesting_opium"
-					"pm_no_transport_plantation"
-					"pm_government_run_plantation"
-				}
-			}
-			create_building = {
 				building = "building_tea_plantation"
 				level = 30
 				subsidized = yes
@@ -1569,18 +1532,6 @@
 					"pm_paved_roads"
 					"pm_cargo_prioritization"
 					"pm_government_run_building_railway"
-				}
-			}
-			create_building = {
-				building = "building_opium_plantation"
-				level = 20
-				subsidized = yes
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_mechanized_harvesting_opium"
-					"pm_no_transport_plantation"
-					"pm_government_run_plantation"
 				}
 			}
 		}
@@ -1697,18 +1648,6 @@
 					"pm_paved_roads"
 					"pm_cargo_prioritization"
 					"pm_government_run_building_railway"
-				}
-			}
-			create_building = {
-				building = "building_opium_plantation"
-				level = 5
-				subsidized = yes
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_mechanized_harvesting_opium"
-					"pm_no_transport_plantation"
-					"pm_government_run_plantation"
 				}
 			}
 		}
@@ -1994,47 +1933,14 @@
 					"pm_privately_owned_mine"
 				}
 			}
-			create_building = {
-				building = "building_opium_plantation"
-				level = 10
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
-				}
-			}
 		}
 	}
 	s:STATE_WESTERN_AFGHANISTAN = {
 		region_state:AFH = {
-			create_building = {
-				building = "building_opium_plantation"
-				level = 3
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
-				}
-			}
 		}
 	}
 	s:STATE_EASTERN_AFGHANISTAN = {
 		region_state:AFH = {
-			create_building = {
-				building = "building_opium_plantation"
-				level = 2
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
-				}
-			}
 		}
 	}
 	s:STATE_BALUCHISTAN = {
@@ -2081,17 +1987,6 @@
 					"pm_traditional_tools"
 					"pm_manual_transportation"
 					"pm_privately_owned_mine"
-				}
-			}
-			create_building = {
-				building = "building_opium_plantation"
-				level = 10
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
 				}
 			}
 		}

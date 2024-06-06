@@ -867,7 +867,6 @@ retire_commander = {
 				OR = {	
 					has_trait = alcoholic
 					has_trait = cocaine_addiction
-					has_trait = opium_addiction
 				}
 			}
 			add = 25

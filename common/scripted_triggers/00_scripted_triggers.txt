@@ -1021,7 +1021,6 @@ is_production_building = {
 		is_building_type = building_oil_rig
 		is_building_type = building_coffee_plantation
 		is_building_type = building_cotton_plantation
-		is_building_type = building_opium_plantation
 		is_building_type = building_tea_plantation
 		is_building_type = building_tobacco_plantation
 		is_building_type = building_sugar_plantation
@@ -1161,7 +1160,6 @@ is_plantation_building = {
 	or = {
 		is_building_type = building_coffee_plantation
 		is_building_type = building_cotton_plantation
-		is_building_type = building_opium_plantation
 		is_building_type = building_tea_plantation
 		is_building_type = building_tobacco_plantation
 		is_building_type = building_sugar_plantation
@@ -1190,7 +1188,6 @@ is_non_customs_union_subject = {
 has_addiction = {
 	OR = {
 		has_trait = alcoholic
-		has_trait = opium_addiction
 		has_trait = cocaine_addiction
 	}
 }

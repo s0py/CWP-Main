@@ -196,7 +196,6 @@ hsr_pm_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	building_coffee_plantation_throughput_add = 0.15
 	building_cotton_plantation_throughput_add = 0.15
-	building_opium_plantation_throughput_add = 0.15
 	building_tea_plantation_throughput_add = 0.15
 	building_tobacco_plantation_throughput_add = 0.15
 	building_sugar_plantation_throughput_add = 0.15

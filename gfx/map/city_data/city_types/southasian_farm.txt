@@ -67,9 +67,6 @@
 	building_silk_plantation = {
 		"arabic_farm_plantation_01_mesh"
 	}		
-	building_opium_plantation = {
-		"arabic_farm_plantation_01_mesh"
-	}
 	building_tea_plantation = {
 		"arabic_farm_plantation_01_mesh"
 	}

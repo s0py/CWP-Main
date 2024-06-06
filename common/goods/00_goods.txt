@@ -478,15 +478,6 @@ cargo_ships = {
 	convoy_cost_multiplier = 0.25
 }
 
-opium = {
-	texture = "gfx/interface/icons/goods_icons/opium.dds"
-	cost = 50
-	category = luxury
-	obsession_chance = 2
-	prestige_factor = 4
-	convoy_cost_multiplier = 0.75
-}
-
 refined_fuel = {
 	texture = "gfx/interface/icons/goods_icons/refined_fuel.dds"
 	cost = 50

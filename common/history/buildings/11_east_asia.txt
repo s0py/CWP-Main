@@ -75,17 +75,6 @@
 	s:STATE_SICHUAN = {
 		region_state:ROC = {
 			create_building = {
-				building = "building_opium_plantation"
-				level = 6
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_government_run_plantation"
-				}
-			}
-			create_building = {
 				building = "building_tea_plantation"
 				level = 2
 				reserves = 1
@@ -204,17 +193,6 @@
 	s:STATE_YUNNAN = {
 		region_state:ROC = {
 			create_building = {
-				building = "building_opium_plantation"
-				level = 16
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_government_run_plantation"
-				}
-			}
-			create_building = {
 				building = "building_tea_plantation"
 				level = 3
 				reserves = 1
@@ -308,17 +286,6 @@
 	}
 	s:STATE_GUIZHOU = {
 		region_state:ROC = {
-			create_building = {
-				building = "building_opium_plantation"
-				level = 7
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_government_run_plantation"
-				}
-			}
 			create_building = {
 				building = "building_tea_plantation"
 				level = 3
@@ -3118,17 +3085,6 @@
 				}
 			}
 			create_building = {
-				building = "building_opium_plantation"
-				level = 2
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
-				}
-			}
-			create_building = {
 				building = "building_livestock_ranch"
 				level = 3
 				reserves = 1
@@ -3182,17 +3138,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_anchorage"
-				}
-			}
-			create_building = {
-				building = "building_opium_plantation"
-				level = 15
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
 				}
 			}
 			create_building = {
@@ -3331,17 +3276,6 @@
 	s:STATE_LAOS = {
 		region_state:VNM = {
 			create_building = {
-				building = "building_opium_plantation"
-				level = 20
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
-				}
-			}
-			create_building = {
 				building = "building_silk_plantation"
 				level = 1
 				reserves = 1
@@ -3367,17 +3301,6 @@
 	}
 	s:STATE_CHIANG_MAI = {
 		region_state:THA = {
-			create_building = {
-				building = "building_opium_plantation"
-				level = 2
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
-				}
-			}
 			create_building = {
 				building = "building_rice_farm"
 				level = 3
@@ -3410,17 +3333,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_anchorage"
-				}
-			}
-			create_building = {
-				building = "building_opium_plantation"
-				level = 9
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
 				}
 			}
 			create_building = {
@@ -3468,17 +3380,6 @@
 				}
 			}
 			create_building = {
-				building = "building_opium_plantation"
-				level = 5
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
-				}
-			}
-			create_building = {
 				building = "building_rice_farm"
 				level = 7
 				reserves = 1
@@ -3507,17 +3408,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_anchorage"
-				}
-			}
-			create_building = {
-				building = "building_opium_plantation"
-				level = 7
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
 				}
 			}
 			create_building = {
@@ -3557,17 +3447,6 @@
 				}
 			}
 			create_building = {
-				building = "building_opium_plantation"
-				level = 4
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
-				}
-			}
-			create_building = {
 				building = "building_rice_farm"
 				level = 1
 				reserves = 1
@@ -3591,17 +3470,6 @@
 					"pm_professional_bureaucrats"
 				}
 			}
-			create_building = {
-				building = "building_opium_plantation"
-				level = 4
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
-				}
-			}
 		}
 	}
 	s:STATE_BURMA = {
@@ -3614,17 +3482,6 @@
 					"pm_modern_bureaucracy"
 					"pm_professional_service_industry_no"
 					"pm_professional_bureaucrats"
-				}
-			}
-			create_building = {
-				building = "building_opium_plantation"
-				level = 4
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
 				}
 			}
 		}
@@ -3647,17 +3504,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_anchorage"
-				}
-			}
-			create_building = {
-				building = "building_opium_plantation"
-				level = 3
-				reserves = 1
-				activate_production_methods = {
-					"pm_default_building_opium_plantation"
-					"pm_manual_harvesting_plantation"
-					"pm_no_transport_plantation"
-					"pm_privately_owned_plantation"
 				}
 			}
 			create_building = {

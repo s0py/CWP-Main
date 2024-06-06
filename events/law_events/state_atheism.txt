@@ -111,29 +111,6 @@ state_atheism.1 = {
 			months = long_modifier_time
 		}
 	}
-	option = {
-		name = state_atheism.1.c
-		trigger = {
-			market = {
-				mg:opium = {
-					market_goods_consumption > 100
-				}
-			}
-			any_primary_culture = {
-				NOT = {
-					has_cultural_obsession = opium
-				}
-			}
-		}
-		random_primary_culture = {
-			limit = {
-				NOT = {
-					has_cultural_obsession = opium
-				}
-			}
-			add_cultural_obsession = opium
-		}
-	}
 }
 
 # Advancement event - Society of the Godless

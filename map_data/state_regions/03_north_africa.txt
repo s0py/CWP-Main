@@ -9,7 +9,7 @@
     mine = xD050E0
     wood = x5011E0
     arable_land = 244
-    arable_resources = { bg_wheat_farms bg_livestock_ranches bg_cotton_plantations bg_opium_plantations bg_tobacco_plantations bg_sugar_plantations bg_banana_plantations }
+    arable_resources = { bg_wheat_farms bg_livestock_ranches bg_cotton_plantations bg_tobacco_plantations bg_sugar_plantations bg_banana_plantations }
     resource = {
         type = bg_rare_earth_elements_mining
         undiscovered_amount = 1
@@ -42,7 +42,7 @@ STATE_UPPER_EGYPT = {
     mine = xD0D060
     wood = xEDE183
     arable_land = 57
-    arable_resources = { bg_wheat_farms bg_livestock_ranches bg_cotton_plantations bg_opium_plantations bg_tobacco_plantations bg_sugar_plantations }
+    arable_resources = { bg_wheat_farms bg_livestock_ranches bg_cotton_plantations bg_tobacco_plantations bg_sugar_plantations }
     resource = {
         type = bg_uranium_mining
         undiscovered_amount = 20
@@ -72,7 +72,7 @@ STATE_MIDDLE_EGYPT = {
     mine = xA41CF4
     wood = x50D060
     arable_land = 70
-    arable_resources = { bg_wheat_farms bg_livestock_ranches bg_cotton_plantations bg_opium_plantations bg_tobacco_plantations bg_sugar_plantations bg_banana_plantations }
+    arable_resources = { bg_wheat_farms bg_livestock_ranches bg_cotton_plantations bg_tobacco_plantations bg_sugar_plantations bg_banana_plantations }
     resource = {
         type = bg_oil_rig
         undiscovered_amount = 32
@@ -618,7 +618,7 @@ STATE_EASTERN_MALI = {
     mine = xA08311
     wood = xD5F34F
     arable_land = 100
-    arable_resources = { bg_millet_farms bg_livestock_ranches bg_cotton_plantations bg_opium_plantations bg_tobacco_plantations }
+    arable_resources = { bg_millet_farms bg_livestock_ranches bg_cotton_plantations bg_tobacco_plantations }
     capped_resources = {
         bg_monuments = 1
     }
@@ -634,7 +634,7 @@ STATE_WESTERN_MALI = {
     mine = xEAE72D
     wood = x901121
     arable_land = 70
-    arable_resources = { bg_millet_farms bg_livestock_ranches bg_cotton_plantations bg_opium_plantations bg_tobacco_plantations }
+    arable_resources = { bg_millet_farms bg_livestock_ranches bg_cotton_plantations bg_tobacco_plantations }
 }
 
 STATE_TIMBUKTU = {
