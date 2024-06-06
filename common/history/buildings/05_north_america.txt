@@ -164,7 +164,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_powered_assembly_lines_industry"
-					"pm_no_household_appliance_manufacturing"
 					"pm_privately_owned_general_industry"
 					"pm_synthetic_fiber_production_furniture"
 					"pm_no_environmental_tech"
@@ -672,7 +671,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_synthetic_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_services_use_engineers"
 					"pm_no_environmental_tech"
@@ -1001,7 +999,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_synthetic_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_services_use_engineers"
 					"pm_no_environmental_tech"
@@ -1815,7 +1812,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_synthetic_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_services_use_engineers"
 					"pm_no_environmental_tech"
@@ -2415,7 +2411,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_synthetic_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_services_use_engineers"
 					"pm_no_environmental_tech"
@@ -2947,7 +2942,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_synthetic_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_services_use_engineers"
 					"pm_no_environmental_tech"
@@ -3176,7 +3170,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_synthetic_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_services_use_engineers"
 					"pm_no_environmental_tech"
@@ -3689,7 +3682,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_synthetic_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_services_use_engineers"
 					"pm_no_environmental_tech"
@@ -4159,7 +4151,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_synthetic_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_services_use_engineers"
 					"pm_no_environmental_tech"
@@ -4993,7 +4984,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_synthetic_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_services_use_engineers"
 					"pm_no_environmental_tech"
@@ -5528,7 +5518,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_privately_owned_general_industry"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -6180,7 +6169,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -6473,7 +6461,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -7205,7 +7192,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -8287,7 +8273,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_synthetic_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_services_use_engineers"
 					"pm_no_environmental_tech"
@@ -8773,7 +8758,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_powered_assembly_lines_industry"
-					"pm_no_household_appliance_manufacturing"
 					"pm_privately_owned_general_industry"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -8869,7 +8853,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_synthetic_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -9263,7 +9246,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_synthetic_fiber_production_furniture"
-					"pm_no_household_appliance_manufacturing"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"

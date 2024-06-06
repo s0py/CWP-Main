@@ -94,8 +94,8 @@ mobilization_basic_rations = {
 		always = no	
     }
 	upkeep_modifier = {
-		goods_input_groceries_add = 0.5
 		goods_input_meat_add = 0.5
+		goods_input_grain_add = 0.5
 	}
 	
 	unit_modifier = {
@@ -119,8 +119,8 @@ mobilization_canned_rations = {
 		}
 	}
 	upkeep_modifier = {
-		goods_input_groceries_add = 1
-		goods_input_groceries_add = -0.5
+		goods_input_groceries_add = 0.5
+		goods_input_grain_add = -0.5
 		goods_input_meat_add = -0.5
 	}
 	
@@ -150,7 +150,7 @@ mobilization_mre_rations = {
 	upkeep_modifier = {
 		goods_input_groceries_add = 0.5
 		goods_input_plastics_add = 0.5
-		goods_input_groceries_add = -0.5
+		goods_input_grain_add = -0.5
 		goods_input_meat_add = -0.5
 	}
 	
@@ -178,7 +178,10 @@ mobilization_catering_rations = {
 		}
 	}
 	upkeep_modifier = {
-		goods_input_household_appliances_add = 0.5
+		goods_input_groceries_add = 1.0
+		goods_input_plastics_add = 0.5
+		goods_input_grain_add = -0.5
+		goods_input_meat_add = -0.5
 	}
 	
 	unit_modifier = {

@@ -211,7 +211,7 @@ texticon = {
 texticon = {
 	icon = furniture
 	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/furniture.dds"
+		texture = "gfx/interface/icons/goods_icons/household_appliances.dds"
 		size = { 25 25 }
 		offset = { 0 7 }
 		fontsize = 18
@@ -565,16 +565,6 @@ texticon = {
 	icon = tourism
 	iconsize = {
 		texture = "gfx/interface/icons/goods_icons/tourism.dds"
-		size = { 25 25 }
-		offset = { 0 7 }
-		fontsize = 18
-	}
-}
-
-texticon = {
-	icon = household_appliances
-	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/household_appliances.dds"
 		size = { 25 25 }
 		offset = { 0 7 }
 		fontsize = 18

@@ -1145,13 +1145,6 @@
   modifier_goods_output_healthcare_add: "@healthcare! Healthcare output per level"
   modifier_goods_output_healthcare_add_desc: "The amount of @healthcare! Healthcare produced by buildings"
 
-  # Household Appliances
-  modifier_goods_input_household_appliances_add: "@household_appliances! Household Appliances input per level"
-  modifier_goods_input_household_appliances_add_desc: "The amount of @household_appliances! Household Appliances consumed by buildings"
-
-  modifier_goods_output_household_appliances_add: "@household_appliances! Household Appliances output per level"
-  modifier_goods_output_household_appliances_add_desc: "The amount of @household_appliances! Household Appliances produced by buildings"
-
   # Housing
   modifier_goods_input_housing_add: "@housing! Housing input per level"
   modifier_goods_input_housing_add_desc: "The amount of @housing! Housing consumed by buildings"

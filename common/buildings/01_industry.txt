@@ -102,7 +102,6 @@ building_furniture_manufactories = {
 	}
 	production_method_groups = {
 		pmg_base_furniture
-		pmg_base_household_appliance_manufactories
 		pmg_automation_furniture
 		pmg_professional_service_use_engineers
 		pmg_green_tech_industry

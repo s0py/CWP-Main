@@ -433,20 +433,11 @@ nuclear_weapon = {
 }
 
 ################## STAPLE ####################################
-household_appliances = {
-	texture = "gfx/interface/icons/goods_icons/household_appliances.dds"
-	cost = 100
-	category = staple
-	prestige_factor = 4
-	traded_quantity = 15
-	convoy_cost_multiplier = 0.5
-	consumption_tax_cost = 200
-}
-
 housing = {
 	texture = "gfx/interface/icons/goods_icons/housing.dds"
 	cost = 30
 	category = staple
+	local = yes
 	tradeable = no
 	prestige_factor = 5
 	consumption_tax_cost = 500

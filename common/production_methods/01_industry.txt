@@ -834,14 +834,14 @@ pm_fiber_production_furniture = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_wood_add = 20			# x20 =  700
-			goods_input_fabric_add = 10			# x20 =  300
+			goods_input_wood_add = 40			# x20 =  700
+			goods_input_fabric_add = 20			# x20 =  300
 			# output goods
-			goods_output_furniture_add = 35			# x30 = 2100
+			goods_output_furniture_add = 70			# x30 = 2100
 		}
 		level_scaled = {
 			# profit = 1100 (6.3)
-			building_employment_laborers_add = 4500
+			building_employment_laborers_add = 9000
 			building_employment_technicians_add = 500
 		}
 	}
@@ -860,18 +860,17 @@ pm_synthetic_fiber_production_furniture = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			goods_input_wood_add = 15			# x 20 = 600
-			goods_input_fabric_add = 5			# x 20 = 200
-			goods_input_high_quality_fabric_add = 5
-			goods_input_tools_add = 5			# x 40 = 200
+			goods_input_wood_add = 30			# x 20 = 600
+			goods_input_fabric_add = 10			# x 20 = 200
+			goods_input_tools_add = 10			# x 40 = 200
 			# output goods
-			goods_output_furniture_add = 50			# x 30 = 2400
+			goods_output_furniture_add = 100			# x 30 = 2400
 		}
 		level_scaled = {
 			# profit = 1400 (7.5)
-			building_employment_laborers_add = 3500
-			building_employment_technicians_add = 1000
-			building_employment_engineers_add = 500
+			building_employment_laborers_add = 7000
+			building_employment_technicians_add = 2000
+			building_employment_engineers_add = 1000
 		}
 	}
 }
@@ -889,17 +888,17 @@ pm_spinnerets_furniture = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods						# profit = 2150 (10.1)
-			goods_input_wood_add = 25			# x 20 = 1000
-			goods_input_fabric_add = 5			# x 20 = 200
-			goods_input_high_quality_fabric_add = 5
-			goods_input_tools_add = 5			# x 40 = 400
+			goods_input_wood_add = 35			# x 20 = 1000
+			goods_input_steel_add = 5			# x 50 = 250
+			goods_input_fabric_add = 10			# x 20 = 200
+			goods_input_tools_add = 10			# x 40 = 400
 			# output goods
-			goods_output_furniture_add = 65			# x 30 = 3750
+			goods_output_furniture_add = 135			# x 30 = 3750
 		}
 		level_scaled = {
-			building_employment_laborers_add = 3000
-			building_employment_technicians_add = 1500
-			building_employment_engineers_add = 500
+			building_employment_laborers_add = 6000
+			building_employment_technicians_add = 3000
+			building_employment_engineers_add = 1000
 		}
 	}
 }
@@ -917,17 +916,18 @@ pm_technical_textiles_furniture = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods							#profit = 3150 (12.6)
-			goods_input_wood_add = 30			# x 20 = 1200
+			goods_input_wood_add = 20			# x 20 = 1200
+			goods_input_steel_add = 10			# x 50 = 500
+			goods_input_electronics_add = 5		# x 60 = 300
 			goods_input_fabric_add = 10			# x 20 = 300
-			goods_input_high_quality_fabric_add = 10
 			goods_input_tools_add = 10			# x 40 = 600
 			# output goods
-			goods_output_furniture_add = 90			# x 30 = 5250
+			goods_output_furniture_add = 180			# x 30 = 5250
 		}
 		level_scaled = {
-			building_employment_laborers_add = 2500
-			building_employment_technicians_add = 1750
-			building_employment_engineers_add = 750
+			building_employment_laborers_add = 5000
+			building_employment_technicians_add = 2500
+			building_employment_engineers_add = 1500
 		}
 	}
 }
@@ -945,78 +945,18 @@ pm_3d_printed_furniture = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods							# profit = 4300 (15.9)
-			goods_input_wood_add = 40			# x 20 = 900
 			goods_input_fabric_add = 10			# x 20 = 300
-			goods_input_high_quality_fabric_add = 10
-			goods_input_tools_add = 15			# x 40 = 1000
-			goods_input_electronics_add = 5			# x 60 = 600
-			goods_input_plastics_add = 5			# x 40 = 400
+			goods_input_tools_add = 10			# x 40 = 1000
+			goods_input_electronics_add = 10			# x 60 = 300
+			goods_input_plastics_add = 20			# x 40 = 400
+			goods_input_glass_add = 5
 			# output goods
-			goods_output_furniture_add = 125			# x 30 = 7500
+			goods_output_furniture_add = 260			# x 30 = 7500
 		}
 		level_scaled = {
-			building_employment_laborers_add = 2000
-			building_employment_technicians_add = 2000
-			building_employment_engineers_add = 1000
-		}
-	}
-}
-
-## Base Appliance PMG
-pm_no_household_appliance_manufacturing = {
-	texture = "gfx/interface/icons/production_method_icons/unused/disabled.dds"	# disabled produciton.  Pink
-}
-
-pm_household_appliance_manufacturing = {
-	texture = "gfx/interface/icons/production_method_icons/unused/refining1.dds"	# household appliances, driers and shit.  Pink
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 25
-		}
-	}
-	unlocking_technologies = {
-		household_appliance_manufacturing
-	}
-	building_modifiers = {
-		workforce_scaled = {
-			# profit = 1600
-			goods_input_electronics_add = 20			# x 60 = 1200
-			goods_input_glass_add = 10
-			goods_input_plastics_add = 20
-			goods_input_steel_add = 20			# x 50 = 1000
-			goods_output_household_appliances_add = 50			# x 100 = 5000
-		}
-		level_scaled = {
-			building_employment_laborers_add = 3500
-			building_employment_technicians_add = 1000
-			building_employment_engineers_add = 500
-		}
-	}
-}
-
-pm_mass_appliance_manufacturing = {
-	texture = "gfx/interface/icons/production_method_icons/unused/refining2.dds"	# household appliances, but a lot of them.  Pink
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 50
-		}
-	}
-	unlocking_technologies = {
-		mass_appliance_manufacturing
-	}
-	building_modifiers = {
-		workforce_scaled = {
-			# profit = 2700
-			goods_input_electronics_add = 40			# x 60 = 2400
-			goods_input_glass_add = 20
-			goods_input_plastics_add = 40
-			goods_input_steel_add = 35			# x 50 = 2000
-			goods_output_household_appliances_add = 95			# x 100 = 9500
-		}
-		level_scaled = {
-			building_employment_laborers_add = 2000
-			building_employment_technicians_add = 1500
-			building_employment_engineers_add = 1500
+			building_employment_laborers_add = 4000
+			building_employment_technicians_add = 4000
+			building_employment_engineers_add = 2000
 		}
 	}
 }
