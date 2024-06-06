@@ -55,7 +55,7 @@
 			desc = "POP_CAPITALISTS"
 			if = {
 				limit = {
-					is_pop_type = investors
+					is_pop_type = capitalists
 				}
 				value = 100
 			}

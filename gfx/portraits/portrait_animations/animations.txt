@@ -87,7 +87,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 100
-					administrators_clothes_pop_trigger = yes
+					bureaucrats_clothes_pop_trigger = yes
 					struggling_pop_trigger = no
 				}
 			}
@@ -101,7 +101,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 110
-					servicemembers_clothes_pop_trigger = yes
+					soldiers_clothes_pop_trigger = yes
 					struggling_pop_trigger = no
 				}
 			}
@@ -148,7 +148,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 150
-					informal_workers_clothes_pop_trigger = yes
+					peasants_clothes_pop_trigger = yes
 					struggling_pop_trigger = no
 				}
 			}
@@ -329,7 +329,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 100
-					landlords_clothes_pop_trigger = yes
+					aristocrats_clothes_pop_trigger = yes
 					european_clothes_pop_trigger = yes
 					struggling_pop_trigger = no
 				}
@@ -359,7 +359,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 100
-					landlords_clothes_pop_trigger = yes
+					aristocrats_clothes_pop_trigger = yes
 					european_clothes_pop_trigger = yes
 					struggling_pop_trigger = no
 				}
@@ -428,7 +428,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 150
-					administrators_clothes_pop_trigger = yes
+					bureaucrats_clothes_pop_trigger = yes
 					struggling_pop_trigger = yes
 				}
 			}
@@ -445,7 +445,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 150
-					servicemembers_clothes_pop_trigger = yes
+					soldiers_clothes_pop_trigger = yes
 					struggling_pop_trigger = yes
 				}
 			}
@@ -479,7 +479,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 150
-					informal_workers_clothes_pop_trigger = yes
+					peasants_clothes_pop_trigger = yes
 					struggling_pop_trigger = yes
 				}
 			}
@@ -496,7 +496,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 200
-					informal_workers_clothes_pop_trigger = yes
+					peasants_clothes_pop_trigger = yes
 					struggling_pop_trigger = yes
 				}
 			}
@@ -681,7 +681,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 150
-					landlords_clothes_pop_trigger = yes
+					aristocrats_clothes_pop_trigger = yes
 					european_clothes_pop_trigger = yes
 					struggling_pop_trigger = yes
 				}
@@ -711,7 +711,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 150
-					landlords_clothes_pop_trigger = yes
+					aristocrats_clothes_pop_trigger = yes
 					european_clothes_pop_trigger = yes
 					struggling_pop_trigger = yes
 				}
@@ -890,7 +890,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 110
-					servicemembers_clothes_pop_trigger = yes
+					soldiers_clothes_pop_trigger = yes
 					struggling_pop_trigger = no
 				}
 			}
@@ -904,7 +904,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 150
-					landlords_clothes_pop_trigger = yes
+					aristocrats_clothes_pop_trigger = yes
 					struggling_pop_trigger = no
 				}
 			}
@@ -1032,7 +1032,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 150
-					informal_workers_clothes_pop_trigger = yes
+					peasants_clothes_pop_trigger = yes
 					struggling_pop_trigger = yes
 				}
 			}
@@ -1049,7 +1049,7 @@ idle = {
 				base = 0
 				modifier = {
 					add = 110
-					servicemembers_clothes_pop_trigger = yes
+					soldiers_clothes_pop_trigger = yes
 					struggling_pop_trigger = yes
 				}
 			}

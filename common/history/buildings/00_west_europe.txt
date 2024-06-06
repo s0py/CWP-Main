@@ -2232,7 +2232,7 @@
 					"pm_no_commercial_banking"
 					"pm_privately_owned_urban_center"
 					"pm_professional_service_industry_no"
-					"pm_certified_investors"
+					"pm_certified_capitalists"
 				}
 			}
 		}
@@ -4400,7 +4400,7 @@
 				activate_production_methods = {
 					"pm_traditional_financial_services"
 					"pm_no_commercial_banking"
-					"pm_certified_investors"
+					"pm_certified_capitalists"
 					"pm_professional_service_industry_no"
 					"pm_privately_owned_urban_center"
 				}
@@ -5182,7 +5182,7 @@
 					"pm_no_commercial_banking"
 					"pm_privately_owned_urban_center"
 					"pm_professional_service_industry_no"
-					"pm_certified_investors"
+					"pm_certified_capitalists"
 				}
 			}
 		}
@@ -5357,7 +5357,7 @@
 				activate_production_methods = {
 					"pm_traditional_financial_services"
 					"pm_no_commercial_banking"
-					"pm_certified_investors"
+					"pm_certified_capitalists"
 					"pm_professional_service_industry_no"
 					"pm_privately_owned_urban_center"
 				}
@@ -7564,7 +7564,7 @@
 					"pm_no_commercial_banking"
 					"pm_privately_owned_urban_center"
 					"pm_professional_service_industry_no"
-					"pm_certified_investors"
+					"pm_certified_capitalists"
 				}
 			}
 		}
@@ -7742,7 +7742,7 @@
 				activate_production_methods = {
 					"pm_traditional_financial_services"
 					"pm_no_commercial_banking"
-					"pm_certified_investors"
+					"pm_certified_capitalists"
 					"pm_professional_service_industry_no"
 					"pm_privately_owned_urban_center"
 				}
@@ -7863,7 +7863,7 @@
 				activate_production_methods = {
 					"pm_traditional_financial_services"
 					"pm_no_commercial_banking"
-					"pm_certified_investors"
+					"pm_certified_capitalists"
 					"pm_professional_service_industry_no"
 					"pm_privately_owned_urban_center"
 				}
@@ -8175,7 +8175,7 @@
 					"pm_no_commercial_banking"
 					"pm_privately_owned_urban_center"
 					"pm_professional_service_industry_no"
-					"pm_certified_investors"
+					"pm_certified_capitalists"
 				}
 			}
 		}
@@ -8496,7 +8496,7 @@
 				activate_production_methods = {
 					"pm_traditional_financial_services"
 					"pm_no_commercial_banking"
-					"pm_certified_investors"
+					"pm_certified_capitalists"
 					"pm_professional_service_industry_no"
 					"pm_privately_owned_urban_center"
 				}
@@ -9542,7 +9542,7 @@
 					"pm_no_commercial_banking"
 					"pm_privately_owned_urban_center"
 					"pm_professional_service_industry_no"
-					"pm_certified_investors"
+					"pm_certified_capitalists"
 				}
 			}
 		}
@@ -9789,7 +9789,7 @@
 				activate_production_methods = {
 					"pm_traditional_financial_services"
 					"pm_no_commercial_banking"
-					"pm_certified_investors"
+					"pm_certified_capitalists"
 					"pm_professional_service_industry_no"
 					"pm_privately_owned_urban_center"
 				}
@@ -13556,7 +13556,7 @@
 					"pm_no_commercial_banking"
 					"pm_privately_owned_urban_center"
 					"pm_professional_service_industry_no"
-					"pm_certified_investors"
+					"pm_certified_capitalists"
 				}
 			}
 			create_building = {

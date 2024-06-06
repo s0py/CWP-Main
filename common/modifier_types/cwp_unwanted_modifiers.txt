@@ -96,7 +96,7 @@ country_clergymen_pol_str_mult = {
 	percent = yes
 }
 
-country_landlords_voting_power_add = {
+country_aristocrats_voting_power_add = {
 	neutral = yes
 	percent = yes
 }

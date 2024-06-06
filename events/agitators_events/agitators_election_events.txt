@@ -1587,7 +1587,7 @@ agitators_election_events.13 = {
 			is_party_type = communist_party
 		}
 		pop_type_percent_country = {
-			pop_type = informal_workers
+			pop_type = peasants
 			percent >= 0.35
 		}
 	}
@@ -1608,7 +1608,7 @@ agitators_election_events.13 = {
 			limit = {
 				is_incorporated = yes
 				any_scope_pop = {
-					is_pop_type = informal_workers
+					is_pop_type = peasants
 				}
 			}
 			save_scope_as = peasant_agitation_state
@@ -1620,7 +1620,7 @@ agitators_election_events.13 = {
 		scope:peasant_agitation_state = {
 			add_radicals_in_state = {
 				value = medium_radicals
-				pop_type = informal_workers
+				pop_type = peasants
 			}
 			add_modifier = {
 				name = modifier_communist_peasant_agitation
@@ -1636,7 +1636,7 @@ agitators_election_events.13 = {
 		scope:peasant_agitation_state = {
 			add_radicals_in_state = {
 				value = small_radicals
-				pop_type = informal_workers
+				pop_type = peasants
 			}
 			add_modifier = {
 				name = modifier_communist_anti_landlord_agitation

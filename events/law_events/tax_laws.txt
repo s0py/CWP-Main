@@ -173,7 +173,7 @@ tax.2 = {
 			}
 		}
 		add_loyalists = {
-			pop_type = servicemembers
+			pop_type = soldiers
 			value = 0.1
 		}
 		add_loyalists = {

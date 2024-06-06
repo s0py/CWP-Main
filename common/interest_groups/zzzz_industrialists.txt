@@ -41,7 +41,7 @@ ig_industrialists = {
 			}
 		}
 		OR = {
-			is_pop_type = investors
+			is_pop_type = capitalists
 			is_pop_type = engineers
 			is_pop_type = professionals
 		}
@@ -50,7 +50,7 @@ ig_industrialists = {
 		value = 0
 		if = {
 			limit = {
-				is_pop_type = investors
+				is_pop_type = capitalists
 			}
 			add = {
 				desc = "POP_CAPITALISTS"

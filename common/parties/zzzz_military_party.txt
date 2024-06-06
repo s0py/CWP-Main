@@ -135,7 +135,7 @@ military_party = {
 			}
 		}
 		if = {
-			# a party for powerful servicemembers
+			# a party for powerful soldiers
 			limit = {
 				is_interest_group_type = ig_armed_forces
 				is_powerful = yes

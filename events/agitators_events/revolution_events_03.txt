@@ -639,7 +639,7 @@ revolution_pulse2_events.4 = {
 		name = revolution_pulse2_events.4.b
 		custom_tooltip = revolution_pulse2_events.4.tt
 		add_radicals = {
-			pop_type = investors
+			pop_type = capitalists
 			value = small_radicals
 		}
 		ig:ig_market_liberals = {
@@ -743,7 +743,7 @@ revolution_pulse2_events.5 = {
 		}
 		scope:garrison_refusal_state = {
 			add_radicals_in_state = {
-				pop_type = servicemembers
+				pop_type = soldiers
 				value = medium_radicals
 			}
 			add_loyalists_in_state = {

@@ -42,7 +42,7 @@
 			desc = "POP_ARISTOCRATS"
 			if = {
 				limit = {
-					is_pop_type = landlords
+					is_pop_type = aristocrats
 				}
 				value = 0.1
 			}
@@ -110,7 +110,7 @@ law_tenant_farmers = {
 							has_law = law_type:law_serfdom
 						}
 					}
-					is_pop_type = landlords
+					is_pop_type = aristocrats
 				}
 				value = 0.1
 			}
@@ -119,7 +119,7 @@ law_tenant_farmers = {
 			desc = "POP_PEASANTS"
 			if = {
 				limit = {
-					is_pop_type = informal_workers
+					is_pop_type = peasants
 					owner = {
 						has_law = law_type:law_serfdom
 					}
@@ -139,7 +139,7 @@ law_tenant_farmers = {
 							has_law = law_type:law_serfdom
 						}
 					}
-					is_pop_type = investors
+					is_pop_type = capitalists
 				}
 				value = 0.5
 			}

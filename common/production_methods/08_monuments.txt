@@ -88,7 +88,7 @@ pm_default_building_forbidden_city = {
 			goods_output_tourism_add = 300
 		}
 		level_scaled = {
-			building_employment_administrators_add = 2000
+			building_employment_bureaucrats_add = 2000
 		}
 		unscaled = {
 			building_government_shares_add = 1
@@ -113,7 +113,7 @@ pm_cultural_building_hagia_sophia = {
 			goods_output_tourism_add = 200
 		}
 		level_scaled = {
-			building_employment_administrators_add = 800
+			building_employment_bureaucrats_add = 800
 		}
 		unscaled = {
 			building_government_shares_add = 1
@@ -193,7 +193,7 @@ pm_cultural_building_red_square = {
 			goods_output_tourism_add = 200
 		}
 		level_scaled = {
-			building_employment_administrators_add = 1000
+			building_employment_bureaucrats_add = 1000
 			building_employment_service_workers_add = 500
 		}
 		unscaled = {
@@ -250,7 +250,7 @@ pm_default_building_statue_of_liberty = {
 			goods_output_tourism_add = 200
 		}
 		level_scaled = {
-			building_employment_administrators_add = 200
+			building_employment_bureaucrats_add = 200
 			building_employment_service_workers_add = 800
 		}
 		unscaled = {
@@ -271,7 +271,7 @@ pm_default_building_taj_mahal = {
 			goods_output_tourism_add = 200
 		}
 		level_scaled = {
-			building_employment_administrators_add = 200
+			building_employment_bureaucrats_add = 200
 			building_employment_service_workers_add = 400
 		}
 		unscaled = {
@@ -323,7 +323,7 @@ pm_default_building_white_house = {
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_administrators_add = 1000
+			building_employment_bureaucrats_add = 1000
 		}
 	}
 }
@@ -347,7 +347,7 @@ pm_default_building_white_house = {
 # 			goods_output_tourism_add = 100
 # 		}
 # 		level_scaled = {
-# 			building_employment_administrators_add = 1000
+# 			building_employment_bureaucrats_add = 1000
 # 		}
 # 		unscaled = {
 # 			building_government_shares_add = 1
@@ -366,7 +366,7 @@ pm_default_building_white_house = {
 # 			goods_output_tourism_add = 100
 # 		}
 # 		level_scaled = {
-# 			building_employment_administrators_add = 1000
+# 			building_employment_bureaucrats_add = 1000
 # 		}
 # 		unscaled = {
 # 			building_government_shares_add = 1
@@ -385,13 +385,13 @@ pm_default_building_white_house = {
 # 			goods_output_tourism_add = 200
 # 		}
 # 		level_scaled = {
-# 			building_employment_landlords_add = 3500
-# 			building_employment_investors_add = 500
-# 			building_employment_administrators_add = 9000
+# 			building_employment_aristocrats_add = 3500
+# 			building_employment_capitalists_add = 500
+# 			building_employment_bureaucrats_add = 9000
 # 			building_employment_service_workers_add = 8000
 # 		}
 # 		unscaled = {
-# 			building_investors_shares_add = 2
+# 			building_capitalists_shares_add = 2
 # 			building_government_shares_add = 1
 # 		}
 # 	}
@@ -458,7 +458,7 @@ pm_default_building_white_house = {
 #	}
 #	building_modifiers = {
 #		level_scaled = {
-#			building_employment_administrators_add = 15000
+#			building_employment_bureaucrats_add = 15000
 #		}
 #		workforce_scaled = {
 #			goods_input_paper_add = 450

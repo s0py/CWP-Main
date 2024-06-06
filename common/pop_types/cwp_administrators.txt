@@ -1,6 +1,7 @@
-﻿administrators = {
+﻿#Administrators
+bureaucrats = {
 	#todo update icon
-	texture = gfx/interface/icons/pops_icons/administrators.dds
+	texture = gfx/interface/icons/pops_icons/bureaucrats.dds
 	color = {
 		102
 		128
@@ -30,7 +31,7 @@
 			}
 		}
 	}
-	qualifications_growth_desc = ADMINISTRATORS_QUALIFICATIONS_DESC
+	qualifications_growth_desc = bureaucrats_QUALIFICATIONS_DESC
 	qualifications = {
 		if = {
 			limit = {
@@ -55,7 +56,7 @@
 				limit = {
 					or = {
 						is_pop_type = professionals
-						is_pop_type = servicemembers
+						is_pop_type = soldiers
 						is_pop_type = service_workers
 					}
 				}

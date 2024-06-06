@@ -1,6 +1,7 @@
-﻿informal_workers = {
+﻿#Subsistance Workers
+peasants = {
 	#todo add icon
-	texture = gfx/interface/icons/pops_icons/informal_workers.dds
+	texture = gfx/interface/icons/pops_icons/peasants.dds
 	color = {
 		138
 		175

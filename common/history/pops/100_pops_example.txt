@@ -34,7 +34,7 @@ POPS = {
 	#		}
 	#
 	#		create_pop = {
-	#			pop_type = investors
+	#			pop_type = capitalists
 	#			culture = polish
 	#			religion = catholic
 	#			size = 5200

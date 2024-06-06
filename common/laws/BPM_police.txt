@@ -127,7 +127,7 @@ law_dedicated_police = {
 							has_law = law_type:law_militarized_police
 						}
 					}
-					is_pop_type = investors
+					is_pop_type = capitalists
 				}
 				value = 0.33
 			}

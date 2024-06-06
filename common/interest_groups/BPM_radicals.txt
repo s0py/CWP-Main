@@ -44,7 +44,7 @@
 		value = 20
 		if = {
 			limit = {
-				is_pop_type = informal_workers
+				is_pop_type = peasants
 			}
 			add = {
 				desc = "POP_EXCLUSIONS"
@@ -53,7 +53,7 @@
 		}
 		else_if = {
 			limit = {
-				is_pop_type = investors
+				is_pop_type = capitalists
 			}
 			add = {
 				desc = "POP_CAPITALISTS"

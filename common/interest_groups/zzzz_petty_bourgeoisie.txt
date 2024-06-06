@@ -61,7 +61,7 @@ ig_petty_bourgeoisie = {
 		}
 		else_if = {
 			limit = {
-				is_pop_type = administrators
+				is_pop_type = bureaucrats
 			}
 			add = {
 				desc = "POP_BUREAUCRATS"
@@ -70,7 +70,7 @@ ig_petty_bourgeoisie = {
 		}
 		else_if = {
 			limit = {
-				is_pop_type = investors
+				is_pop_type = capitalists
 			}
 			add = {
 				desc = "POP_CAPITALISTS"
@@ -88,7 +88,7 @@ ig_petty_bourgeoisie = {
 		}
 		else_if = {
 			limit = {
-				is_pop_type = landlords
+				is_pop_type = aristocrats
 			}
 			add = {
 				desc = "POP_ARISTOCRATS"

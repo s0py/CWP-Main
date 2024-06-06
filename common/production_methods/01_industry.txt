@@ -5548,10 +5548,10 @@ pm_privately_owned_general_industry = {
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_investors_add = 200
+			building_employment_capitalists_add = 200
 		}
 		unscaled = {
-			building_investors_shares_add = 1
+			building_capitalists_shares_add = 1
 		}
 	}
 }
@@ -5573,10 +5573,10 @@ pm_publicly_traded_general_industry = {
 			goods_output_bonds_add = 5
 		}
 		level_scaled = {
-			building_employment_investors_add = 200
+			building_employment_capitalists_add = 200
 		}
 		unscaled = {
-			building_investors_shares_add = 1
+			building_capitalists_shares_add = 1
 		}
 	}
 }
@@ -5596,7 +5596,7 @@ pm_government_run_general_industry = {
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_administrators_add = 200
+			building_employment_bureaucrats_add = 200
 		}
 		unscaled = {
 			building_government_shares_add = 1
@@ -5636,10 +5636,10 @@ pm_privately_owned_heavy_industry = {
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_investors_add = 200
+			building_employment_capitalists_add = 200
 		}
 		unscaled = {
-			building_investors_shares_add = 1
+			building_capitalists_shares_add = 1
 		}
 	}
 }
@@ -5662,10 +5662,10 @@ pm_publicly_traded_heavy_industry = {
 			goods_output_bonds_add = 5
 		}
 		level_scaled = {
-			building_employment_investors_add = 200
+			building_employment_capitalists_add = 200
 		}
 		unscaled = {
-			building_investors_shares_add = 1
+			building_capitalists_shares_add = 1
 		}
 	}
 }
@@ -5684,7 +5684,7 @@ pm_government_run_heavy_industry = {
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_administrators_add = 200
+			building_employment_bureaucrats_add = 200
 		}
 		unscaled = {
 			building_government_shares_add = 1
@@ -5726,10 +5726,10 @@ pm_privately_owned_military_industry = {
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_investors_add = 200
+			building_employment_capitalists_add = 200
 		}
 		unscaled = {
-			building_investors_shares_add = 1
+			building_capitalists_shares_add = 1
 		}
 	}
 }
@@ -5753,10 +5753,10 @@ pm_publicly_traded_military_industry = {
 			goods_output_bonds_add = 5
 		}
 		level_scaled = {
-			building_employment_investors_add = 200
+			building_employment_capitalists_add = 200
 		}
 		unscaled = {
-			building_investors_shares_add = 1
+			building_capitalists_shares_add = 1
 		}
 	}
 }
@@ -5774,7 +5774,7 @@ pm_government_run_military_industry = {
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_administrators_add = 200
+			building_employment_bureaucrats_add = 200
 		}
 		unscaled = {
 			building_government_shares_add = 1

@@ -1237,34 +1237,34 @@ texticon = {
 }
 
 texticon = {
-  icon = investors
+  icon = capitalists
   iconsize = {
     offset = { 0 50 }
-    texture = "gfx/interface/icons/pops_icons/investors.dds"
+    texture = "gfx/interface/icons/pops_icons/capitalists.dds"
     fontsize = 250
   }
 }
 
 texticon = {
-  icon = investors
+  icon = capitalists
   iconsize = {
     offset = { 0 5 }
-    texture = "gfx/interface/icons/pops_icons/investors_15.dds"
+    texture = "gfx/interface/icons/pops_icons/capitalists_15.dds"
     fontsize = 30
   }
 }
 
 texticon = {
-  icon = administrators
+  icon = bureaucrats
   iconsize = {
     offset = { 0 50 }
-    texture = "gfx/interface/icons/pops_icons/administrators.dds"
+    texture = "gfx/interface/icons/pops_icons/bureaucrats.dds"
     fontsize = 250
   }
 }
 
 texticon = {
-  icon = administrators
+  icon = bureaucrats
   iconsize = {
     offset = { 0 5 }
     texture = "gfx/interface/icons/pops_icons/bureaucrats_15.dds"
@@ -1273,19 +1273,19 @@ texticon = {
 }
 
 texticon = {
-  icon = landlords
+  icon = aristocrats
   iconsize = {
     offset = { 0 50 }
-    texture = "gfx/interface/icons/pops_icons/landlords.dds"
+    texture = "gfx/interface/icons/pops_icons/aristocrats.dds"
     fontsize = 250
   }
 }
 
 texticon = {
-  icon = landlords
+  icon = aristocrats
   iconsize = {
     offset = { 0 5 }
-    texture = "gfx/interface/icons/pops_icons/landlords_15.dds"
+    texture = "gfx/interface/icons/pops_icons/aristocrats_15.dds"
     fontsize = 30
   }
 }
@@ -1417,19 +1417,19 @@ texticon = {
 }
 
 texticon = {
-  icon = informal_workers
+  icon = peasants
   iconsize = {
     offset = { 0 50 }
-    texture = "gfx/interface/icons/pops_icons/informal_workers.dds"
+    texture = "gfx/interface/icons/pops_icons/peasants.dds"
     fontsize = 250
   } 
 }
  
 texticon = {
-  icon = informal_workers
+  icon = peasants
   iconsize = {
     offset = { 0 5 }
-    texture = "gfx/interface/icons/pops_icons/informal_workers_15.dds"
+    texture = "gfx/interface/icons/pops_icons/peasants_15.dds"
     fontsize = 30
   } 
 }
@@ -1438,7 +1438,7 @@ texticon = {
   icon = slum_dwellers
   iconsize = {
     offset = { 0 5 }
-    texture = "gfx/interface/icons/pops_icons/informal_workers_15.dds"
+    texture = "gfx/interface/icons/pops_icons/peasants_15.dds"
     fontsize = 30
   } 
 }
@@ -1447,25 +1447,25 @@ texticon = {
   icon = slum_dwellers
   iconsize = {
     offset = { 0 50 }
-    texture = "gfx/interface/icons/pops_icons/informal_workers.dds"
+    texture = "gfx/interface/icons/pops_icons/peasants.dds"
     fontsize = 250
   } 
 }
 
 texticon = {
-  icon = servicemembers
+  icon = soldiers
   iconsize = {
     offset = { 0 50 }
-    texture = "gfx/interface/icons/pops_icons/servicemembers.dds"
+    texture = "gfx/interface/icons/pops_icons/soldiers.dds"
     fontsize = 250
   } 
 }
   
   texticon = {
-  icon = servicemembers
+  icon = soldiers
   iconsize = {
     offset = { 0 5 }
-    texture = "gfx/interface/icons/pops_icons/servicemembers_15.dds"
+    texture = "gfx/interface/icons/pops_icons/soldiers_15.dds"
     fontsize = 30
   }  
 }

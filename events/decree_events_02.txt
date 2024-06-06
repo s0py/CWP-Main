@@ -578,7 +578,7 @@ decree_events.106 = {
 		}
 		scope:decree_enlistment = {
 			add_radicals = {
-				pop_type = servicemembers
+				pop_type = soldiers
 				value = large_radicals
 			}
 		}
@@ -592,7 +592,7 @@ decree_events.106 = {
 				months = short_modifier_time
 			}
 			add_loyalists_in_state = {
-				pop_type = servicemembers
+				pop_type = soldiers
 				value = large_radicals
 			}
 		}

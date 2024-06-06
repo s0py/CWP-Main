@@ -102,7 +102,7 @@ bureaucracy.1 = {
 		}
 	}
 	option = {
-		# hire new administrators
+		# hire new bureaucrats
 		name = bureaucracy.1.e
 		trigger = {
 			enactment_setback_count < 2

@@ -46,11 +46,11 @@ ig_armed_forces = {
 	
 	pop_potential = {
 		OR = {
-			is_pop_type = servicemembers
+			is_pop_type = soldiers
 			is_pop_type = officers
-			is_pop_type = landlords
-			is_pop_type = administrators
-			is_pop_type = investors
+			is_pop_type = aristocrats
+			is_pop_type = bureaucrats
+			is_pop_type = capitalists
 			is_pop_type = professionals
 		}		
 	}
@@ -85,7 +85,7 @@ ig_armed_forces = {
 		}
 		
 		if = {
-			limit = { is_pop_type = servicemembers }
+			limit = { is_pop_type = soldiers }
 			add = {
 				desc = "POP_SOLDIERS"
 				value = 50
@@ -99,14 +99,14 @@ ig_armed_forces = {
 			}
 		}
 		else_if = {
-			limit = { is_pop_type = landlords }
+			limit = { is_pop_type = aristocrats }
 			add = {
 				desc = "POP_ARISTOCRATS"
 				value = 100
 			}
 		}
 		else_if = {
-			limit = { is_pop_type = administrators }
+			limit = { is_pop_type = bureaucrats }
 			add = {
 				desc = "POP_BUREAUCRATS"
 				value = 50

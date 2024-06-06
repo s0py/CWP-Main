@@ -32,9 +32,9 @@
 	}
 	pop_potential = {
 		NOR = {
-			is_pop_type = landlords
-			is_pop_type = investors
-			is_pop_type = administrators
+			is_pop_type = aristocrats
+			is_pop_type = capitalists
+			is_pop_type = bureaucrats
 		}
 		custom_tooltip = {
 			text = BPM_VALID_POP_FOR_IG
@@ -78,7 +78,7 @@
 			# Free peasants are less likely to be agpops
 			else_if = {
 				limit = {
-					is_pop_type = informal_workers
+					is_pop_type = peasants
 				}
 				add = {
 					desc = "POP_FREE_PEASANTS"
@@ -158,7 +158,7 @@
 			}
 			if = {
 				limit = {
-					is_pop_type = servicemembers
+					is_pop_type = soldiers
 				}
 				add = {
 					desc = "POPS_ANGER_SYMPATHY"

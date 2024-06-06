@@ -1981,7 +1981,7 @@ coup_pulse_events.4 = {
 		name = coup_pulse_events.4.a
 		default_option = yes
 		add_modifier = {
-			name = modifier_wary_investors_country
+			name = modifier_wary_capitalists_country
 			months = normal_modifier_time
 		}
 		change_variable = {
@@ -2000,11 +2000,11 @@ coup_pulse_events.4 = {
 						is_building_group = bg_heavy_industry
 					}
 					NOT = {
-						has_modifier = modifier_wary_investors_building
+						has_modifier = modifier_wary_capitalists_building
 					}
 				}
 				add_modifier = {
-					name = modifier_wary_investors_building
+					name = modifier_wary_capitalists_building
 					months = 12
 				}
 			}
@@ -2015,11 +2015,11 @@ coup_pulse_events.4 = {
 						is_building_group = bg_heavy_industry
 					}
 					NOT = {
-						has_modifier = modifier_wary_investors_building
+						has_modifier = modifier_wary_capitalists_building
 					}
 				}
 				add_modifier = {
-					name = modifier_wary_investors_building
+					name = modifier_wary_capitalists_building
 					months = 12
 				}
 			}
@@ -2547,7 +2547,7 @@ coup_pulse_events.11 = {
 					}
 				}
 				add_radicals_in_state = {
-					pop_type = servicemembers
+					pop_type = soldiers
 					value = medium_radicals
 				}
 				add_radicals_in_state = {
@@ -2763,7 +2763,7 @@ coup_pulse_events.13 = {
 					}
 				}
 				add_radicals_in_state = {
-					pop_type = investors
+					pop_type = capitalists
 					value = large_radicals
 				}
 			}
@@ -2870,7 +2870,7 @@ coup_pulse_events.14 = {
 					}
 				}
 				add_radicals_in_state = {
-					pop_type = landlords
+					pop_type = aristocrats
 					value = large_radicals
 				}
 			}
@@ -3310,7 +3310,7 @@ coup_pulse_events.18 = {
 					}
 				}
 				add_radicals_in_state = {
-					pop_type = informal_workers
+					pop_type = peasants
 					value = medium_radicals
 				}
 				add_radicals_in_state = {

@@ -51,7 +51,7 @@ ig_devout = {
 		}
 		else_if = {
 			limit = {
-				is_pop_type = informal_workers
+				is_pop_type = peasants
 			}
 			add = {
 				desc = "POP_PEASANTS"

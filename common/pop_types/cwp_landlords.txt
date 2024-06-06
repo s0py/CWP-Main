@@ -1,5 +1,6 @@
-﻿landlords = {
-	texture = gfx/interface/icons/pops_icons/landlords.dds
+﻿#Landlords
+aristocrats = {
+	texture = gfx/interface/icons/pops_icons/aristocrats.dds
 	color = {
 		85
 		120
@@ -27,7 +28,7 @@
 			}
 		}
 	}
-	qualifications_growth_desc = LANDLORDS_QUALIFICATIONS_DESC
+	qualifications_growth_desc = aristocrats_QUALIFICATIONS_DESC
 	qualifications = {
 		if = {
 			limit = {
@@ -48,7 +49,7 @@
 				limit = {
 					or = {
 						is_pop_type = engineers
-						is_pop_type = investors
+						is_pop_type = capitalists
 					}
 				}
 				multiply = {

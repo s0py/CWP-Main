@@ -245,7 +245,7 @@ pmg_investment_services = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_no_investment_services
-		pm_certified_investors
+		pm_certified_capitalists
 		pm_public_investor_services
 		pm_mutual_funds
 	}
@@ -398,15 +398,15 @@ pmg_professional_service_use_creatives = {
 	}
 }
 
-pmg_professional_service_use_administrators = {
+pmg_professional_service_use_bureaucrats = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_professional_service_industry_no
-		pm_professional_services_use_administrators
-		pm_proprietary_software_administrators
-		pm_graphical_user_interfaces_administrators
-		pm_email_servers_administrators
-		pm_ai_integrated_software_administrators
-		pm_autonomous_ai_administrators
+		pm_professional_services_use_bureaucrats
+		pm_proprietary_software_bureaucrats
+		pm_graphical_user_interfaces_bureaucrats
+		pm_email_servers_bureaucrats
+		pm_ai_integrated_software_bureaucrats
+		pm_autonomous_ai_bureaucrats
 	}
 }

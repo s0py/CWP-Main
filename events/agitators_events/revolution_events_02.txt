@@ -513,7 +513,7 @@ revolution_pulse_events.4 = {
 		scope:soldiers_council_state = {
 			add_radicals_in_state = {
 				value = medium_radicals
-				pop_type = servicemembers
+				pop_type = soldiers
 			}
 			scope:soldiers_council_building = {
 				add_modifier = {
@@ -1143,7 +1143,7 @@ revolution_pulse_events.9 = {
 		scope:agitation_af_state = {
 			add_radicals_in_state = {
 				value = medium_radicals
-				pop_type = servicemembers
+				pop_type = soldiers
 			}
 			scope:agitation_af_building = {
 				add_modifier = {
@@ -1339,7 +1339,7 @@ revolution_pulse_events.11 = {
 		}
 		add_loyalists = {
 			value = small_radicals
-			pop_type = servicemembers
+			pop_type = soldiers
 		}
 		scope:ongoing_revolution_movement = {
 			add_modifier = {
@@ -4017,11 +4017,11 @@ revolution_pulse_events.31 = {
 		scope:martial_laws_state = {
 			kill_population_percent_in_state = {
 				percent = 0.02
-				pop_type = servicemembers
+				pop_type = soldiers
 			}
 			add_radicals_in_state = {
 				value = large_radicals
-				pop_type = servicemembers
+				pop_type = soldiers
 			}
 		}
 	}
@@ -4497,12 +4497,12 @@ revolution_pulse_events.35 = {
 		scope:tragedy_of_commons_state = {
 			add_radicals_in_state = {
 				value = medium_radicals
-				pop_type = landlords
+				pop_type = aristocrats
 			}
 		}
 		ig:ig_conservatives = {
 			add_modifier = {
-				name = modifier_arrested_landlords_for_collusion
+				name = modifier_arrested_aristocrats_for_collusion
 				months = normal_modifier_time
 			}
 		}
@@ -4513,7 +4513,7 @@ revolution_pulse_events.35 = {
 			add_civil_war_progress = revolution_advance_small
 		}
 		add_modifier = {
-			name = modifier_arrested_landlords_exortion
+			name = modifier_arrested_aristocrats_exortion
 			months = normal_modifier_time
 		}
 	}
@@ -4525,7 +4525,7 @@ revolution_pulse_events.35 = {
 		scope:tragedy_of_commons_state = {
 			add_radicals_in_state = {
 				value = small_radicals
-				pop_type = landlords
+				pop_type = aristocrats
 			}
 			add_modifier = {
 				name = modifier_light_rent_controls
@@ -4876,7 +4876,7 @@ revolution_pulse_events.38 = {
 		scope:shall_not_be_infringed_state = {
 			kill_population_percent_in_state = {
 				percent = 0.02
-				pop_type = servicemembers
+				pop_type = soldiers
 			}
 		}
 	}

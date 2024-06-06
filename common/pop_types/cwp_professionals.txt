@@ -59,9 +59,9 @@
 				limit = {
 					or = {
 						is_pop_type = officers
-						is_pop_type = administrators
-						is_pop_type = landlords
-						is_pop_type = investors
+						is_pop_type = bureaucrats
+						is_pop_type = aristocrats
+						is_pop_type = capitalists
 					}
 				}
 				multiply = {

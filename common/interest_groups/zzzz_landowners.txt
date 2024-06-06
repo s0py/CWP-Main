@@ -43,7 +43,7 @@ ig_landowners = {
 			}
 		}
 		OR = {
-			is_pop_type = landlords
+			is_pop_type = aristocrats
 			is_pop_type = clergy
 			is_pop_type = officers
 			is_pop_type = farmers

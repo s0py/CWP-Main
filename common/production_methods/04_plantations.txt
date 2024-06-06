@@ -1193,10 +1193,10 @@ pm_privately_owned_plantation = {
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_landlords_add = 100
+			building_employment_aristocrats_add = 100
 		}
 		unscaled = {
-			building_landlords_shares_add = 10
+			building_aristocrats_shares_add = 10
 			building_clergy_shares_add = 2
 			building_farmers_shares_add = 0.25
 		}
@@ -1223,10 +1223,10 @@ pm_publicly_traded_plantation = {
 			goods_output_bonds_add = 5
 		}
 		level_scaled = {
-			building_employment_landlords_add = 150
+			building_employment_aristocrats_add = 150
 		}
 		unscaled = {
-			building_landlords_shares_add = 15
+			building_aristocrats_shares_add = 15
 			building_clergy_shares_add = 2
 			building_farmers_shares_add = 0.25
 		}
@@ -1245,7 +1245,7 @@ pm_government_run_plantation = {
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_administrators_add = 150
+			building_employment_bureaucrats_add = 150
 		}
 		unscaled = {
 			building_government_shares_add = 1

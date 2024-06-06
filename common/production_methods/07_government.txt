@@ -33,7 +33,7 @@ pm_basic_port = {
 		level_scaled = {
 			building_employment_laborers_add = 6000
 			building_employment_technicians_add = 3000
-			building_employment_administrators_add = 1000
+			building_employment_bureaucrats_add = 1000
 		}
 	}
 	country_modifiers = {
@@ -62,7 +62,7 @@ pm_industrial_port = {
 		level_scaled = {
 			building_employment_laborers_add = 4000
 			building_employment_technicians_add = 5000
-			building_employment_administrators_add = 1000
+			building_employment_bureaucrats_add = 1000
 		}
 	}
 	country_modifiers = {
@@ -92,7 +92,7 @@ pm_container_port = {
 		level_scaled = {
 			building_employment_laborers_add = 2000
 			building_employment_technicians_add = 5000
-			building_employment_administrators_add = 1000
+			building_employment_bureaucrats_add = 1000
 		}
 	}
 	country_modifiers = {
@@ -123,7 +123,7 @@ pm_smart_port = {
 		}
 		level_scaled = {
 			building_employment_technicians_add = 5000
-			building_employment_administrators_add = 1000
+			building_employment_bureaucrats_add = 1000
 		}
 	}
 	country_modifiers = {
@@ -177,7 +177,7 @@ pm_modern_bureaucracy = {
 		}
 		level_scaled = {
 			building_employment_service_workers_add = 4000
-			building_employment_administrators_add = 500
+			building_employment_bureaucrats_add = 500
 		}
 	}
 }
@@ -203,7 +203,7 @@ pm_computerized_bureaucracy = {
 		}
 		level_scaled = {
 			building_employment_service_workers_add = 3000
-			building_employment_administrators_add = 1000
+			building_employment_bureaucrats_add = 1000
 		}
 	}
 }
@@ -229,7 +229,7 @@ pm_word_processors = {
 		}
 		level_scaled = {
 			building_employment_service_workers_add = 2000
-			building_employment_administrators_add = 1500
+			building_employment_bureaucrats_add = 1500
 		}
 	}
 }
@@ -255,7 +255,7 @@ pm_paperless_offices = {
 		}
 		level_scaled = {
 			building_employment_service_workers_add = 1000
-			building_employment_administrators_add = 2000
+			building_employment_bureaucrats_add = 2000
 		}
 	}
 }
@@ -265,7 +265,7 @@ pm_professional_bureaucrats = {
 	texture = "gfx/interface/icons/production_method_icons/government/professional_bureaucrats.dds"
 	building_modifiers = {
 		level_scaled = {
-			building_employment_administrators_add = 500
+			building_employment_bureaucrats_add = 500
 		}
 	}
 }

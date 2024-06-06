@@ -9,7 +9,7 @@ je_housing = {
 		NOT = {
 			has_variable = housing_je_done
 			pop_type_percent_country = {
-				pop_type = informal_workers
+				pop_type = peasants
 				percent > 0.6
 			}
 		}

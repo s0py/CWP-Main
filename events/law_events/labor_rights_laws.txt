@@ -24,7 +24,7 @@ labor_rights.1 = {
 		}
 		any_scope_state = {
 			any_scope_pop = {
-				is_pop_type = informal_workers
+				is_pop_type = peasants
 			}
 		}
 		NOT = {
@@ -35,7 +35,7 @@ labor_rights.1 = {
 		random_scope_state = {
 			limit = {
 				any_scope_pop = {
-					is_pop_type = informal_workers
+					is_pop_type = peasants
 				}
 			}
 			save_scope_as = serf_state

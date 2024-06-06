@@ -4,7 +4,7 @@
 	is_shown_when_inactive = {
 		is_player = yes
 		pop_type_percent_country = {
-			pop_type = informal_workers
+			pop_type = peasants
 			percent > 0.6
 		}
 	}
@@ -14,13 +14,13 @@
 		}
 		pop_type_percent_country = {
 			#added again so the tooltip is nicer
-			pop_type = informal_workers
+			pop_type = peasants
 			percent > 0.6
 		}
 	}
 	complete = {
 		pop_type_percent_country = {
-			pop_type = informal_workers
+			pop_type = peasants
 			percent < 0.35
 		}
 		NOT = {

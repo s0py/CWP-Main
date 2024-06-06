@@ -48,7 +48,7 @@
 					}
 					scope:target_country = {
 						add_modifier = {
-							name = colonial_administrators
+							name = colonial_bureaucrats
 							days = 7
 							multiplier = local_var:colonial_administration_amount
 						}

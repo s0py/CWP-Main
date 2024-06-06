@@ -125,7 +125,7 @@ autocracy.3 = {
 			is_incorporated = yes
 			any_scope_pop = {
 				pop_is_discriminated = no
-				is_pop_type = informal_workers
+				is_pop_type = peasants
 				religion = root.religion
 			}
 			any_scope_pop = {
@@ -147,7 +147,7 @@ autocracy.3 = {
 			limit = {
 				is_incorporated = yes
 				any_scope_pop = {
-					is_pop_type = informal_workers
+					is_pop_type = peasants
 					religion = root.religion
 					pop_is_discriminated = no
 				}
@@ -159,7 +159,7 @@ autocracy.3 = {
 			save_scope_as = religious_serfs_state
 			random_scope_pop = {
 				limit = {
-					is_pop_type = informal_workers
+					is_pop_type = peasants
 					pop_is_discriminated = no
 					religion = root.religion
 				}
