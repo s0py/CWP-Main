@@ -35,7 +35,6 @@
   # Trade goods
   trade_route_import_lens_option_aircraft_carriers_tooltip: "Establish an $aircraft_carriers$ import trade route"
   trade_route_import_lens_option_aluminum_tooltip: "Establish an $aluminum$ import trade route"
-  trade_route_import_lens_option_armored_fighting_vehicle_tooltip: "Establish an $armored_fighting_vehicle$ import trade route"
   trade_route_import_lens_option_batteries_tooltip: "Establish an $batteries$ import trade route"
   trade_route_import_lens_option_bauxite_tooltip: "Establish an $bauxite$ import trade route"
   trade_route_import_lens_option_biological_weapon_tooltip: "Establish an $biological_weapon$ import trade route"
@@ -53,7 +52,6 @@
   trade_route_import_lens_option_high_quality_fabric_tooltip: "Establish an $high_quality_fabric$ import trade route"
   trade_route_import_lens_option_housing_tooltip: "Establish an $housing$ import trade route"
   trade_route_import_lens_option_lift_capacity_tooltip: "Establish an $lift_capacity$ import trade route"
-  trade_route_import_lens_option_luxury_cars_tooltip: "Establish an $luxury_cars$ import trade route"
   trade_route_import_lens_option_media_tooltip: "Establish an $media$ import trade route"
   trade_route_import_lens_option_military_aircraft_tooltip: "Establish an $military_aircraft$ import trade route"
   trade_route_import_lens_option_missiles_tooltip: "Establish an $missiles$ import trade route"
@@ -79,7 +77,6 @@
 
   trade_route_export_lens_option_aircraft_carriers_tooltip: "Establish an $aircraft_carriers$ export trade route"
   trade_route_export_lens_option_aluminum_tooltip: "Establish an $aluminum$ export trade route"
-  trade_route_export_lens_option_armored_fighting_vehicle_tooltip: "Establish an $armored_fighting_vehicle$ export trade route"
   trade_route_export_lens_option_batteries_tooltip: "Establish an $batteries$ export trade route"
   trade_route_export_lens_option_bauxite_tooltip: "Establish an $bauxite$ export trade route"
   trade_route_export_lens_option_biological_weapon_tooltip: "Establish an $biological_weapon$ export trade route"
@@ -97,7 +94,6 @@
   trade_route_export_lens_option_high_quality_fabric_tooltip: "Establish an $high_quality_fabric$ export trade route"
   trade_route_export_lens_option_housing_tooltip: "Establish an $housing$ export trade route"
   trade_route_export_lens_option_lift_capacity_tooltip: "Establish an $lift_capacity$ export trade route"
-  trade_route_export_lens_option_luxury_cars_tooltip: "Establish an $luxury_cars$ export trade route"
   trade_route_export_lens_option_media_tooltip: "Establish an $media$ export trade route"
   trade_route_export_lens_option_military_aircraft_tooltip: "Establish an $military_aircraft$ export trade route"
   trade_route_export_lens_option_missiles_tooltip: "Establish an $missiles$ export trade route"

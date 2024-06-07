@@ -77,9 +77,6 @@
 	building_small_arms_manufactories = {
 		"arabic_factory_colonial_03_mesh"
 	}
-	building_advanced_military_manufactories = {
-		"arabic_factory_colonial_03_mesh"
-	}
 	building_motor_industry = {
 		"arabic_factory_colonial_02_mesh"
 	}

@@ -339,19 +339,6 @@
 					"pm_privately_owned_heavy_industry"
 				}
 			}
-			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 3
-				reserves = 1
-				activate_production_methods = {
-					"pm_pre_war_tanks_prod"
-					"pm_privately_owned_military_industry"
-					"pm_no_automation"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_no_armored_fighting_vehicle_prod"
-				}
-			}
 		}
 	}
 	s:STATE_GUATEMALA = {

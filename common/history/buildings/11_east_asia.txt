@@ -4062,7 +4062,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
@@ -4296,7 +4295,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
@@ -4680,7 +4678,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
@@ -5126,7 +5123,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"

@@ -1,9 +1,4 @@
-﻿building_advanced_military_manufactories_throughput_add = {
-	good = yes
-	percent = yes
-}
-
-building_aircraft_manufactories_throughput_add = {
+﻿building_aircraft_manufactories_throughput_add = {
 	good = yes
 	percent = yes
 }
@@ -147,17 +142,6 @@ goods_input_aluminum_add = {
 goods_input_aluminum_mult = {
 	good = no
 	percent = yes
-}
-
-goods_input_armored_fighting_vehicle_add = {
-	good = no
-	percent = no
-}
-
-goods_input_armored_fighting_vehicle_mult = {
-	good = no
-	percent = yes
-	num_decimals = 0
 }
 
 goods_input_batteries_add = {
@@ -410,11 +394,6 @@ goods_output_aluminum_add = {
 	percent = no
 }
 
-goods_output_armored_fighting_vehicle_add = {
-	good = yes
-	percent = no
-}
-
 goods_output_batteries_add = {
 	good = yes
 	percent = no
@@ -496,11 +475,6 @@ goods_output_housing_add = {
 }
 
 goods_output_lift_capacity_add = {
-	good = yes
-	percent = no
-}
-
-goods_output_luxury_cars_add = {
 	good = yes
 	percent = no
 }

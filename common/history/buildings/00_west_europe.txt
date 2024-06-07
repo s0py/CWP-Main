@@ -2069,19 +2069,6 @@
 				}
 			}
 			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 8
-				reserves = 1
-				activate_production_methods = {
-					"pm_privately_owned_military_industry"
-					"pm_wartime_halftacks_production"
-					"pm_no_automation"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_no_tank_prod"
-				}
-			}
-			create_building = {
 				building = "building_shipyards"
 				level = 7
 				reserves = 1
@@ -2111,7 +2098,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_privately_owned_heavy_industry"
 					"pm_professional_service_industry_no"
@@ -2473,7 +2459,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
@@ -2702,19 +2687,6 @@
 					"pm_antibiotics"
 					"pm_professional_service_industry_no"
 					"pm_privatized_hospital"
-				}
-			}
-			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 2
-				reserves = 1
-				activate_production_methods = {
-					"pm_privately_owned_military_industry"
-					"pm_wartime_halftacks_production"
-					"pm_no_automation"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_pre_war_tanks_prod"
 				}
 			}
 			create_building = {
@@ -2986,25 +2958,11 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
 					"pm_privately_owned_heavy_industry"
-				}
-			}
-			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 2
-				reserves = 1
-				activate_production_methods = {
-					"pm_privately_owned_military_industry"
-					"pm_pre_war_tanks_prod"
-					"pm_no_automation"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_no_armored_fighting_vehicle_prod"
 				}
 			}
 			create_building = {
@@ -3382,7 +3340,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
@@ -3621,7 +3578,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
@@ -3888,7 +3844,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
@@ -4275,7 +4230,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
@@ -5086,19 +5040,6 @@
 				}
 			}
 			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 10
-				reserves = 1
-				activate_production_methods = {
-					"pm_powered_assembly_lines_industry"
-					"pm_wartime_halftacks_production"
-					"pm_1st_gen_mbt_ami"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_government_run_military_industry"
-				}
-			}
-			create_building = {
 				building = "building_explosives_industry"
 				level = 10
 				reserves = 1
@@ -5142,7 +5083,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
@@ -5274,19 +5214,6 @@
 					"pm_modern_bureaucracy"
 					"pm_professional_service_industry_no"
 					"pm_professional_bureaucrats"
-				}
-			}
-			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 5
-				reserves = 1
-				activate_production_methods = {
-					"pm_1st_gen_mbt_ami"
-					"pm_wartime_halftacks_production"
-					"pm_powered_assembly_lines_industry"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_government_run_military_industry"
 				}
 			}
 			create_building = {
@@ -6636,7 +6563,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
@@ -6998,7 +6924,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
@@ -7437,7 +7362,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_privately_owned_heavy_industry"
 					"pm_professional_service_industry_no"
@@ -7493,20 +7417,6 @@
 					"pm_powered_assembly_lines_industry"
 				}
 			}
-			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 2
-				reserves = 1
-				activate_production_methods = {
-					"pm_pre_war_tanks_prod"
-					"pm_powered_assembly_lines_industry"
-					"pm_privately_owned_military_industry"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_no_armored_fighting_vehicle_prod"
-				}
-			}
-
 			create_building = {
 				building = "building_construction_sector"
 				level = 5
@@ -8413,7 +8323,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_privately_owned_heavy_industry"
 					"pm_professional_service_industry_no"
@@ -10549,7 +10458,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_privately_owned_heavy_industry"
 					"pm_professional_service_industry_no"
@@ -10618,19 +10526,6 @@
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
 					"pm_privately_owned_military_industry"
-				}
-			}
-			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 8
-				reserves = 1
-				activate_production_methods = {
-					"pm_pre_war_tanks_prod"
-					"pm_privately_owned_military_industry"
-					"pm_no_armored_fighting_vehicle_prod"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_powered_assembly_lines_industry"
 				}
 			}
 			create_building = {
@@ -10807,7 +10702,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
@@ -11434,19 +11328,6 @@
 				}
 			}
 			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 1
-				reserves = 1
-				activate_production_methods = {
-					"pm_pre_war_tanks_prod"
-					"pm_privately_owned_military_industry"
-					"pm_no_automation"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_no_armored_fighting_vehicle_prod"
-				}
-			}
-			create_building = {
 				building = "building_steelworks"
 				level = 11
 				reserves = 1
@@ -11490,7 +11371,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
@@ -11816,7 +11696,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
@@ -12132,19 +12011,6 @@
 				activate_production_methods = {
 					"pm_oil_refineries"
 					"pm_rudimentary_polymers"
-					"pm_no_automation"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_privately_owned_military_industry"
-				}
-			}
-			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 1
-				reserves = 1
-				activate_production_methods = {
-					"pm_pre_war_tanks_prod"
-					"pm_no_armored_fighting_vehicle_prod"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -12525,7 +12391,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
@@ -13007,7 +12872,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
@@ -13104,19 +12968,6 @@
 				activate_production_methods = {
 					"pm_rudimentary_explosives"
 					"pm_pre_war_ammunition"
-					"pm_no_automation"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_privately_owned_military_industry"
-				}
-			}
-			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 4
-				reserves = 1
-				activate_production_methods = {
-					"pm_pre_war_tanks_prod"
-					"pm_no_armored_fighting_vehicle_prod"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -13383,19 +13234,6 @@
 				}
 			}
 			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 2
-				reserves = 1
-				activate_production_methods = {
-					"pm_pre_war_tanks_prod"
-					"pm_privately_owned_military_industry"
-					"pm_no_automation"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_no_armored_fighting_vehicle_prod"
-				}
-			}
-			create_building = {
 				building = "building_pharmaceutical_industry"
 				level = 16
 				reserves = 1
@@ -13442,7 +13280,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"

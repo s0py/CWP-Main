@@ -452,18 +452,13 @@ effect_remove_military_industry = {
 		}
 		remove_building = building_drydocks
 	}
-	if = {
-		limit = {
-			has_building = building_advanced_military_manufactories
-		}
-		remove_building = building_advanced_military_manufactories
-	}
-	if = {
-		limit = {
-			has_building = building_electronics_manufactories
-		}
-		remove_building = building_electronics_manufactories
-	}
+	# Remove PMs for sensors
+	#if = {
+	#	limit = {
+	#		has_building = building_electronics_manufactories
+	#	}
+	#	remove_building = building_electronics_manufactories
+	#}
 	if = {
 		limit = {
 			has_building = building_small_arms_manufactories
@@ -476,10 +471,12 @@ effect_remove_military_industry = {
 		}
 		remove_building = building_explosives_industry
 	}
-	if = {
-		limit = {
-			has_building = building_aircraft_manufactories
-		}
-		remove_building = building_aircraft_manufactories
-	}
+# Probably just remove possibility for military PMs
+#	if = {
+#		limit = {
+#			has_building = building_aircraft_manufactories
+#		}
+#		remove_building = building_aircraft_manufactories
+#	}
+# TODO: Re-add tanks
 }

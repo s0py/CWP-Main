@@ -1696,19 +1696,6 @@
 				}
 			}
 			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 1
-				reserves = 1
-				activate_production_methods = {
-					"pm_pre_war_tanks_prod"
-					"pm_powered_assembly_lines_industry"
-					"pm_no_armored_fighting_vehicle_prod"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_government_run_military_industry"
-				}
-			}
-			create_building = {
 				building = "building_port"
 				level = 1
 				reserves = 1
@@ -2565,19 +2552,6 @@
 				}
 			}
 			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 1
-				reserves = 1
-				activate_production_methods = {
-					"pm_pre_war_tanks_prod"
-					"pm_no_armored_fighting_vehicle_prod"
-					"pm_powered_assembly_lines_industry"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_government_run_military_industry"
-				}
-			}
-			create_building = {
 				building = "building_airport"
 				level = 1
 				reserves = 1
@@ -2605,7 +2579,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"

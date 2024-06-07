@@ -198,7 +198,7 @@ combat_unit_type_mechanized_infantry = {
 	upkeep_modifier = {
 		goods_input_small_arms_add = 2
 		goods_input_ammunition_add = 1
-		goods_input_armored_fighting_vehicle_add = 1
+		goods_input_tanks_add = 1
 		goods_input_refined_fuel_add = 1
 	}
 	unlocking_technologies = {
@@ -353,7 +353,7 @@ combat_unit_type_self_propelled_artillery = {
 	upkeep_modifier = {
 		goods_input_artillery_add = 2
 		goods_input_ammunition_add = 1
-		goods_input_armored_fighting_vehicle_add = 1
+		goods_input_tanks_add = 1
 	}
 	battle_modifier = {
 		unit_offense_add = 65
@@ -396,7 +396,7 @@ combat_unit_type_mlrs_artillery = {
 	upkeep_modifier = {
 		goods_input_artillery_add = 3
 		goods_input_ammunition_add = 2
-		goods_input_armored_fighting_vehicle_add = 1
+		goods_input_tanks_add = 1
 	}
 	battle_modifier = {
 		unit_offense_add = 80
@@ -477,7 +477,7 @@ combat_unit_type_combat_engineers = {
 combat_unit_type_armoured_reconnaissance = {
 	group = combat_unit_group_artillery
 	upkeep_modifier = {
-		goods_input_armored_fighting_vehicle_add = 1
+		goods_input_tanks_add = 1
 		goods_input_ammunition_add = 1
 		goods_input_refined_fuel_add = 1
 	}

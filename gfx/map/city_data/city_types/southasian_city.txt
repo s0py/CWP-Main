@@ -50,7 +50,6 @@
 	building_chemical_plants = {"arabic_factory_colonial_01_mesh"}
 	building_steelworks = {"arabic_factory_01_mesh"}
 	building_small_arms_manufactories = {"arabic_factory_colonial_03_mesh"}
-	building_advanced_military_manufactories = {"war_machines_manufactory_01_mesh"}
 	building_motor_industry = {"arabic_factory_colonial_02_mesh"}
 	building_explosives_industry = {"arabic_factory_colonial_03_mesh"}
 	building_synthetics_plant = {"arabic_factory_glassworks_01_mesh"}

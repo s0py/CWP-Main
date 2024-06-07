@@ -962,20 +962,6 @@
 				}
 			}
 			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 3
-				subsidized = yes
-				reserves = 1
-				activate_production_methods = {
-					"pm_1st_gen_mbt_ami"
-					"pm_wartime_halftacks_production"
-					"pm_no_automation"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_government_run_military_industry"
-				}
-			}
-			create_building = {
 				building = "building_combustion_plant"
 				level = 10
 				subsidized = yes

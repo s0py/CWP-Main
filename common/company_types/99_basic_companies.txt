@@ -507,7 +507,6 @@ company_basic_arms_industry = {
 	building_types = {
 		building_small_arms_manufactories
 		building_explosives_industry
-		building_advanced_military_manufactories
 	}
 	potential = {
 		always = yes
@@ -518,7 +517,6 @@ company_basic_arms_industry = {
 				OR = {
 					is_building_type = building_small_arms_manufactories
 					is_building_type = building_explosives_industry
-					is_building_type = building_advanced_military_manufactories
 				}
 				level >= 3
 			}

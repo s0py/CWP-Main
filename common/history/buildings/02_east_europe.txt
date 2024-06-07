@@ -237,7 +237,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
@@ -683,20 +682,6 @@
 					"pm_paved_roads"
 					"pm_cargo_prioritization"
 					"pm_government_run_building_railway"
-				}
-			}
-			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 5
-				subsidized = yes
-				reserves = 1
-				activate_production_methods = {
-					"pm_1st_gen_mbt_ami"
-					"pm_wartime_halftacks_production"
-					"pm_no_automation"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_government_run_military_industry"
 				}
 			}
 			create_building = {
@@ -2164,7 +2149,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
@@ -4120,7 +4104,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"
@@ -4343,19 +4326,6 @@
 				}
 			}
 			create_building = {
-				building = "building_advanced_military_manufactories"
-				level = 1
-				reserves = 1
-				activate_production_methods = {
-					"pm_pre_war_tanks_prod"
-					"pm_no_armored_fighting_vehicle_prod"
-					"pm_no_automation"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_government_run_military_industry"
-				}
-			}
-			create_building = {
 				building = "building_railway"
 				level = 1
 				reserves = 1
@@ -4547,7 +4517,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_automobiles"
-					"pm_no_luxury_cars"
 					"pm_refined_oil_production"
 					"pm_powered_assembly_lines_industry"
 					"pm_professional_service_industry_no"

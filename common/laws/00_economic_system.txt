@@ -317,12 +317,6 @@ law_industry_banned = {
 				}
 				if = {
 					limit = {
-						has_building = building_advanced_military_manufactories
-					}
-					remove_building = building_advanced_military_manufactories
-				}
-				if = {
-					limit = {
 						has_building = building_electronics_manufactories
 					}
 					remove_building = building_electronics_manufactories

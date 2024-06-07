@@ -160,7 +160,6 @@ company_chrysler = {
 	flavored_company = yes
 	building_types = {
 		building_automobile_manufactories
-		building_advanced_military_manufactories
 		building_motor_industry
 	}
 	potential = {
@@ -186,7 +185,7 @@ company_chrysler = {
 		has_technology_researched = combustion_gas_engine
 	}
 	prosperity_modifier = {
-		building_advanced_military_manufactories_throughput_add = 0.15
+		building_automobile_manufactories_throughput_add = 0.15
 	}
 	ai_weight = {
 		value = 3		# Higher base value for flavored companies

@@ -867,10 +867,6 @@
   modifier_building_group_bg_heavy_industry_professionals_mortality_mult: "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $professionals$ employed in Heavy Industry"
   modifier_building_group_bg_heavy_industry_professionals_mortality_mult_desc: "An increase or decrease in the $modifier_building_group_bg_heavy_industry_professionals_mortality_mult$"
 
-  # Advanced Military Manufactories
-  modifier_building_advanced_military_manufactories_throughput_add: "$building_advanced_military_manufactories$ building [concept_throughput]"
-  modifier_building_advanced_military_manufactories_throughput_add_desc: "A bonus or penalty to both input and output of $building_advanced_military_manufactories$"
-
   # Aircraft Manufactories
   modifier_building_aircraft_manufactories_throughput_add: "$building_aircraft_manufactories$ building [concept_throughput]"
   modifier_building_aircraft_manufactories_throughput_add_desc: "A bonus or penalty to both input and output of $building_aircraft_manufactories$"
@@ -1430,10 +1426,6 @@
   modifier_goods_input_gold_add_desc: "The amount of @gold! Gold consumed by buildings"
 
   # Liquor
-
-  # Luxury Cars
-  modifier_goods_output_luxury_cars_add: "@luxury_cars! Luxury Cars output per level"
-  modifier_goods_output_luxury_cars_add_desc: "The amount of @luxury_cars! Luxury Cars produced by buildings"
 
   # Meat
 
