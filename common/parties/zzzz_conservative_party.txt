@@ -502,7 +502,7 @@ conservative_party = {
 			}
 		}
 		if = {
-			# capitalists more likely to join conservatives when the poor can vote
+			# investors more likely to join conservatives when the poor can vote
 			limit = {
 				bpm_ig_is_upper_institutional = yes
 				owner = {
@@ -515,7 +515,7 @@ conservative_party = {
 			}
 		}
 		if = {
-			# capitalists and landowners more likely to join with progressive taxation
+			# investors and landowners more likely to join with progressive taxation
 			limit = {
 				bpm_ig_is_upper_institutional = yes
 				owner = {
@@ -528,7 +528,7 @@ conservative_party = {
 			}
 		}
 		if = {
-			# capitalists more likely to join conservatives with public health
+			# investors more likely to join conservatives with public health
 			limit = {
 				bpm_ig_is_upper_institutional = yes
 				owner = {

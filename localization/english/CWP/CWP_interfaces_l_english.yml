@@ -124,16 +124,16 @@
   trade_route_export_lens_option_uranium_tooltip: "Establish an $uranium$ export trade route"
 
   # Pops
-  POP_capitalists: "$capitalists$ [concept_profession]"
-  POP_bureaucrats: "$bureaucrats$ [concept_profession]"
-  POP_aristocrats: "$aristocrats$ [concept_profession]"
+  POP_INVESTORS: "$investors$ [concept_profession]"
+  POP_ADMINISTRATORS: "$administrators$ [concept_profession]"
+  POP_LANDLORDS: "$landlords$ [concept_profession]"
   POP_CLERGY: "$clergy$ [concept_profession]"
   POP_PROFESSIONALS: "$professionals$ [concept_profession]"
   POP_TECHNICIANS: "$technicians$ [concept_profession]"
-  POP_peasants: "$peasants$ [concept_profession]"
+  POP_INFORMAL_WORKERS: "$informal_workers$ [concept_profession]"
   POP_SLUM_DWELLERS: "$slum_dwellers$ [concept_profession]"
   POP_SERVICE_WORKERS: "$service_workers$ [concept_profession]"
-  POP_soldiers: "$soldiers$ [concept_profession]"
+  POP_SERVICEMEMBERS: "$servicemembers$ [concept_profession]"
   POP_CREATIVES: "$creatives$ [concept_profession]"
 
   QUALIFICATIONS_ACCEPTED_POP_CULTURE: "Accepted [concept_culture]"

@@ -794,7 +794,7 @@ poor_clothes_pop_trigger = {
 	scope:pop = {
 		OR = {
 			is_pop_type = farmers
-			is_pop_type = peasants
+			is_pop_type = informal_workers
 			is_pop_type = slum_dwellers
 			is_pop_type = laborers
 			is_pop_type = technicians
@@ -808,7 +808,7 @@ middle_clothes_pop_trigger = {
 		OR = {
 			is_pop_type = service_workers
 			is_pop_type = engineers
-			is_pop_type = bureaucrats
+			is_pop_type = administrators
 			is_pop_type = farmers
 			is_pop_type = academics
 		}
@@ -819,16 +819,16 @@ upper_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
 		OR = {
-			is_pop_type = capitalists
-			is_pop_type = aristocrats
+			is_pop_type = investors
+			is_pop_type = landlords
 		}
 	}
 }
 
-soldiers_clothes_pop_trigger = {
+servicemembers_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
-		is_pop_type = soldiers
+		is_pop_type = servicemembers
 	}
 }
 
@@ -874,24 +874,24 @@ laborers_clothes_pop_trigger = {
 	}
 }
 
-peasants_clothes_pop_trigger = {
+informal_workers_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
-		is_pop_type = peasants
+		is_pop_type = informal_workers
 	}
 }
 
-capitalists_clothes_pop_trigger = {
+investors_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
-		is_pop_type = capitalists
+		is_pop_type = investors
 	}
 }
 
-aristocrats_clothes_pop_trigger = {
+landlords_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
-		is_pop_type = capitalists
+		is_pop_type = investors
 	}
 }
 
@@ -909,10 +909,10 @@ engineers_clothes_pop_trigger = {
 	}
 }
 
-bureaucrats_clothes_pop_trigger = {
+administrators_clothes_pop_trigger = {
 	exists = scope:pop
 	scope:pop = {
-		is_pop_type = bureaucrats
+		is_pop_type = administrators
 	}
 }
 
@@ -1068,7 +1068,7 @@ should_be_naked_trigger = {
 	scope:pop = {
 		OR = {
 			is_pop_type = farmers
-			is_pop_type = peasants
+			is_pop_type = informal_workers
 			is_pop_type = laborers
 		}
 		OR = {

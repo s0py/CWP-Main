@@ -57,6 +57,7 @@
   law_secret_police: "Secret Police"
   law_secret_police_desc: "An organization is given a strong hand in monitoring and suppressing internal threats and opponents via extralegal means."
   
+  
   lawgroup_centralization: "Centralization"
   law_unitary: "Unitary"
   law_unitary_desc: "The government is entirely centralized, with all power held by the central government."
@@ -132,18 +133,6 @@
   law_volunteer_only_military_desc: "The nation has a large standing military, manned solely with volunteer troops."
   law_private_military: "Private Military"
   law_private_military_desc: "The nation hires private military companies for its military actions."
-
-  lawgroup_officers: "Military Oversight"
-  lawgroup_officers_desc: "The criteria for assignment and promotion of officers."
-  law_officer_cliques: "Military Cliques"
-  law_officer_cliques_desc: "The Military lack any political or civil oversight and are free to act with impunity and hold great political influence and can advance their agendas."
-  bpm_law_effect_tt_officer_cliques: "PLACEHOLDER Military Officers are usually either ideological or part of the military interests"
-  law_independent_officers: "Independent Military"
-  law_independent_officers_desc: "The Military are mostly independent from civil structures and are protected from political interference."
-  law_officers_oversight: "Military Oversight"
-  law_officers_oversight_desc: "The Military are overseen by government and major military appointments are overseen by civil leadership."
-  law_officers_controlled: "Controlled Military"
-  law_officers_controlled_desc: "The Military is heavily controlled and overseen by the government and the armed forces are heavily restricted in political activity."
   
   lawgroup_economic_system: "Economic System"
   law_anti_industrialization: "Anti Industrialization"

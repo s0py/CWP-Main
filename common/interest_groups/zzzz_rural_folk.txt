@@ -36,8 +36,8 @@ ig_rural_folk = {
 	}
 	pop_potential = {
 		NOR = {
-			is_pop_type = aristocrats
-			is_pop_type = capitalists
+			is_pop_type = landlords
+			is_pop_type = investors
 		}
 		OR = {
 			pop_employment_building_group = bg_agriculture
@@ -63,7 +63,7 @@ ig_rural_folk = {
 		}
 		else_if = {
 			limit = {
-				is_pop_type = peasants
+				is_pop_type = informal_workers
 			}
 			add = {
 				desc = "POP_PEASANTS"

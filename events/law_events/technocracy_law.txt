@@ -25,7 +25,7 @@ technocracy.1 = {
 				is_interest_group_type = ig_intelligentsia
 			}
 			any_scope_pop = {
-				is_pop_type = capitalists
+				is_pop_type = investors
 			}
 			law_stance = {
 				law = law_type:law_technocrats
@@ -45,7 +45,7 @@ technocracy.1 = {
 					is_interest_group_type = ig_intelligentsia
 				}
 				any_scope_pop = {
-					is_pop_type = capitalists
+					is_pop_type = investors
 				}
 				law_stance = {
 					law = law_type:law_technocrats

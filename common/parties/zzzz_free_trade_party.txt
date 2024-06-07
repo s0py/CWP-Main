@@ -100,7 +100,7 @@ free_trade_party = {
 			desc = "base_value"
 		}
 		if = {
-			# capitalists like capitalism
+			# investors like capitalism
 			limit = {
 				OR = {
 					leader = {
@@ -124,7 +124,7 @@ free_trade_party = {
 				desc = "from_liberal_leader"
 			}
 		}
-		# powerful capitalists likely to form their own party
+		# powerful investors likely to form their own party
 		if = {
 			limit = {
 				is_powerful = yes
@@ -197,7 +197,7 @@ free_trade_party = {
 			}
 		}
 		if = {
-			# capitalists hate children
+			# investors hate children
 			limit = {
 				owner = {
 					NOT = {
@@ -217,7 +217,7 @@ free_trade_party = {
 			}
 		}
 		if = {
-			# capitalists want free trade
+			# investors want free trade
 			limit = {
 				owner = {
 					NOT = {
@@ -237,7 +237,7 @@ free_trade_party = {
 			}
 		}
 		if = {
-			# capitalists want to have power
+			# investors want to have power
 			limit = {
 				owner = {
 					NOR = {

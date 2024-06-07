@@ -35,7 +35,7 @@
 		}
 		if = {
 			limit = {
-				is_pop_type = aristocrats
+				is_pop_type = landlords
 			}
 			multiply = {
 				value = 10
@@ -55,7 +55,7 @@
 		}
 		if = {
 			limit = {
-				is_pop_type = peasants
+				is_pop_type = informal_workers
 			}
 			multiply = {
 				value = 3

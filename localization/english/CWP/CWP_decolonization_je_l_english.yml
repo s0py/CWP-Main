@@ -59,7 +59,7 @@
   decolonization.100.a: "Declare Independence"
   decolonization.100.b: "Remain Loyal"
   decolonization.101.t: "The [ROOT.GetCountry.GetAdjectiveNoFlag] Empire is in Turmoil"
-  decolonization.101.desc: "Our bureaucrats have been forced to withdraw from our colonies, and we may soon face a total loss of control in our colonies."
+  decolonization.101.desc: "Our administrators have been forced to withdraw from our colonies, and we may soon face a total loss of control in our colonies."
   decolonization.101.f: "This may spell the end of our empire."
   decolonization.101.a: "This will end poorly."
   decolonization.102.t: "Ultimatum"

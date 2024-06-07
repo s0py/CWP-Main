@@ -1,6 +1,5 @@
-﻿#Investors
-capitalists = {
-	texture = gfx/interface/icons/pops_icons/capitalists.dds
+﻿investors = {
+	texture = gfx/interface/icons/pops_icons/investors.dds
 	color = {
 		49
 		76
@@ -28,7 +27,7 @@ capitalists = {
 			}
 		}
 	}
-	qualifications_growth_desc = capitalists_QUALIFICATIONS_DESC
+	qualifications_growth_desc = INVESTORS_QUALIFICATIONS_DESC
 	qualifications = {
 		if = {
 			limit = {
@@ -49,7 +48,7 @@ capitalists = {
 					is_pop_type = engineers
 					is_pop_type = professionals
 					is_pop_type = clergy
-					is_pop_type = aristocrats
+					is_pop_type = landlords
 				}
 				multiply = {
 					value = 3

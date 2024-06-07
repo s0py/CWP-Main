@@ -228,7 +228,7 @@ law_managerial_state = {
 		country_legitimacy_govt_size_add = 2
 		country_legitimacy_ideological_incoherence_mult = -0.1
 		country_academics_pol_str_mult = 0.15
-		country_bureaucrats_pol_str_mult = 0.50
+		country_administrators_pol_str_mult = 0.50
 		country_officers_pol_str_mult = 0.15
 		country_authority_add = 100
 	}
@@ -263,7 +263,7 @@ law_managerial_state = {
 					owner = {
 						NOT = { has_law = law_type:law_hybrid_voting }
 					}
-					is_pop_type = capitalists
+					is_pop_type = investors
 				}
 				value = 0.25
 			}
@@ -339,9 +339,9 @@ law_hybrid_voting = {
 
 	modifier = {
 		country_legitimacy_govt_total_clout_add = 130
-		country_aristocrats_voting_power_add = 40
-		country_bureaucrats_voting_power_add = 40
-		country_capitalists_voting_power_add = 40
+		country_landlords_voting_power_add = 40
+		country_administrators_voting_power_add = 40
+		country_investors_voting_power_add = 40
 		country_officers_voting_power_add = 40
 		country_authority_add = 100
 		bpm_decorative_modify_rigidity_per_suffrage_investment = -5
@@ -351,9 +351,9 @@ law_hybrid_voting = {
 	institution_modifier = {
 		country_legitimacy_govt_total_votes_add = 10
 		country_legitimacy_govt_total_clout_add = -10
-		country_aristocrats_voting_power_add = -5
-		country_bureaucrats_voting_power_add = -5
-		country_capitalists_voting_power_add = -5
+		country_landlords_voting_power_add = -5
+		country_administrators_voting_power_add = -5
+		country_investors_voting_power_add = -5
 		country_officers_voting_power_add = -5
 	}
 	

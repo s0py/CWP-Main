@@ -10,7 +10,7 @@ pm_canal_base = {
 			goods_output_bonds_add = 50
 		}
 		level_scaled = {
-			building_employment_bureaucrats_add = 4000
+			building_employment_administrators_add = 4000
 			building_employment_technicians_add = 5000
 		}
 	}
@@ -30,7 +30,7 @@ pm_canal_improved = {
 			goods_output_bonds_add = 100
 		}
 		level_scaled = {
-			building_employment_bureaucrats_add = 2000
+			building_employment_administrators_add = 2000
 			building_employment_technicians_add = 6000
 			building_employment_engineers_add = 2000
 		}
@@ -97,10 +97,10 @@ pm_canal_privately_owned = {
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_capitalists_add = 200
+			building_employment_investors_add = 200
 		}
 		unscaled = {
-			building_capitalists_shares_add = 1
+			building_investors_shares_add = 1
 		}
 	}
 }
@@ -126,10 +126,10 @@ pm_canal_publicly_traded = {
 			goods_output_bonds_add = 5
 		}
 		level_scaled = {
-			building_employment_capitalists_add = 500
+			building_employment_investors_add = 500
 		}
 		unscaled = {
-			building_capitalists_shares_add = 1
+			building_investors_shares_add = 1
 		}
 	}
 }
@@ -144,7 +144,7 @@ pm_canal_government_run = {
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_bureaucrats_add = 1000
+			building_employment_administrators_add = 1000
 		}
 		unscaled = {
 			building_government_shares_add = 1
@@ -184,7 +184,7 @@ pm_canal_minor = {
 			goods_output_bonds_add = 25
 		}
 		level_scaled = {
-			building_employment_bureaucrats_add = 500
+			building_employment_administrators_add = 500
 			building_employment_technicians_add = 500
 		}
 	}

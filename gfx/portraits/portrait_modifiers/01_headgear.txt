@@ -148,7 +148,7 @@
 					AND = {
 						indian_clothes_pop_trigger = yes
 						OR = {
-							soldiers_clothes_pop_trigger = yes
+							servicemembers_clothes_pop_trigger = yes
 							officers_clothes_pop_trigger = yes
 						}
 					}
@@ -332,7 +332,7 @@
 						scope:pop = {
 							OR = {
 								is_pop_type = officers
-								is_pop_type = soldiers
+								is_pop_type = servicemembers
 							}
 							owner = c:CSA
 						}
@@ -741,7 +741,7 @@
 				add = 100
 				exists = scope:pop
 				scope:pop = {
-					is_pop_type = capitalists
+					is_pop_type = investors
 					culture = {
 						has_discrimination_trait = mongolic
 					}
@@ -856,7 +856,7 @@
 				add = 100
 				european_clothes_pop_trigger = yes
 				poor_clothes_pop_trigger = yes
-				peasants_clothes_pop_trigger = no
+				informal_workers_clothes_pop_trigger = no
 			}
 		}
 	}
@@ -968,11 +968,11 @@
 			modifier = {
 				add = 200
 				arabic_military_fez_pop_trigger = yes
-				soldiers_clothes_pop_trigger = yes
+				servicemembers_clothes_pop_trigger = yes
 			}
 		}
 	}
-	european_peasants_headgear = {
+	european_informal_workers_headgear = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -990,7 +990,7 @@
 			modifier = {
 				add = 200
 				AND = {
-					peasants_clothes_pop_trigger = yes
+					informal_workers_clothes_pop_trigger = yes
 					european_clothes_pop_trigger = yes
 				}
 			}

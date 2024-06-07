@@ -12,7 +12,7 @@
 	}
 	every_scope_pop = {
 		limit = {
-			is_pop_type = bureaucrats
+			is_pop_type = administrators
 		}
 		change_pop_religion = {
 			target = rel:atheist
@@ -57,7 +57,7 @@ effect_atheism_activate_law = {
 	}
 	every_scope_pop = {
 		limit = {
-			is_pop_type = bureaucrats
+			is_pop_type = administrators
 		}
 		change_pop_religion = {
 			target = rel:atheist

@@ -50,7 +50,7 @@
  decolonization.100.a:0 "独立を宣言する"
  decolonization.100.b:0 "忠誠を貫く"
  decolonization.101.t:0 "[ROOT.GetCountry.GetAdjectiveNoFlag]帝国の動乱"
- decolonization.101.desc:0 "Our bureaucrats have been forced to withdraw from our colonies, and we may soon face a total loss of control in our colonies."
+ decolonization.101.desc:0 "Our administrators have been forced to withdraw from our colonies, and we may soon face a total loss of control in our colonies."
  decolonization.101.f:0 "This may spell the end of our empire."
  decolonization.101.a:0 "This will end poorly."
  decolonization.102.t:0 "Ultimatum"

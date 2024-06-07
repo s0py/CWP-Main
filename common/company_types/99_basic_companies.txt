@@ -1026,6 +1026,6 @@ company_basic_financial = {
 		}
 	}
 	prosperity_modifier = {
-		state_capitalists_investment_pool_efficiency_mult = 0.15
+		state_investors_investment_pool_efficiency_mult = 0.15
 	}
 }

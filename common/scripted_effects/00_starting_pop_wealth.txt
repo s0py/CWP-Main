@@ -7,13 +7,13 @@ effect_starting_pop_wealth_exorbitant = {
 				value = 25
 				if = {
 					limit = {
-						is_pop_type = capitalists
+						is_pop_type = investors
 					}
 					add = 5
 				}
 				if = {
 					limit = {
-						is_pop_type = aristocrats
+						is_pop_type = landlords
 					}
 					add = 4
 				}
@@ -30,7 +30,7 @@ effect_starting_pop_wealth_exorbitant = {
 				if = {
 					limit = {
 						or = {
-							is_pop_type = bureaucrats
+							is_pop_type = administrators
 							is_pop_type = farmers
 							is_pop_type = officers
 						}
@@ -50,7 +50,7 @@ effect_starting_pop_wealth_exorbitant = {
 					limit = {
 						or = {
 							is_pop_type = technicians
-							is_pop_type = soldiers
+							is_pop_type = servicemembers
 						}
 					}
 					add = 1
@@ -66,7 +66,7 @@ effect_starting_pop_wealth_exorbitant = {
 				}
 				if = {
 					limit = {
-						is_pop_type = peasants
+						is_pop_type = informal_workers
 					}
 					add = -2
 				}
@@ -84,13 +84,13 @@ effect_starting_pop_wealth_very_high = {
 				value = 20
 				if = {
 					limit = {
-						is_pop_type = capitalists
+						is_pop_type = investors
 					}
 					add = 5
 				}
 				if = {
 					limit = {
-						is_pop_type = aristocrats
+						is_pop_type = landlords
 					}
 					add = 4
 				}
@@ -107,7 +107,7 @@ effect_starting_pop_wealth_very_high = {
 				if = {
 					limit = {
 						or = {
-							is_pop_type = bureaucrats
+							is_pop_type = administrators
 							is_pop_type = farmers
 							is_pop_type = officers
 						}
@@ -127,7 +127,7 @@ effect_starting_pop_wealth_very_high = {
 					limit = {
 						or = {
 							is_pop_type = technicians
-							is_pop_type = soldiers
+							is_pop_type = servicemembers
 						}
 					}
 					add = 1
@@ -143,7 +143,7 @@ effect_starting_pop_wealth_very_high = {
 				}
 				if = {
 					limit = {
-						is_pop_type = peasants
+						is_pop_type = informal_workers
 					}
 					add = -2
 				}
@@ -161,13 +161,13 @@ effect_starting_pop_wealth_high = {
 				value = 15
 				if = {
 					limit = {
-						is_pop_type = capitalists
+						is_pop_type = investors
 					}
 					add = 5
 				}
 				if = {
 					limit = {
-						is_pop_type = aristocrats
+						is_pop_type = landlords
 					}
 					add = 4
 				}
@@ -184,7 +184,7 @@ effect_starting_pop_wealth_high = {
 				if = {
 					limit = {
 						or = {
-							is_pop_type = bureaucrats
+							is_pop_type = administrators
 							is_pop_type = farmers
 							is_pop_type = officers
 						}
@@ -204,7 +204,7 @@ effect_starting_pop_wealth_high = {
 					limit = {
 						or = {
 							is_pop_type = technicians
-							is_pop_type = soldiers
+							is_pop_type = servicemembers
 						}
 					}
 					add = 1
@@ -220,7 +220,7 @@ effect_starting_pop_wealth_high = {
 				}
 				if = {
 					limit = {
-						is_pop_type = peasants
+						is_pop_type = informal_workers
 					}
 					add = -2
 				}
@@ -238,13 +238,13 @@ effect_starting_pop_wealth_medium = {
 				value = 10
 				if = {
 					limit = {
-						is_pop_type = capitalists
+						is_pop_type = investors
 					}
 					add = 5
 				}
 				if = {
 					limit = {
-						is_pop_type = aristocrats
+						is_pop_type = landlords
 					}
 					add = 4
 				}
@@ -261,7 +261,7 @@ effect_starting_pop_wealth_medium = {
 				if = {
 					limit = {
 						or = {
-							is_pop_type = bureaucrats
+							is_pop_type = administrators
 							is_pop_type = farmers
 							is_pop_type = officers
 						}
@@ -281,7 +281,7 @@ effect_starting_pop_wealth_medium = {
 					limit = {
 						or = {
 							is_pop_type = technicians
-							is_pop_type = soldiers
+							is_pop_type = servicemembers
 						}
 					}
 					add = 1
@@ -297,7 +297,7 @@ effect_starting_pop_wealth_medium = {
 				}
 				if = {
 					limit = {
-						is_pop_type = peasants
+						is_pop_type = informal_workers
 					}
 					add = -2
 				}
@@ -315,13 +315,13 @@ effect_starting_pop_wealth_low = {
 				value = 5
 				if = {
 					limit = {
-						is_pop_type = capitalists
+						is_pop_type = investors
 					}
 					add = 5
 				}
 				if = {
 					limit = {
-						is_pop_type = aristocrats
+						is_pop_type = landlords
 					}
 					add = 4
 				}
@@ -338,7 +338,7 @@ effect_starting_pop_wealth_low = {
 				if = {
 					limit = {
 						or = {
-							is_pop_type = bureaucrats
+							is_pop_type = administrators
 							is_pop_type = farmers
 							is_pop_type = officers
 						}
@@ -358,7 +358,7 @@ effect_starting_pop_wealth_low = {
 					limit = {
 						or = {
 							is_pop_type = technicians
-							is_pop_type = soldiers
+							is_pop_type = servicemembers
 						}
 					}
 					add = 1
@@ -374,7 +374,7 @@ effect_starting_pop_wealth_low = {
 				}
 				if = {
 					limit = {
-						is_pop_type = peasants
+						is_pop_type = informal_workers
 					}
 					add = -2
 				}
@@ -392,13 +392,13 @@ effect_starting_pop_wealth_abysmal = {
 				value = 0
 				if = {
 					limit = {
-						is_pop_type = capitalists
+						is_pop_type = investors
 					}
 					add = 5
 				}
 				if = {
 					limit = {
-						is_pop_type = aristocrats
+						is_pop_type = landlords
 					}
 					add = 4
 				}
@@ -415,7 +415,7 @@ effect_starting_pop_wealth_abysmal = {
 				if = {
 					limit = {
 						or = {
-							is_pop_type = bureaucrats
+							is_pop_type = administrators
 							is_pop_type = farmers
 							is_pop_type = officers
 						}
@@ -435,7 +435,7 @@ effect_starting_pop_wealth_abysmal = {
 					limit = {
 						or = {
 							is_pop_type = technicians
-							is_pop_type = soldiers
+							is_pop_type = servicemembers
 						}
 					}
 					add = 1
@@ -451,7 +451,7 @@ effect_starting_pop_wealth_abysmal = {
 				}
 				if = {
 					limit = {
-						is_pop_type = peasants
+						is_pop_type = informal_workers
 					}
 					add = -2
 				}

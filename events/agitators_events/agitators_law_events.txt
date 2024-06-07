@@ -1105,7 +1105,7 @@ agitators_law_events.13 = {
 			save_scope_as = current_law_scope
 		}
 		ig:ig_rural_folk = {
-			save_scope_as = peasants_ig
+			save_scope_as = informal_workers_ig
 		}
 	}
 	option = {
@@ -2334,7 +2334,7 @@ agitators_law_events.26 = {
 			}
 		}
 		add_modifier = {
-			name = modifier_not_the_good_aristocrats
+			name = modifier_not_the_good_landlords
 			months = normal_modifier_time
 		}
 		add_enactment_modifier = {

@@ -1,9 +1,9 @@
 ﻿full_investment_pool = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	state_academics_investment_pool_contribution_add = -0.001
-	state_capitalists_investment_pool_contribution_add = -0.001
-	state_bureaucrats_investment_pool_contribution_add = -0.001
-	state_aristocrats_investment_pool_contribution_add = -0.001
+	state_investors_investment_pool_contribution_add = -0.001
+	state_administrators_investment_pool_contribution_add = -0.001
+	state_landlords_investment_pool_contribution_add = -0.001
 	state_clergy_investment_pool_contribution_add = -0.001
 	state_service_workers_investment_pool_contribution_add = -0.001
 	state_engineers_investment_pool_contribution_add = -0.001
@@ -11,7 +11,7 @@
 	state_creatives_investment_pool_contribution_add = -0.001
 	state_laborers_investment_pool_contribution_add = -0.001
 	state_technicians_investment_pool_contribution_add = -0.001
-	state_peasants_investment_pool_contribution_add = -0.001
+	state_informal_workers_investment_pool_contribution_add = -0.001
 }
 
 kuomintang_political_dominance = {
@@ -52,7 +52,7 @@ colonial_administration = {
 	country_bureaucracy_add = -1
 }
 
-colonial_bureaucrats = {
+colonial_administrators = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	country_bureaucracy_add = 1
 }

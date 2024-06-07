@@ -36,7 +36,7 @@
 			limit = {
 				OR = {
 					culture_accepted = yes
-					is_pop_type = soldiers
+					is_pop_type = servicemembers
 				}
 			}
 			add = {
@@ -48,7 +48,7 @@
 			}
 			if = {
 				limit = {
-					is_pop_type = soldiers
+					is_pop_type = servicemembers
 				}
 				multiply = {
 					value = 5

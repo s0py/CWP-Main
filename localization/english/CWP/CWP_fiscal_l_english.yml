@@ -116,7 +116,7 @@ fluid_money_supplytt: "Enables [concept_money_supply] growth from gold reserves"
 
 # JEs
 je_set_pegged_currency: "Selecting a [concept_pegged_currency]"
-je_set_pegged_currency_reason: "Current Foreign Reserves: [GetPlayer.MakeScope.ScriptValue('foreign_reserves_value')|+Od]\nForeign Reserves needed to maintain peg: [GetPlayer.MakeScope.ScriptValue('foreign_reserves_needed_for_peg')|+Od]\n$TOOLTIP_DELIMITER$\nA pegged currency offers a shield against the unpredictable nature of global markets. It provides businesses and capitalists with confidence, assuring them that the value of their investments and the price of their goods will remain stable.\n\nThis fosters an environment conducive to growth, attracting foreign investments and encouraging domestic businesses to thrive."
+je_set_pegged_currency_reason: "Current Foreign Reserves: [GetPlayer.MakeScope.ScriptValue('foreign_reserves_value')|+Od]\nForeign Reserves needed to maintain peg: [GetPlayer.MakeScope.ScriptValue('foreign_reserves_needed_for_peg')|+Od]\n$TOOLTIP_DELIMITER$\nA pegged currency offers a shield against the unpredictable nature of global markets. It provides businesses and investors with confidence, assuring them that the value of their investments and the price of their goods will remain stable.\n\nThis fosters an environment conducive to growth, attracting foreign investments and encouraging domestic businesses to thrive."
 je_set_pegged_currency_goal: "Has reached the end of evaluationary period"
 set_pegged_currency_status_desc: "[SelectLocalization(GetPlayer.MakeScope.Var('pegged_currency').IsSet, 'yes_pegged_currency', 'no_pegged_currency')]"
 
@@ -136,7 +136,7 @@ fail_foreignreservesbigorequaltopeg: "Does not have required Foreign Reserves ne
 je_maintain_pegged_currency: "[SelectLocalization(GetPlayer.MakeScope.Var('pegged_currency').IsSet, 'je_maintain_pegged_currency_b', 'je_maintain_pegged_currency_a')]"
 je_maintain_pegged_currency_a: "Maintain Peg to Target Currency"
 je_maintain_pegged_currency_b: "Maintain Peg to [GetPlayer.MakeScope.Var('pegged_currency').GetCountry.GetCustom('currency_text_loc')][GetPlayer.MakeScope.Var('pegged_currency').GetCountry.MakeScope.Var('cwp_currency').GetFlagName]"
-je_maintain_pegged_currency_reason: "Current Foreign Reserves: [GetPlayer.MakeScope.ScriptValue('foreign_reserves_value')|+Od]\nForeign Reserves needed to maintain peg: [GetPlayer.MakeScope.ScriptValue('foreign_reserves_needed_for_peg')|+Od]\n$TOOLTIP_DELIMITER$\nA pegged currency offers a shield against the unpredictable nature of global markets. It provides businesses and capitalists with confidence, assuring them that the value of their investments and the price of their goods will remain stable.\n\nThis fosters an environment conducive to growth, attracting foreign investments and encouraging domestic businesses to thrive."
+je_maintain_pegged_currency_reason: "Current Foreign Reserves: [GetPlayer.MakeScope.ScriptValue('foreign_reserves_value')|+Od]\nForeign Reserves needed to maintain peg: [GetPlayer.MakeScope.ScriptValue('foreign_reserves_needed_for_peg')|+Od]\n$TOOLTIP_DELIMITER$\nA pegged currency offers a shield against the unpredictable nature of global markets. It provides businesses and investors with confidence, assuring them that the value of their investments and the price of their goods will remain stable.\n\nThis fosters an environment conducive to growth, attracting foreign investments and encouraging domestic businesses to thrive."
 je_maintain_pegged_currency_goal: "[SCOPE.GetRootScope.GetCountry.GetNameNoFlag] can't maintain a [concept_pegged_currency]"
 
 pegged_currency_status_desc: "[SelectLocalization(GreaterThan_CFixedPoint(GetPlayer.MakeScope.ScriptValue('foreign_reserves_value'), GetPlayer.MakeScope.ScriptValue('foreign_reserves_needed_for_peg')), 'can_maintain_peg', 'cant_maintain_peg')]"
@@ -148,7 +148,7 @@ can_maintain_peg: "#p Enough Foreign Reserves to Maintain Peg#!"
 # Events
 cwp_bank_reevaluation.1.t: "Credit Rating Increased"
 cwp_bank_reevaluation.1.desc: "In a welcome development, the credit rating of the [GetPlayer.GetAdjectiveNoFlag] [concept_central_bank] has been upgraded from [GetPlayer.GetCustom('bank_credibility_previous_loc')] to [GetPlayer.GetCustom('bank_credibility_loc')] and is now considered [GetPlayer.GetCustom('bank_credibility_loc_desc')], instilling a renewed sense of confidence and optimism. This positive shift signifies a recognition of the bank's prudent policies, resilience, and strong financial position."
-cwp_bank_reevaluation.1.f: "Our newly upgraded credit rating is not only a testament to the central bank's credibility but also an endorsement of [GetPlayer.GetNameNoFormatting]'s overall economic stability. capitalists and market participants now view the bank as a reliable institution, paving the way for increased foreign investments and enhanced economic growth"
+cwp_bank_reevaluation.1.f: "Our newly upgraded credit rating is not only a testament to the central bank's credibility but also an endorsement of [GetPlayer.GetNameNoFormatting]'s overall economic stability. Investors and market participants now view the bank as a reliable institution, paving the way for increased foreign investments and enhanced economic growth"
 cwp_bank_reevaluation.1.a: "To an even brighter future!"
 
 cwp_bank_reevaluation.2.t: "Credit Rating Decreased"

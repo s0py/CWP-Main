@@ -8,7 +8,7 @@
 				activate_production_methods = {
 					"pm_professional_bureaucrats"
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 				}
 			}
 			create_building = {
@@ -31,7 +31,7 @@
 					"pm_no_commercial_banking"
 					"pm_privately_owned_urban_center"
 					"pm_professional_service_industry_no"
-					"pm_certified_capitalists"
+					"pm_certified_investors"
 				}
 			}
 			create_building = {
@@ -218,7 +218,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -446,7 +446,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -626,7 +626,7 @@
 				activate_production_methods = {
 					"pm_traditional_financial_services"
 					"pm_no_commercial_banking"
-					"pm_certified_capitalists"
+					"pm_certified_investors"
 					"pm_professional_service_industry_no"
 					"pm_privately_owned_urban_center"
 				}
@@ -739,7 +739,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -1053,7 +1053,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -1247,7 +1247,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -1412,7 +1412,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -1627,7 +1627,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -1734,7 +1734,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -1828,7 +1828,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -1983,7 +1983,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -2225,7 +2225,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -2432,7 +2432,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -2602,7 +2602,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -2776,7 +2776,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -2960,7 +2960,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -3189,7 +3189,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -3382,7 +3382,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -3564,7 +3564,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -3731,7 +3731,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -3977,7 +3977,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -4226,7 +4226,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -4555,7 +4555,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -4851,7 +4851,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -5081,7 +5081,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -5317,7 +5317,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -5730,7 +5730,7 @@
 					"pm_no_commercial_banking"
 					"pm_privately_owned_urban_center"
 					"pm_professional_service_industry_no"
-					"pm_certified_capitalists"
+					"pm_certified_investors"
 				}
 			}
 			create_building = {
@@ -6289,7 +6289,7 @@
 				activate_production_methods = {
 					"pm_traditional_financial_services"
 					"pm_no_commercial_banking"
-					"pm_certified_capitalists"
+					"pm_certified_investors"
 					"pm_professional_service_industry_no"
 					"pm_privately_owned_urban_center"
 				}
@@ -7278,7 +7278,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -7311,7 +7311,7 @@
 				activate_production_methods = {
 					"pm_traditional_financial_services"
 					"pm_no_commercial_banking"
-					"pm_certified_capitalists"
+					"pm_certified_investors"
 					"pm_professional_service_industry_no"
 					"pm_privately_owned_urban_center"
 				}
@@ -7599,7 +7599,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -7841,7 +7841,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -7947,7 +7947,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -7986,7 +7986,7 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_modern_bureaucracy"
-					"pm_professional_services_use_bureaucrats"
+					"pm_professional_services_use_administrators"
 					"pm_professional_bureaucrats"
 				}
 			}
@@ -8057,7 +8057,7 @@
 				activate_production_methods = {
 					"pm_traditional_financial_services"
 					"pm_no_commercial_banking"
-					"pm_certified_capitalists"
+					"pm_certified_investors"
 					"pm_professional_service_industry_no"
 					"pm_privately_owned_urban_center"
 				}
@@ -8418,7 +8418,7 @@
 					"pm_no_commercial_banking"
 					"pm_privately_owned_urban_center"
 					"pm_professional_service_industry_no"
-					"pm_certified_capitalists"
+					"pm_certified_investors"
 				}
 			}
 			create_building = {
@@ -8581,7 +8581,7 @@
 				activate_production_methods = {
 					"pm_traditional_financial_services"
 					"pm_no_commercial_banking"
-					"pm_certified_capitalists"
+					"pm_certified_investors"
 					"pm_professional_service_industry_no"
 					"pm_privately_owned_urban_center"
 				}

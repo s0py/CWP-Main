@@ -5,8 +5,8 @@ institution_law_hybrid_voting_workaround ={
 	country_legitimacy_govt_total_votes_add = 10
 	country_legitimacy_govt_total_clout_add = -10
 	country_officers_voting_power_add = 10
-	country_aristocrats_voting_power_add = 10
-	country_capitalists_voting_power_add = 10
+	country_landlords_voting_power_add = 10
+	country_investors_voting_power_add = 10
 }
 
 institution_law_majoritarian_voting_workaround ={ 

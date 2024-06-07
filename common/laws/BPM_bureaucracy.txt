@@ -20,7 +20,7 @@
 			desc = "POP_ARISTOCRATS"
 			if = {
 				limit = {
-					is_pop_type = aristocrats
+					is_pop_type = landlords
 				}
 				value = 0.25
 			}
@@ -77,7 +77,7 @@ law_appointed_bureaucrats = {
 					owner = {
 						has_law = law_type:law_hereditary_bureaucrats
 					}
-					is_pop_type = bureaucrats
+					is_pop_type = administrators
 				}
 			}
 			value = 0.5
@@ -134,7 +134,7 @@ law_elected_bureaucrats = {
 					owner = {
 						has_law = law_type:law_hereditary_bureaucrats
 					}
-					is_pop_type = bureaucrats
+					is_pop_type = administrators
 				}
 			}
 			value = 0.25

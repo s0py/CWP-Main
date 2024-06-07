@@ -345,7 +345,7 @@ wedding.3 = {
 		default_option = yes
 		add_loyalists = {
 			value = 0.1
-			pop_type = aristocrats
+			pop_type = landlords
 		}
 		ruler = {
 			kill_character = yes
