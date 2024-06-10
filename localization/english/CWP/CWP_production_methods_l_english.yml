@@ -358,7 +358,7 @@
   pm_natural_opioids: "Natural Opioids"
   pm_synthetic_opioids: "Synthetic Opioids"
   ##### Television Manufactories
-  pm_no_consumer_electronics: "No Consumer Electronics"
+  pm_no_consumer_electronics: "No Electronics"
   pm_cathode_ray_tubes: "Cathode Ray Tubes"
   pm_dot_sequential_color_system: "Dot Sequential Color System"
   pm_light_emitting_diodes: "Light Emitting Diodes"

@@ -1397,11 +1397,11 @@
   modifier_goods_output_computers_add_desc: "The amount of @computers! Computers produced by buildings"
 
   # Consumer Electronics
-  modifier_goods_input_consumer_electronics_add: "@consumer_electronics! Consumer Electronics input per level"
-  modifier_goods_input_consumer_electronics_add_desc: "The amount of @consumer_electronics! Consumer Electronics consumed by buildings"
+  modifier_goods_input_consumer_electronics_add: "@consumer_electronics! Electronics input per level"
+  modifier_goods_input_consumer_electronics_add_desc: "The amount of @consumer_electronics! Electronics consumed by buildings"
 
-  modifier_goods_output_consumer_electronics_add: "@consumer_electronics! Consumer Electronics output per level"
-  modifier_goods_output_consumer_electronics_add_desc: "The amount of @consumer_electronics! Consumer Electronics produced by buildings"
+  modifier_goods_output_consumer_electronics_add: "@consumer_electronics! Electronics output per level"
+  modifier_goods_output_consumer_electronics_add_desc: "The amount of @consumer_electronics! Electronics produced by buildings"
 
   # Financial Services
   modifier_goods_input_financial_services_add: "@financial_services! Financial Services input per level"
