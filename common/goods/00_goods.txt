@@ -546,12 +546,6 @@ uranium = {
 	prestige_factor = 5
 }
 
-refined_uranium = {
-	texture = "gfx/interface/icons/goods_icons/refined_uranium.dds"
-	cost = 180
-	category = industrial
-	prestige_factor = 5
-}
 
 telecommunications = {
 	texture = "gfx/interface/icons/goods_icons/telecommunications.dds"

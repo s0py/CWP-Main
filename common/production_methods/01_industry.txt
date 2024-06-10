@@ -2561,7 +2561,7 @@ pm_nuclear_submarines_prod = {
 			goods_input_electronics_add = 35
 			goods_input_sensors_add = 8
 			goods_input_computers_add = 5
-			goods_input_refined_uranium_add = 10
+			goods_input_uranium_add = 10
 			# output goods
 			goods_output_submarines_add = 20
 		}
@@ -2591,7 +2591,7 @@ pm_advanced_mission_submarines_prod = {
 			goods_input_engines_add = 45
 			goods_input_electronics_add = 40
 			goods_input_computers_add = 20
-			goods_input_refined_uranium_add = 20
+			goods_input_uranium_add = 20
 			goods_input_rare_earth_elements_add = 20
 			goods_input_sensors_add = 16
 			# output goods
@@ -2737,7 +2737,7 @@ pm_35th_gen_mbt_ami = {
 			# input goods
 			goods_input_engines_add = 60
 			goods_input_steel_add = 35
-			goods_input_refined_uranium_add = 10
+			goods_input_uranium_add = 10
 			goods_input_refined_fuel_add = 55
 			goods_input_electronics_add = 65
 			# output goods
@@ -2767,7 +2767,7 @@ pm_4th_gen_mbt_ami = {
 			# input goods
 			goods_input_engines_add = 65
 			goods_input_steel_add = 40
-			goods_input_refined_uranium_add = 10
+			goods_input_uranium_add = 10
 			goods_input_refined_fuel_add = 60
 			goods_input_electronics_add = 75
 			# output goods
@@ -4450,51 +4450,6 @@ pm_retransmission_guidance_missile_production = {
 		}
 		level_scaled = {
 			building_employment_engineers_add = 2000
-		}
-	}
-}
-
-############# Uranium Refineries #################
-## Base Uranium PMG
-pm_brute_force_calutron_separation_refineries = {
-	texture = "gfx/interface/icons/production_method_icons/industry/calutron.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-	building_modifiers = {
-		workforce_scaled = {
-			goods_input_uranium_add = 35
-			goods_output_refined_uranium_add = 15
-		}
-		level_scaled = {
-			building_employment_laborers_add = 5500
-			building_employment_technicians_add = 3500
-			building_employment_engineers_add = 1000
-		}
-	}
-}
-
-pm_calutron = {
-	texture = "gfx/interface/icons/production_method_icons/industry/radium_e_refineries.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 20
-		}
-	}
-	unlocking_technologies = {
-		calutron
-	}
-	building_modifiers = {
-		workforce_scaled = {
-			goods_input_uranium_add = 90
-			goods_output_refined_uranium_add = 45
-		}
-		level_scaled = {
-			building_employment_laborers_add = 4000
-			building_employment_technicians_add = 4500
-			building_employment_engineers_add = 1500
 		}
 	}
 }

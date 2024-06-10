@@ -111,12 +111,6 @@ effect_remove_industry = {
 	}
 	if = {
 		limit = {
-			has_building = building_uranium_refineries
-		}
-		remove_building = building_uranium_refineries
-	}
-	if = {
-		limit = {
 			has_building = building_battery_manufactories
 		}
 		remove_building = building_battery_manufactories

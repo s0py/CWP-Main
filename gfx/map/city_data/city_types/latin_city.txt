@@ -122,9 +122,6 @@
 	building_aluminum_refinery = {
 		"glassworks_manufactory_01_mesh"
 	}
-	building_uranium_refineries = {
-		"glassworks_manufactory_01_mesh"
-	}
 	building_suez_canal = {
 		"canal_suezcanal_01_mesh"
 	}

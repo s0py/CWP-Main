@@ -792,19 +792,6 @@
 				}
 			}
 			create_building = {
-				building = "building_uranium_refineries"
-				level = 1
-				subsidized = yes
-				reserves = 1
-				activate_production_methods = {
-					"pm_brute_force_calutron_separation_refineries"
-					"pm_no_automation"
-					"pm_professional_service_industry_no"
-					"pm_no_environmental_tech"
-					"pm_government_run_military_industry"
-				}
-			}
-			create_building = {
 				building = "building_government_administration"
 				level = 8
 				reserves = 1

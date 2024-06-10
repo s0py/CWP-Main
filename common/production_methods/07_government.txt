@@ -619,7 +619,7 @@ pm_nuclear_fission_testing = {
 	texture = "gfx/interface/icons/production_method_icons/government/scholastic_education.dds"
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_refined_uranium_add = 10
+			goods_input_uranium_add = 10
 			goods_input_electricity_add = 5
 		}
 		level_scaled = {
@@ -633,7 +633,7 @@ pm_nuclear_warhead_testing = {
 	texture = "gfx/interface/icons/production_method_icons/government/scholastic_education.dds"
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_refined_uranium_add = 15
+			goods_input_uranium_add = 15
 			goods_input_electricity_add = 10
 		}
 		level_scaled = {

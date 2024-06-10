@@ -4045,18 +4045,6 @@
 				}
 			}
 			create_building = {
-				building = "building_uranium_refineries"
-				level = 1
-				reserves = 1
-				activate_production_methods = {
-					"pm_brute_force_calutron_separation_refineries"
-					"pm_privately_owned_military_industry"
-					"pm_powered_assembly_lines_industry"
-					"pm_no_environmental_tech"
-					"pm_professional_services_use_engineers"
-				}
-			}
-			create_building = {
 				building = "building_port"
 				level = 1
 				reserves = 1
@@ -8060,18 +8048,6 @@
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
 					"pm_privately_owned_heavy_industry"
-				}
-			}
-			create_building = {
-				building = "building_uranium_refineries"
-				level = 2
-				reserves = 1
-				activate_production_methods = {
-					"pm_brute_force_calutron_separation_refineries"
-					"pm_powered_assembly_lines_industry"
-					"pm_professional_services_use_engineers"
-					"pm_no_environmental_tech"
-					"pm_privately_owned_military_industry"
 				}
 			}
 			create_building = {

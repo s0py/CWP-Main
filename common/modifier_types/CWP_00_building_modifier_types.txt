@@ -327,11 +327,6 @@ goods_input_refined_fuel_add = {
 	percent = no
 }
 
-goods_input_refined_uranium_add = {
-	good = no
-	percent = no
-}
-
 goods_input_semiconductors_add = {
 	good = no
 	percent = no
@@ -544,15 +539,6 @@ goods_output_recreational_drugs_add = {
 	percent = no
 }
 
-goods_output_refined_fuel_add = {
-	good = yes
-	percent = no
-}
-
-goods_output_refined_uranium_add = {
-	good = yes
-	percent = no
-}
 
 goods_output_semiconductors_add = {
 	good = yes

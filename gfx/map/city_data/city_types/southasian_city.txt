@@ -79,7 +79,6 @@
 	building_aircraft_manufactories = {"war_machines_manufactory_01_mesh"}
 	building_pharmaceutical_industry = {"arabic_factory_glassworks_01_mesh"}
 	building_aluminum_refinery = {"arabic_factory_glassworks_01_mesh"}
-	building_uranium_refineries = {"arabic_factory_glassworks_01_mesh"}
 	building_nuclear_research_facility = {"arabic_city_university_01_mesh"}
 	building_military_research_facility = {"arabic_city_university_01_mesh"}
 	building_humanities_research_facility = {"arabic_city_university_01_mesh"}

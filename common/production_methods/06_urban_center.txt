@@ -851,7 +851,7 @@ pm_nuclear_plant = {
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_engines_add = 30
-			goods_input_refined_uranium_add = 15
+			goods_input_uranium_add = 15
 			goods_output_electricity_add = 500
 		}
 		level_scaled = {

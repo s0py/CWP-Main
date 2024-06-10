@@ -354,7 +354,6 @@ company_basic_uranium_mining = {
 	}
 	building_types = {
 		building_uranium_mine
-		building_uranium_refineries
 	}
 	potential = {
 		always = yes
@@ -364,7 +363,6 @@ company_basic_uranium_mining = {
 			any_scope_building = {
 				OR = {
 					is_building_type = building_uranium_mine
-					is_building_type = building_uranium_refineries
 				}
 				level >= 5
 			}

@@ -845,25 +845,6 @@ pmg_ownership_aircraft = {
 	}
 }
 
-# Uranium Refineries
-pmg_base_uranium_refineries = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	production_methods = {
-		pm_brute_force_calutron_separation_refineries
-		pm_calutron
-	}
-}
-
-pmg_ownership_uranium_refineries = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	production_methods = {
-		pm_privately_owned_military_industry
-		pm_publicly_traded_military_industry
-		pm_government_run_military_industry
-		pm_worker_cooperatives_military_industry
-	}
-}
-
 # Battery Manufactories
 pmg_base_battery = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"

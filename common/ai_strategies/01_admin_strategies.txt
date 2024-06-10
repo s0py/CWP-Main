@@ -613,9 +613,6 @@ ai_strategy_maintain_hegemony = {
 		uranium = {
 			stance = wants_high_supply
 		}
-		refined_uranium = {
-			stance = wants_high_supply
-		}
 	}
 	building_group_weights = {
 		bg_manufacturing = 1.25

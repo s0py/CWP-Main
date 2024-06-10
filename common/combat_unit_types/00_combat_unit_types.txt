@@ -1105,7 +1105,7 @@ combat_unit_type_supercarrier = {
 		goods_input_missiles_add = 2
 		goods_input_electronics_add = 1
 		goods_input_military_aircraft_add = 3
-		goods_input_refined_uranium_add = 1
+		goods_input_uranium_add = 1
 	}
 	battle_modifier = {
 		unit_offense_add = 120
@@ -1161,7 +1161,7 @@ combat_unit_type_nuclear_battlecruiser = {
 		goods_input_surface_ships_add = 4
 		goods_input_missiles_add = 3
 		goods_input_electronics_add = 1
-		goods_input_refined_uranium_add = 1
+		goods_input_uranium_add = 1
 	}
 	battle_modifier = {
 		unit_offense_add = 100
@@ -1248,7 +1248,7 @@ combat_unit_type_nuclear_attack_submarine = {
 		goods_input_submarines_add = 2
 		goods_input_ammunition_add = 2
 		goods_input_electronics_add = 1
-		goods_input_refined_uranium_add = 1
+		goods_input_uranium_add = 1
 	}
 	battle_modifier = {
 		unit_offense_add = 55
@@ -1277,7 +1277,7 @@ combat_unit_type_cruise_missile_submarine = {
 		goods_input_submarines_add = 3
 		goods_input_missiles_add = 2
 		goods_input_electronics_add = 1
-		goods_input_refined_uranium_add = 1
+		goods_input_uranium_add = 1
 	}
 	battle_modifier = {
 		unit_offense_add = 75

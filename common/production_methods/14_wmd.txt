@@ -12,7 +12,7 @@ pm_nuclear_stockpile_maintenance = {
 	texture = "gfx/interface/icons/production_method_icons/scholastic_education.dds"
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_refined_uranium_add = 10
+			goods_input_uranium_add = 10
 			goods_input_electricity_add = 10
 			goods_output_nuclear_weapon_add = 20
 		}
@@ -31,7 +31,7 @@ pm_atomic_warhead_prod = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_refined_uranium_add = 25
+			goods_input_uranium_add = 25
 			goods_input_electricity_add = 10
 			goods_output_nuclear_weapon_add = 20
 		}
@@ -55,7 +55,7 @@ pm_thermonuclear_warhead_prod = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_refined_uranium_add = 50
+			goods_input_uranium_add = 50
 			goods_input_electricity_add = 15
 			goods_output_nuclear_weapon_add = 40
 		}
