@@ -731,21 +731,6 @@ pmg_ownership_fuel_refineries = {
 	}
 }
 
-# Semiconductor Manufactories
-pmg_base_semiconductor = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
-	production_methods = {
-		pm_integrated_circuits_semiconductors		#BIPOLAR TRANSISTORS
-		pm_single_chip_processors_semiconductors		#MOSFET
-		pm_microprocessors_semiconductors		#MICROPROCESSORS
-		pm_miniaturized_microprocessors_semiconductors		#EARLY GPU PROCESSORS
-		pm_specialized_microprocessors_semiconductors		#GPU PROCESSORS
-		pm_system_on_a_chip_semiconductors		#ARM SOC PROCESSORS
-		pm_sub_3_nanometer_semiconductors		#SUB 3 NANOMETER PROCESSORS
-		pm_photonic_integration_semiconductors		#PHOTONIC INTEGRATED CIRCUITS
-	}
-}
-
 pmg_automation_semiconductor = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {

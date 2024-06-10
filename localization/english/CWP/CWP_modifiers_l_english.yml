@@ -1346,13 +1346,6 @@
 
   # Rubber
 
-  # Semiconductors
-  modifier_goods_input_semiconductors_add: "@semiconductors! Semiconductors input per level"
-  modifier_goods_input_semiconductors_add_desc: "The amount of @semiconductors! Semiconductors consumed by buildings"
-
-  modifier_goods_output_semiconductors_add: "@semiconductors! Semiconductors output per level"
-  modifier_goods_output_semiconductors_add_desc: "The amount of @semiconductors! Semiconductors produced by buildings"
-
   # Steel
   modifier_goods_input_steel_mult: "Building @steel! Steel input"
   modifier_goods_input_steel_mult_desc: "A bonus or penalty to the amount of @steel! Steel consumed by buildings"

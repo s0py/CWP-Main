@@ -642,16 +642,6 @@ texticon = {
 }
 
 texticon = {
-	icon = semiconductors
-	iconsize = {
-		texture = "gfx/interface/icons/goods_icons/semiconductors.dds"
-		size = { 25 25 }
-		offset = { 0 7 }
-		fontsize = 18
-	}
-}
-
-texticon = {
 	icon = computers
 	iconsize = {
 		texture = "gfx/interface/icons/goods_icons/computers.dds"

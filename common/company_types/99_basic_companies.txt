@@ -461,7 +461,7 @@ company_basic_electronics = {
 		}
 	}
 	prosperity_modifier = {
-		building_semiconductor_manufactories_throughput_add = 0.1
+		building_computer_manufactories_throughput_add = 0.1
 	}
 }
 
@@ -609,34 +609,6 @@ company_basic_automobiles = {
 	prosperity_modifier = {
 		state_market_access_price_impact = 0.1
 	}	
-}
-
-company_basic_semiconductors = {
-	icon = "gfx/interface/icons/generic_icons/unused/lack.dds"
-	background = "gfx/interface/icons/generic_icons/unused/lack.dds"
-	uses_dynamic_naming = yes
-	dynamic_company_type_names = {
-		"dynamic_company_type_company"
-	}
-	building_types = {
-		building_semiconductor_manufactories
-	}
-	potential = {
-		always = yes
-	}
-	possible = {
-		any_scope_state = {
-			any_scope_building = {
-				OR = {
-					is_building_type = building_semiconductor_manufactories
-				}
-				level >= 3
-			}
-		}
-	}
-	prosperity_modifier = {
-		building_computer_manufactories_throughput_add = 0.1
-	}
 }
 
 company_basic_computers = {
