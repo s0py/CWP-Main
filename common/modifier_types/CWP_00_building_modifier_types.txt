@@ -189,6 +189,11 @@ goods_input_consumer_electronics_add = {
 	percent = no
 }
 
+goods_input_consumer_electronics_mult = {
+	good = no
+	percent = yes
+}
+
 goods_input_copper_add = {
 	good = no
 	percent = no
@@ -330,17 +335,6 @@ goods_input_refined_fuel_add = {
 goods_input_semiconductors_add = {
 	good = no
 	percent = no
-}
-
-goods_input_sensors_add = {
-	good = yes
-	percent = no
-}
-
-goods_input_sensors_mult = {
-	good = no
-	percent = yes
-	num_decimals = 0
 }
 
 goods_input_services_add = {
@@ -545,10 +539,6 @@ goods_output_semiconductors_add = {
 	percent = no
 }
 
-goods_output_sensors_add = {
-	good = yes
-	percent = no
-}
 
 goods_output_submarines_add = {
 	good = yes

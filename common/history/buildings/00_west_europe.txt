@@ -271,7 +271,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -2036,7 +2035,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -3055,7 +3053,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -3302,7 +3299,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -5058,7 +5054,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -5425,7 +5420,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -7292,7 +7286,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -8549,7 +8542,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -10108,7 +10100,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -10579,7 +10570,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -12073,7 +12063,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -12378,7 +12367,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -12980,7 +12968,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"
@@ -13293,7 +13280,6 @@
 				reserves = 1
 				activate_production_methods = {
 					"pm_pre_war_electronics"
-					"pm_no_sensors"
 					"pm_no_automation"
 					"pm_professional_service_industry_no"
 					"pm_no_environmental_tech"

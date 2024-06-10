@@ -409,7 +409,6 @@ building_electronics_manufactories = {
 	}
 	production_method_groups = {
 		pmg_base_electronics
-		pmg_sensors_electronics
 		pmg_automation_electronics
 		pmg_professional_service_use_engineers
 		pmg_green_tech_industry

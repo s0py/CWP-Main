@@ -2159,7 +2159,7 @@ pm_container_ships = {
 			goods_input_steel_add = 50
 			goods_input_engines_add = 35
 			goods_input_electronics_add = 5
-			goods_input_sensors_add = 1
+			goods_input_consumer_electronics_add = 1
 			# output goods
 			goods_output_cargo_ships_add = 150
 		}
@@ -2188,7 +2188,7 @@ pm_super_container_ships = {
 			goods_input_steel_add = 75
 			goods_input_engines_add = 45
 			goods_input_electronics_add = 10
-			goods_input_sensors_add = 5
+			goods_input_consumer_electronics_add = 5
 			# output goods
 			goods_output_cargo_ships_add = 200
 		}
@@ -2323,7 +2323,7 @@ pm_advanced_hull_carriers_prod = {
 			goods_input_engines_add = 285
 			goods_input_electronics_add = 225
 			goods_input_computers_add = 135
-			goods_input_sensors_add = 30
+			goods_input_consumer_electronics_add = 30
 			# output goods
 			goods_output_aircraft_carriers_add = 12
 		}
@@ -2394,7 +2394,7 @@ pm_post_war_designs = {
 			goods_input_refined_fuel_add = 20
 			goods_input_engines_add = 30
 			goods_input_electronics_add = 12
-			goods_input_sensors_add = 6
+			goods_input_consumer_electronics_add = 6
 			# output goods
 			goods_output_surface_ships_add = 18
 		}
@@ -2425,7 +2425,7 @@ pm_modernized_designs = {
 			goods_input_refined_fuel_add = 20
 			goods_input_electronics_add = 15
 			goods_input_computers_add = 10
-			goods_input_sensors_add = 8
+			goods_input_consumer_electronics_add = 8
 			# output goods
 			goods_output_surface_ships_add = 22
 		}
@@ -2456,7 +2456,7 @@ pm_advanced_designs = {
 			goods_input_electronics_add = 30
 			goods_input_refined_fuel_add = 20
 			goods_input_computers_add = 20
-			goods_input_sensors_add = 15
+			goods_input_consumer_electronics_add = 15
 			# output goods
 			goods_output_surface_ships_add = 30
 		}
@@ -2530,7 +2530,7 @@ pm_attack_submarines = {
 			goods_input_refined_fuel_add = 25
 			goods_input_engines_add = 20
 			goods_input_electronics_add = 20
-			goods_input_sensors_add = 5
+			goods_input_consumer_electronics_add = 5
 			# output goods
 			goods_output_submarines_add = 12
 		}
@@ -2559,7 +2559,7 @@ pm_nuclear_submarines_prod = {
 			goods_input_steel_add = 45
 			goods_input_engines_add = 45
 			goods_input_electronics_add = 35
-			goods_input_sensors_add = 8
+			goods_input_consumer_electronics_add = 8
 			goods_input_computers_add = 5
 			goods_input_uranium_add = 10
 			# output goods
@@ -2593,7 +2593,7 @@ pm_advanced_mission_submarines_prod = {
 			goods_input_computers_add = 20
 			goods_input_uranium_add = 20
 			goods_input_rare_earth_elements_add = 20
-			goods_input_sensors_add = 16
+			goods_input_consumer_electronics_add = 16
 			# output goods
 			goods_output_submarines_add = 30
 		}
@@ -2868,7 +2868,7 @@ pm_2nd_gen_jet_fighters = {
 			goods_input_aluminum_add = 25
 			goods_input_refined_fuel_add = 25
 			goods_input_electronics_add = 15
-			goods_input_sensors_add = 5
+			goods_input_consumer_electronics_add = 5
 			# output goods
 			goods_output_military_aircraft_add = 45
 		}
@@ -2898,7 +2898,7 @@ pm_3rd_gen_jet_fighters = {
 			goods_input_aluminum_add = 25
 			goods_input_refined_fuel_add = 25
 			goods_input_electronics_add = 20
-			goods_input_sensors_add = 10
+			goods_input_consumer_electronics_add = 10
 			# output goods
 			goods_output_military_aircraft_add = 55
 		}
@@ -2928,7 +2928,7 @@ pm_4th_gen_jet_fighters = {
 			goods_input_aluminum_add = 30
 			goods_input_refined_fuel_add = 30
 			goods_input_electronics_add = 30
-			goods_input_sensors_add = 15
+			goods_input_consumer_electronics_add = 15
 			# output goods
 			goods_output_military_aircraft_add = 85
 		}
@@ -2958,7 +2958,7 @@ pm_45th_gen_jet_fighters = {
 			goods_input_aluminum_add = 30
 			goods_input_refined_fuel_add = 30
 			goods_input_electronics_add = 35
-			goods_input_sensors_add = 20
+			goods_input_consumer_electronics_add = 20
 			# output goods
 			goods_output_military_aircraft_add = 85
 		}
@@ -2988,7 +2988,7 @@ pm_5th_gen_jet_fighters = {
 			goods_input_aluminum_add = 30
 			goods_input_refined_fuel_add = 30
 			goods_input_electronics_add = 40
-			goods_input_sensors_add = 35
+			goods_input_consumer_electronics_add = 35
 			# output goods
 			goods_output_military_aircraft_add = 110
 		}
@@ -3018,7 +3018,7 @@ pm_6th_gen_jet_fighters = {
 			goods_input_aluminum_add = 35
 			goods_input_refined_fuel_add = 35
 			goods_input_electronics_add = 50
-			goods_input_sensors_add = 45
+			goods_input_consumer_electronics_add = 45
 			# output goods
 			goods_output_military_aircraft_add = 135
 		}
@@ -3048,7 +3048,7 @@ pm_7th_gen_jet_fighters = {
 			goods_input_aluminum_add = 40
 			goods_input_refined_fuel_add = 40
 			goods_input_electronics_add = 65
-			goods_input_sensors_add = 60
+			goods_input_consumer_electronics_add = 60
 			# output goods
 			goods_output_military_aircraft_add = 165
 		}
@@ -3192,154 +3192,6 @@ pm_multilayer_surface_boards = {
 		}
 	}
 }
-
-## Sensors
-pm_no_sensors = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base1.dds"	# disabled sensors.  Think radar, sonar, etc.
-}
-
-pm_sensor_production_1 = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base1.dds"	# basic sensors
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-	unlocking_technologies = {
-		monopulse_radar
-	}
-	unlocking_production_methods = {
-		pm_pre_war_electronics
-		pm_bipolar_transistors
-		pm_circuit_integrated_electronics
-		pm_small_surface_mount_parts
-		pm_multilayer_surface_boards
-	}
-	building_modifiers = {
-		workforce_scaled = {
-			# profit = 1600
-			goods_input_glass_add = 5
-			goods_output_electronics_add = -5
-			goods_output_sensors_add = 5
-		}
-		level_scaled = {
-			building_employment_engineers_add = 2000
-		}
-	}
-}
-
-pm_sensor_production_2 = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base1.dds"	# advanced sensors
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-	unlocking_technologies = {
-		phased_array_radar
-	}
-	unlocking_production_methods = {
-		pm_circuit_integrated_electronics
-		pm_small_surface_mount_parts
-		pm_multilayer_surface_boards
-	}
-	building_modifiers = {
-		workforce_scaled = {
-			# profit = 1600
-			goods_input_electricity_add = 5
-			goods_input_glass_add = 10
-			goods_output_electronics_add = -10
-			goods_output_sensors_add = 10
-		}
-		level_scaled = {
-			building_employment_engineers_add = 2000
-		}
-	}
-}
-
-pm_sensor_production_3 = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base1.dds"	# advanced^2 sensors
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-	unlocking_technologies = {
-		synthetic_aperture_radar
-	}
-	unlocking_production_methods = {
-		pm_small_surface_mount_parts
-		pm_multilayer_surface_boards
-	}
-	building_modifiers = {
-		workforce_scaled = {
-			# profit = 1600
-			goods_input_electricity_add = 5
-			goods_input_glass_add = 15
-			goods_output_electronics_add = -15
-			goods_output_sensors_add = 15			# x 60 = 3000
-		}
-		level_scaled = {
-			building_employment_engineers_add = 2000
-		}
-	}
-}
-
-pm_sensor_production_4 = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base1.dds"	# Look, we were real tired when we came up with these.  They get more futurey.
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-	unlocking_technologies = {
-		sensors_tech
-	}
-	unlocking_production_methods = {
-		pm_multilayer_surface_boards
-		pm_small_surface_mount_parts
-	}
-	building_modifiers = {
-		workforce_scaled = {
-			# profit = 1600
-			goods_input_electricity_add = 5
-			goods_input_glass_add = 20
-			goods_output_electronics_add = -20
-			goods_output_sensors_add = 20			# x 60 = 3000
-		}
-		level_scaled = {
-			building_employment_engineers_add = 2000
-		}
-	}
-}
-
-pm_sensor_production_5 = {
-	texture = "gfx/interface/icons/production_method_icons/unused/base1.dds"	# EXXXXTRA Futurey
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
-	unlocking_technologies = {
-		ai_detection_profiling
-	}
-	unlocking_production_methods = {
-		pm_multilayer_surface_boards
-	}
-	building_modifiers = {
-		workforce_scaled = {
-			# profit = 1600
-			goods_input_electricity_add = 5
-			goods_input_glass_add = 25
-			goods_output_electronics_add = -25
-			goods_output_sensors_add = 25			# x 60 = 3000
-		}
-		level_scaled = {
-			building_employment_engineers_add = 2000
-		}
-	}
-}
-
 ############# Small Arms Manufactories #################
 ## Base Small Arms PMG
 pm_semi_automatic_rifles = {
@@ -3563,7 +3415,7 @@ pm_guided_missile_launchers = {
 			# input goods
 			goods_input_steel_add = 45
 			goods_input_refined_fuel_add = 15
-			goods_input_sensors_add = 5
+			goods_input_consumer_electronics_add = 5
 			goods_input_electronics_add = 10
 			# output goods
 			goods_output_artillery_add = 100
@@ -4313,7 +4165,7 @@ pm_early_missile_production = {
 			goods_input_ammunition_add = 15
 			goods_input_aluminum_add = 5
 			goods_input_refined_fuel_add = 5
-			goods_input_sensors_add = 2
+			goods_input_consumer_electronics_add = 2
 			goods_input_electronics_add = 5
 			#output
 			goods_output_missiles_add = 15
@@ -4339,7 +4191,7 @@ pm_remote_guided_missile_production = {
 			goods_input_ammunition_add = 30
 			goods_input_aluminum_add = 5
 			goods_input_refined_fuel_add = 5
-			goods_input_sensors_add = 5
+			goods_input_consumer_electronics_add = 5
 			goods_input_electronics_add = 10
 			#output
 			goods_output_missiles_add = 25
@@ -4365,7 +4217,7 @@ pm_internally_missile_production = {
 			goods_input_ammunition_add = 40
 			goods_input_aluminum_add = 10
 			goods_input_refined_fuel_add = 10
-			goods_input_sensors_add = 10
+			goods_input_consumer_electronics_add = 10
 			goods_input_electronics_add = 15
 			#output
 			goods_output_missiles_add = 40
@@ -4391,7 +4243,7 @@ pm_passive_tracking_missile_production = {
 			goods_input_ammunition_add = 60
 			goods_input_aluminum_add = 10
 			goods_input_refined_fuel_add = 10
-			goods_input_sensors_add = 15
+			goods_input_consumer_electronics_add = 15
 			goods_input_electronics_add = 20
 			#output
 			goods_output_missiles_add = 55
@@ -4417,7 +4269,7 @@ pm_terrain_guidance_missile_production = {
 			goods_input_ammunition_add = 70
 			goods_input_aluminum_add = 15
 			goods_input_refined_fuel_add = 10
-			goods_input_sensors_add = 20
+			goods_input_consumer_electronics_add = 20
 			goods_input_electronics_add = 20
 			#output
 			goods_output_missiles_add = 70
@@ -4443,7 +4295,7 @@ pm_retransmission_guidance_missile_production = {
 			goods_input_ammunition_add = 90
 			goods_input_aluminum_add = 20
 			goods_input_refined_fuel_add = 15
-			goods_input_sensors_add = 25
+			goods_input_consumer_electronics_add = 25
 			goods_input_electronics_add = 25
 			#output
 			goods_output_missiles_add = 90
