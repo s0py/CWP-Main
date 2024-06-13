@@ -1,5 +1,87 @@
 ﻿namespace = ee_migration
-# South America Migration events
+# Eastern Europe Migration events
+
+ee_migration.1 = {
+	type = country_event
+	placement = scope:german_exile_state
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	event_image = {
+		video = "europenorthamerica_native_american"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	title = ee_migration.1.t
+	desc = ee_migration.1.d
+	flavor = ee_migration.1.f
+
+	duration = 3
+	
+	trigger = {
+		any_scope_state = {
+			has_modifier = ongoing_exile
+		}
+		has_journal_entry = je_german_resettlement
+		any_scope_state = {
+			any_scope_pop = {
+				culture = cu:north_german
+			}
+		}
+		NOT = {
+			has_variable = exile_event_happened
+		}
+		this = {
+			is_ai = no
+		}
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_modifier = ongoing_exile
+			}
+			save_scope_as = german_exile_state
+		}
+		ROOT = {
+			set_variable = {
+				name = exile_event_happened
+				months = 2
+			}
+		}
+	}
+	
+	option = { # use force
+		name = ee_migration.1.a
+		default_option = yes
+		scope:german_exile_state = {
+			kill_population_percent_in_state = {
+				percent = 0.05
+				culture = cu:north_german
+			}
+		}
+		c:DDR = {
+			change_relations = {
+				country = c:POL
+				value = -10
+			}
+		}
+	}
+	option = { # pay their way
+		name = ee_migration.1.b
+		scope:german_exile_state = {
+			kill_population_percent_in_state = {
+				percent = 0.025
+				culture = cu:north_german
+			}
+		}
+		add_modifier = {
+			name = USA_paying_removal_costs
+			multiplier = money_amount_multiplier_very_small
+			months = 1
+		}
+	}
+}
 
 # SA migration button event
 sa_migration.1 = {

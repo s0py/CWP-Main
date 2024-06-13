@@ -51,6 +51,9 @@
 	}
 
 	on_weekly_pulse = {
+		events = {
+			ee_migration.1
+		}
 		effect = {
 			random_scope_state = {
 				limit = {
@@ -132,11 +135,19 @@
 	}
 
 	invalid = {
-		has_variable = cancel_sa_migration_var
+		always = no
 	}
 
 	scripted_button = german_migration_button
 	scripted_button = german_expulsion_10_button
+	scripted_button = german_expulsion_pomerania_button
+	scripted_button = german_expulsion_pomerania_remove_homeland_button
+	scripted_button = german_expulsion_gr_poland_button
+	scripted_button = german_expulsion_gr_poland_remove_homeland_button
+	scripted_button = german_expulsion_silesia_button
+	scripted_button = german_expulsion_silesia_remove_homeland_button
+	scripted_button = german_expulsion_pomemasuria_button
+	scripted_button = german_expulsion_pomemasuria_remove_homeland_button
 
 	weight = 100
 
