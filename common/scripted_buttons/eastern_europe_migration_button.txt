@@ -572,9 +572,14 @@ german_expulsion_pomerania_remove_homeland_button = {
 				target = cu:north_german
 				value < 0.05
 			}
-			any_scope_culture = {
-				this = cu:north_german 
-				has_homeland = PREV
+		}
+		custom_tooltip = {
+			text = has_german_homeland_tt
+			s:STATE_WEST_POMERANIA.region_state:POL = {
+				any_scope_culture = {
+					this = cu:north_german 
+					has_homeland = PREV
+				}
 			}
 		}
 		NOT = {
@@ -632,9 +637,14 @@ german_expulsion_gr_poland_remove_homeland_button = {
 				target = cu:north_german
 				value < 0.05
 			}
-			any_scope_culture = {
-				this = cu:north_german 
-				has_homeland = PREV
+		}
+		custom_tooltip = {
+			text = has_german_homeland_tt
+			s:STATE_GREATER_POLAND.region_state:POL = {
+				any_scope_culture = {
+					this = cu:north_german 
+					has_homeland = PREV
+				}
 			}
 		}
 		NOT = {
@@ -692,9 +702,14 @@ german_expulsion_silesia_remove_homeland_button = {
 				target = cu:north_german
 				value < 0.05
 			}
-			any_scope_culture = {
-				this = cu:north_german 
-				has_homeland = PREV
+		}
+		custom_tooltip = {
+			text = has_german_homeland_tt
+			s:STATE_SILESIA.region_state:POL = {
+				any_scope_culture = {
+					this = cu:north_german 
+					has_homeland = PREV
+				}
 			}
 		}
 		NOT = {
@@ -752,9 +767,14 @@ german_expulsion_pomemasuria_remove_homeland_button = {
 				target = cu:north_german
 				value < 0.05
 			}
-			any_scope_culture = {
-				this = cu:north_german 
-				has_homeland = PREV
+		}
+		custom_tooltip = {
+			text = has_german_homeland_tt
+			s:STATE_POMEMASURIA.region_state:POL = {
+				any_scope_culture = {
+					this = cu:north_german 
+					has_homeland = PREV
+				}
 			}
 		}
 		NOT = {

@@ -18,17 +18,19 @@
   german_expulsion_pomemasuria_button: "Exile Masurian Germans"
   german_expulsion_pomemasuria_button_desc: "We will offer assistance to the Germans in leaving Masuria"
 
-  german_expulsion_pomerania_remove_homeland_button: "Finalize Exiling Germans from Pomerania"
+  german_expulsion_pomerania_remove_homeland_button: "Remove Pomeranian Homelands"
 	german_expulsion_pomerania_remove_homeland_button_desc: "We will remove any resemblance of a German homeland from Pomerania"
 
-  german_expulsion_gr_poland_remove_homeland_button: "Finalize Exiling Germans from Greater Poland"
+  german_expulsion_gr_poland_remove_homeland_button: "Remove Greater Polish Homelands"
   german_expulsion_gr_poland_remove_homeland_button_desc: "We will remove any resemblance of a German homeland from Greater Poland"
   
-  german_expulsion_silesia_remove_homeland_button: "Finalize Exiling Germans from Silesia"
+  german_expulsion_silesia_remove_homeland_button: "Remove Silesian Homelands"
   german_expulsion_silesia_remove_homeland_button_desc: "We will remove any resemblance of a German homeland from Silesia"
   
-  german_expulsion_pomemasuria_remove_homeland_button: "Finalize Exiling Germans from Masuria"
+  german_expulsion_pomemasuria_remove_homeland_button: "Remove Masurian Homelands"
   german_expulsion_pomemasuria_remove_homeland_button_desc: "We will remove any resemblance of a German homeland from Masuria"
+
+  has_german_homeland_tt: "The [GetCulture('north_german').GetName] people consider this state their [concept_homeland]"
 
   mass_migration_button_germany_tt: "Creates a [concept_migration_target], with Germany as its' destination"
 
