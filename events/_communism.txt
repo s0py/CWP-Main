@@ -41,13 +41,13 @@ communism.1 = {
 		name = communism.1.a
 		trigger = {
 			NOT = {
-				has_law = law_type:law_wage_subsidies
+				has_law = law_type:law_income_supplementation
 			}
 			NOT = {
-				has_law = law_type:law_old_age_pension
+				has_law = law_type:law_income_supplementation
 			}
 		}
-		activate_law = law_type:law_wage_subsidies
+		activate_law = law_type:law_income_supplementation
 		if = {
 			limit = {
 				any_interest_group = {
@@ -62,13 +62,13 @@ communism.1 = {
 		name = communism.1.c
 		trigger = {
 			NOT = {
-				has_law = law_type:law_regulatory_bodies
+				has_law = law_type:law_workplace_safety_standards
 			}
 			NOT = {
-				has_law = law_type:law_worker_protections
+				has_law = law_type:law_wrongful_dismissal_protections
 			}
 		}
-		activate_law = law_type:law_regulatory_bodies
+		activate_law = law_type:law_workplace_safety_standards
 		if = {
 			limit = {
 				any_interest_group = {

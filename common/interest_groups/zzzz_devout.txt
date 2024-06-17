@@ -70,7 +70,7 @@ ig_devout = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_state_religion
+					has_law = law_type:law_religious_nationalism
 				}
 			}
 			multiply = {
@@ -81,7 +81,7 @@ ig_devout = {
 		else_if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_total_separation
+					has_law = law_type:law_church_disestablishment
 				}
 			}
 			multiply = {
@@ -147,7 +147,7 @@ ig_devout = {
 				limit = {
 					is_pop_type = clergy
 					owner = {
-						has_law = law_type:law_total_separation
+						has_law = law_type:law_church_disestablishment
 					}
 				}
 				value = 1.5

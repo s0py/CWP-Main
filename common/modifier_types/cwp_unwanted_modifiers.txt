@@ -141,7 +141,7 @@ state_pop_support_law_proportional_taxation_add = {
 	percent = yes
 }
 
-state_pop_support_law_no_migration_controls_mult = {
+state_pop_support_law_open_borders_mult = {
 	neutral = yes
 	percent = yes
 }

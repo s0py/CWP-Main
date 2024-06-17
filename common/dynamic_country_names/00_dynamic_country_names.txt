@@ -1759,7 +1759,7 @@ PAN = {
 			exists = scope:actor
 			coa_def_monarchy_flag_trigger = yes
 			scope:actor = {
-				has_law = law_type:law_state_religion
+				has_law = law_type:law_religious_nationalism
 			}
 		}
 	}

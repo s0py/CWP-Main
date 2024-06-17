@@ -319,7 +319,7 @@ law_theocracy = {
 	progressiveness = -50
 
 	disallowing_laws = {
-		law_total_separation 
+		law_church_disestablishment 
 	}
 
 	modifier = {

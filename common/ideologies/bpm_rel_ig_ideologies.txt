@@ -5,8 +5,8 @@ ideology_rel_atheist = {
 	priority = 1000
     lawgroup_church_and_state = {
 		law_state_religion = strongly_disapprove
-		law_freedom_of_conscience = disapprove
-		law_total_separation = approve
+		law_church_disestablishment = disapprove
+		law_church_disestablishment = approve
 		law_state_atheism = strongly_approve
 	}
 }
@@ -16,8 +16,8 @@ ideology_rel_radical_secularist = {
 	priority = 1000
     lawgroup_church_and_state = {
 		law_state_religion = strongly_disapprove
-		law_freedom_of_conscience = neutral
-		law_total_separation = approve
+		law_church_disestablishment = neutral
+		law_church_disestablishment = approve
 		law_state_atheism = neutral
 	}
 }
@@ -27,8 +27,8 @@ ideology_rel_secularist = {
 	priority = 1000
     lawgroup_church_and_state = {
 		law_state_religion = disapprove
-		law_freedom_of_conscience = approve
-		law_total_separation = approve
+		law_church_disestablishment = approve
+		law_church_disestablishment = approve
 		law_state_atheism = disapprove
 	}
 }
@@ -38,8 +38,8 @@ ideology_rel_moralist = {
 	priority = 1000
     lawgroup_church_and_state = {
 		law_state_religion = approve
-		law_freedom_of_conscience = approve
-		law_total_separation = disapprove
+		law_church_disestablishment = approve
+		law_church_disestablishment = disapprove
 		law_state_atheism = strongly_disapprove
 	}
 }
@@ -49,8 +49,8 @@ ideology_rel_radical_moralist = {
 	priority = 1000
     lawgroup_church_and_state = {
 		law_state_religion = strongly_approve
-		law_freedom_of_conscience = neutral
-		law_total_separation = strongly_disapprove
+		law_church_disestablishment = neutral
+		law_church_disestablishment = strongly_disapprove
 		law_state_atheism = strongly_disapprove
 	}
 

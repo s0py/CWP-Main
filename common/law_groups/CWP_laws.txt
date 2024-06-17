@@ -1,0 +1,263 @@
+﻿# base_enactment_days = the length of the enactment cycle (in days) prior to taking Legitimacy into account. If not specified, this value will be dictated by the LAW_ENACTMENT_DEFAULT_BASE_DAYS define. If specified, this overrides the define.
+# enactment_approval_mult = multiplier to the approval effects changing this law has on IGs, default 1.0
+# enable = {} trigger for whether laws in this group should be possible at all
+
+# Governance Principles
+lawgroup_governance_principles = {
+	law_group_category = power_structure
+	base_enactment_days = 200
+	enactment_approval_mult = 3
+	affected_by_regime_change = yes
+	progressive_movement_chance = 1
+	regressive_movement_chance = 0.25
+	change_allowed_trigger = {
+		NAND = {
+			is_subject = yes
+			OR = {
+				is_subject_type = subject_type_personal_union
+				#has_government_type = gov_chartered_company
+			}
+		}
+	}
+}
+
+# Distribution of Power
+lawgroup_distribution_of_power = {
+	law_group_category = power_structure
+	base_enactment_days = 150
+	affected_by_regime_change = yes
+	enactment_approval_mult = 1.5
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.25
+}
+
+# Citizenship
+lawgroup_citizenship = {
+	law_group_category = power_structure
+	affected_by_regime_change = yes
+	progressive_movement_chance = 2
+	regressive_movement_chance = 0.25
+}
+
+# Church and State
+lawgroup_church_and_state = {
+	law_group_category = power_structure
+	affected_by_regime_change = yes
+	progressive_movement_chance = 2
+	regressive_movement_chance = 0.25
+}
+
+# Bureaucracy
+lawgroup_bureaucracy = {
+	law_group_category = power_structure
+	affected_by_regime_change = yes
+	progressive_movement_chance = 1.5
+	regressive_movement_chance = 0.05
+}
+
+# Judiciary
+lawgroup_criminal_justice = {
+	law_group_category = power_structure
+	affected_by_regime_change = yes
+	progressive_movement_chance = 2
+	regressive_movement_chance = 0.25
+}
+
+# Policing
+lawgroup_policing = {
+	law_group_category = power_structure
+	affected_by_regime_change = yes
+	progressive_movement_chance = 1.5
+	regressive_movement_chance = 0.1
+}
+
+# Army Model
+lawgroup_army_model = {
+	law_group_category = power_structure
+	progressive_movement_chance = 1.5
+	regressive_movement_chance = 0.1
+}
+
+# Internal Security
+lawgroup_internal_security = {
+	law_group_category = power_structure
+	affected_by_regime_change = yes
+	progressive_movement_chance = 1.5
+	regressive_movement_chance = 0.1
+}
+
+# Officer Composition
+lawgroup_officers = {
+	law_group_category = power_structure
+	affected_by_regime_change = yes
+	progressive_movement_chance = 1.5
+	regressive_movement_chance = 0.1
+}
+
+# Centralization
+lawgroup_centralization = {
+	law_group_category = power_structure
+	affected_by_regime_change = yes
+	base_enactment_days = 150
+	enactment_approval_mult = 2
+	progressive_movement_chance = 2
+	regressive_movement_chance = 0.25
+}
+
+# Economic System
+lawgroup_economic_system = {
+	law_group_category = economy
+	base_enactment_days = 150
+	progressive_movement_chance = 3
+	regressive_movement_chance = 0.15
+	change_allowed_trigger = {
+		NOT = {
+			has_modifier = forced_deindustrialization
+		}
+	}
+}
+
+# Trade Policy
+lawgroup_trade_policy = {
+	law_group_category = economy
+	progressive_movement_chance = 1.5
+	regressive_movement_chance = 0.15
+	change_allowed_trigger = {
+		NOT = {
+			has_modifier = forced_market_opening
+		}
+	}
+}
+
+# Monetary Policy
+lawgroup_monetary_policy = {
+	law_group_category = economy
+	progressive_movement_chance = 0.25
+	regressive_movement_chance = 0.25
+	affected_by_regime_change = yes
+}
+
+# Taxation
+lawgroup_taxation = {
+	law_group_category = economy
+	progressive_movement_chance = 1.5
+	regressive_movement_chance = 0.15
+}
+
+# Land Reform
+lawgroup_land_reform = {
+	law_group_category = economy
+	enactment_approval_mult = 1.5	# people REALLY care about land reform
+	progressive_movement_chance = 3
+	regressive_movement_chance = 1
+}
+
+# Education System
+lawgroup_education_system = {
+	law_group_category = economy
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.25
+}
+
+# Health System
+lawgroup_health_system = {
+	law_group_category = economy
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.25
+}
+
+# Weapons of Mass Destruction
+lawgroup_wmds = {
+	law_group_category = economy
+	progressive_movement_chance = 0.25
+	regressive_movement_chance = 0.25
+	affected_by_regime_change = yes
+}
+
+# Labor Unions
+lawgroup_labor_unions = {
+	law_group_category = economy
+	affected_by_regime_change = yes
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.5
+}
+
+# Free Speech
+lawgroup_free_speech = {
+	law_group_category = human_rights
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.25
+}
+
+# Media and Propaganda
+lawgroup_media_and_propaganda = {
+	law_group_category = human_rights
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.25
+}
+
+# Labor Rights
+lawgroup_labor_rights = {
+	law_group_category = human_rights
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.25
+}
+
+# Children's Rights
+lawgroup_childrens_rights = {
+	law_group_category = human_rights
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.25
+}
+
+# Rights of Women
+lawgroup_rights_of_women = {
+	law_group_category = human_rights
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.25
+}
+
+# Reproductive Rights
+lawgroup_reproductive_rights = {
+	law_group_category = human_rights
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.25
+}
+
+# Welfare
+lawgroup_welfare = {
+	law_group_category = human_rights
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.25
+}
+
+# Environmental Regulations
+lawgroup_environmental_regulations = {
+	law_group_category = human_rights
+	progressive_movement_chance = 0.25
+	regressive_movement_chance = 0.2
+	affected_by_regime_change = yes
+}
+
+# Migration
+lawgroup_migration = {
+	law_group_category = human_rights
+	progressive_movement_chance = 1
+	regressive_movement_chance = 0.255
+}
+
+# Party Laws
+lawgroup_party_laws = {
+	law_group_category = human_rights
+	affected_by_regime_change = yes
+	progressive_movement_chance = 1.5
+	regressive_movement_chance = 0.1
+}
+
+# Work Time Regulations
+lawgroup_work_time_regulations = {
+	law_group_category = human_rights
+	affected_by_regime_change = yes
+	progressive_movement_chance = 2.5
+	regressive_movement_chance = 0.1
+}

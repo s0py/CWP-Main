@@ -137,7 +137,7 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 		desc = "BPM_VALUE_FROM_LAW_STATE_RELIGION"
 		if = {
 			limit = {
-				has_law = law_type:law_state_religion
+				has_law = law_type:law_religious_nationalism
 			}
 			add = 5
 		}
@@ -176,7 +176,7 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 		desc = "BPM_VALUE_FROM_LAW_NO_WELFARE"
 		if = {
 			limit = {
-				has_law = law_type:law_no_social_security
+				has_law = law_type:law_no_welfare
 			}
 			add = 5
 		}
@@ -264,7 +264,7 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 		desc = "BPM_VALUE_FROM_LAW_NO_WORKERS_RIGHTS"
 		if = {
 			limit = {
-				has_law = law_type:law_no_workers_rights
+				has_law = law_type:law_no_workers_protections
 			}
 			add = 5
 		}
@@ -1214,7 +1214,7 @@ bpm_je_general_strike_power = {
 		# Labor laws
 		if = {
 			limit = {
-				has_law = law_type:law_regulatory_bodies
+				has_law = law_type:law_workplace_safety_standards
 			}
 			subtract = {
 				desc = "[GetLawType('law_regulatory_bodies').GetName] [concept_investment_level]"
@@ -1224,10 +1224,10 @@ bpm_je_general_strike_power = {
 		}
 		else_if = {
 			limit = {
-				has_law = law_type:law_worker_protections
+				has_law = law_type:law_wrongful_dismissal_protections
 			}
 			subtract = {
-				desc = "[GetLawType('law_worker_protections').GetName] [concept_investment_level]"
+				desc = "[GetLawType('law_wrongful_dismissal_protections').GetName] [concept_investment_level]"
 				value = institution:institution_workplace_safety.investment
 				multiply = 2
 			}

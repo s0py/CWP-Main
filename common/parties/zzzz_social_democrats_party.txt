@@ -703,9 +703,9 @@ social_democrat_party = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_no_workers_rights
+						has_law = law_type:law_no_workers_protections
 						has_law = law_type:law_child_labor_allowed
-						has_law = law_type:law_no_social_security
+						has_law = law_type:law_no_welfare
 					}
 					NOT = {
 						has_technology_researched = pre_war_ideological_thought

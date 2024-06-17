@@ -87,8 +87,8 @@ liberalism.1 = {
 					has_law = law_type:law_protected_speech
 				}
 				OR = {
-					has_law = law_type:law_freedom_of_conscience
-					has_law = law_type:law_total_separation
+					has_law = law_type:law_church_disestablishment
+					has_law = law_type:law_church_disestablishment
 				}
 				any_scope_building = {
 					is_building_type = building_university
@@ -153,8 +153,8 @@ liberalism.1 = {
 					has_law = law_type:law_protected_speech
 				}
 				OR = {
-					has_law = law_type:law_freedom_of_conscience
-					has_law = law_type:law_total_separation
+					has_law = law_type:law_church_disestablishment
+					has_law = law_type:law_church_disestablishment
 				}
 				any_scope_building = {
 					is_building_type = building_university
@@ -229,8 +229,8 @@ liberalism.1 = {
 					has_law = law_type:law_protected_speech
 				}
 				OR = {
-					has_law = law_type:law_freedom_of_conscience
-					has_law = law_type:law_total_separation
+					has_law = law_type:law_church_disestablishment
+					has_law = law_type:law_church_disestablishment
 				}
 				any_scope_building = {
 					is_building_type = building_university
@@ -318,11 +318,11 @@ liberalism.3 = {
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_freedom_of_conscience
-					has_law = law_type:law_total_separation
+					has_law = law_type:law_church_disestablishment
+					has_law = law_type:law_church_disestablishment
 				}
 				has_law = law_type:law_multicultural
-				has_law = law_type:law_no_migration_controls
+				has_law = law_type:law_open_borders
 				average_sol >= 12
 			}
 			trigger_event = {
@@ -350,11 +350,11 @@ liberalism.3 = {
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_freedom_of_conscience
-					has_law = law_type:law_total_separation
+					has_law = law_type:law_church_disestablishment
+					has_law = law_type:law_church_disestablishment
 				}
 				has_law = law_type:law_multicultural
-				has_law = law_type:law_no_migration_controls
+				has_law = law_type:law_open_borders
 				average_sol >= 12
 			}
 			trigger_event = {

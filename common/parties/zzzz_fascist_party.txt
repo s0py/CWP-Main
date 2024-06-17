@@ -426,11 +426,11 @@
 			# rural folk will ally with anti-migration faction
 			limit = {
 				law_stance = {
-					law = law_type:law_no_migration_controls
+					law = law_type:law_open_borders
 					value < disapprove
 				}
 				owner = {
-					has_law = law_type:law_no_migration_controls
+					has_law = law_type:law_open_borders
 				}
 			}
 			add = {

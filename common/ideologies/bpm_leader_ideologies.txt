@@ -118,8 +118,8 @@ ideology_traditionalist = {
 	}
 	lawgroup_church_and_state = {
 		law_state_religion = approve
-		law_freedom_of_conscience = disapprove
-		law_total_separation = strongly_disapprove
+		law_church_disestablishment = disapprove
+		law_church_disestablishment = strongly_disapprove
 		law_state_atheism = strongly_disapprove
 	}
 	possible = {
@@ -129,8 +129,8 @@ ideology_traditionalist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law = law_type:law_no_womens_rights
-				has_law = law_type:law_state_religion
+				#has_law = law_type:law_legal_guardianship
+				has_law = law_type:law_religious_nationalism
 				NOT = {
 					has_law = law_type:law_multicultural
 				}
@@ -187,8 +187,8 @@ ideology_atheist = {
 	}
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_disapprove
-		law_freedom_of_conscience = disapprove
-		law_total_separation = approve
+		law_church_disestablishment = disapprove
+		law_church_disestablishment = approve
 		law_state_atheism = strongly_approve
 	}
 	possible = {
@@ -748,7 +748,7 @@ ideology_reformer = {
 			has_role = agitator
 			owner = {
 				has_law = law_type:law_cultural_exclusion
-				has_law = law_type:law_compulsory_primary_school
+				#has_law = law_type:law_compulsory_education
 				NOT = {
 					bpm_country_has_unfree_labor = yes
 				}
@@ -1362,7 +1362,7 @@ ideology_socialist_leader = {
 		law_syndicalism = neutral
 	}
 	lawgroup_labor_rights = {
-		law_worker_protections = strongly_approve
+		law_wrongful_dismissal_protections = strongly_approve
 		law_regulatory_bodies = neutral
 		law_no_workers_rights = strongly_disapprove
 	}
@@ -1376,7 +1376,7 @@ ideology_socialist_leader = {
 			has_role = agitator
 			owner = {
 				has_law = law_type:law_socialist_republic
-				has_law = law_type:law_worker_protections
+				has_law = law_type:law_wrongful_dismissal_protections
 				has_law = law_type:law_direct_democracy
 				has_law = law_type:law_all_labor_unions_allowed
 			}
@@ -1493,7 +1493,7 @@ ideology_syndicalist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_communist.dds"	# TODO: Sydnicalist icon
 	character_ideology = yes
 	lawgroup_labor_rights = {
-		law_worker_protections = strongly_approve
+		law_wrongful_dismissal_protections = strongly_approve
 		law_regulatory_bodies = neutral
 		law_no_workers_rights = strongly_disapprove
 	}
@@ -1518,7 +1518,7 @@ ideology_syndicalist = {
 	lawgroup_welfare = {
 		law_poor_laws = strongly_disapprove
 		law_no_social_security = strongly_disapprove
-		law_wage_subsidies = approve
+		law_income_supplementation = approve
 		law_old_age_pension = strongly_approve
 	}
 	lawgroup_governance_principles = {
@@ -1545,7 +1545,7 @@ ideology_syndicalist = {
 			has_role = agitator
 			owner = {
 				has_law = law_type:law_socialist_republic
-				has_law = law_type:law_worker_protections
+				has_law = law_type:law_wrongful_dismissal_protections
 				has_law = law_type:law_direct_democracy
 				has_law = law_type:law_syndicalism
 			}
@@ -1694,7 +1694,7 @@ ideology_social_democrat = {
 	lawgroup_labor_rights = {
 		law_no_workers_rights = strongly_disapprove
 		law_regulatory_bodies = approve
-		law_worker_protections = strongly_approve
+		law_wrongful_dismissal_protections = strongly_approve
 	}
 	lawgroup_childrens_rights = {
 		law_child_labor_allowed = strongly_disapprove
@@ -1704,7 +1704,7 @@ ideology_social_democrat = {
 	lawgroup_welfare = {
 		law_no_social_security = strongly_disapprove
 		law_poor_laws = disapprove
-		law_wage_subsidies = approve
+		law_income_supplementation = approve
 		law_old_age_pension = strongly_approve
 	}
 	lawgroup_labor_unions = {
@@ -1831,7 +1831,7 @@ ideology_communist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_communist.dds"
 	character_ideology = yes
 	lawgroup_labor_rights = {
-		law_worker_protections = strongly_approve
+		law_wrongful_dismissal_protections = strongly_approve
 		law_regulatory_bodies = neutral
 		law_no_workers_rights = strongly_disapprove
 	}
@@ -1851,8 +1851,8 @@ ideology_communist = {
 	}
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_disapprove
-		law_freedom_of_conscience = neutral
-		law_total_separation = approve
+		law_church_disestablishment = neutral
+		law_church_disestablishment = approve
 		law_state_atheism = strongly_approve
 	}
 	lawgroup_economic_system = {
@@ -1881,7 +1881,7 @@ ideology_communist = {
 			has_role = agitator
 			owner = {
 				has_law = law_type:law_socialist_republic
-				has_law = law_type:law_worker_protections
+				has_law = law_type:law_wrongful_dismissal_protections
 				has_law = law_type:law_state_atheism
 				bpm_country_laws_has_socialist_economics = yes
 			}
@@ -3126,9 +3126,9 @@ ideology_ethno_nationalist = {
 		law_multicultural = strongly_disapprove
 	}
 	lawgroup_migration = {
-		law_migration_controls = strongly_approve
+		law_selective_immigration = strongly_approve
 		law_closed_borders = approve
-		law_no_migration_controls = disapprove
+		law_open_borders = disapprove
 	}
 	possible = {
 		scope:interest_group = {
@@ -3142,7 +3142,7 @@ ideology_ethno_nationalist = {
 			has_role = agitator
 			owner = {
 				has_law = law_type:law_ethnostate
-				has_law = law_type:law_migration_controls
+				has_law = law_type:law_selective_immigration
 			}
 		}
 		scope:interest_group = {
@@ -3249,8 +3249,8 @@ ideology_theocrat = {
 	character_ideology = yes
 	lawgroup_church_and_state = {
 		law_state_religion = approve
-		law_freedom_of_conscience = disapprove
-		law_total_separation = strongly_disapprove
+		law_church_disestablishment = disapprove
+		law_church_disestablishment = strongly_disapprove
 		law_state_atheism = strongly_disapprove
 	}
 	lawgroup_governance_principles = {
@@ -3323,7 +3323,7 @@ ideology_theocrat = {
 				owner = {
 					bpm_country_is_republic = yes
 					NOT = {
-						has_law = law_type:law_state_religion
+						has_law = law_type:law_religious_nationalism
 					}
 				}
 			}
@@ -3347,7 +3347,7 @@ ideology_theocrat = {
 				owner = {
 					bpm_country_is_republic = yes
 					NOT = {
-						has_law = law_type:law_state_religion
+						has_law = law_type:law_religious_nationalism
 					}
 				}
 			}
@@ -3391,7 +3391,7 @@ ideology_market_liberal = {
 	lawgroup_labor_rights = {
 		law_no_workers_rights = approve
 		law_regulatory_bodies = disapprove
-		law_worker_protections = strongly_disapprove
+		law_wrongful_dismissal_protections = strongly_disapprove
 	}
 	lawgroup_land_reform = {
 		law_collectivized_agriculture = strongly_disapprove
@@ -3919,10 +3919,10 @@ ideology_humanitarian = {
 				NOT = {
 					bpm_country_laws_are_racist = yes
 				}
-				has_law = law_type:law_guaranteed_liberties
+				#has_law = law_type:law_guaranteed_liberties
 				has_law = law_type:law_protected_speech
 				has_law = law_type:law_womens_suffrage
-				has_law = law_type:law_compulsory_primary_school
+				#has_law = law_type:law_compulsory_education
 			}
 		}
 		scope:interest_group = {
@@ -3946,7 +3946,7 @@ ideology_humanitarian = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_guaranteed_liberties
+					#has_law = law_type:law_guaranteed_liberties
 				}
 			}
 			add = -10
@@ -3970,7 +3970,7 @@ ideology_humanitarian = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_compulsory_primary_school
+					#has_law = law_type:law_compulsory_education
 				}
 			}
 			add = -10
@@ -4013,7 +4013,7 @@ ideology_humanitarian = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_no_womens_rights
+						#has_law = law_type:law_legal_guardianship
 						has_law = law_type:law_women_own_property
 					}
 				}
@@ -4025,7 +4025,7 @@ ideology_humanitarian = {
 				owner = {
 					OR = {
 						has_law = law_type:law_restricted_child_labor
-						has_law = law_type:law_compulsory_primary_school
+						#has_law = law_type:law_compulsory_education
 					}
 				}
 			}
@@ -4114,8 +4114,8 @@ ideology_positivist = {
 	}
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_disapprove
-		law_freedom_of_conscience = disapprove
-		law_total_separation = approve
+		law_church_disestablishment = disapprove
+		law_church_disestablishment = approve
 		law_state_atheism = approve
 	}
 	lawgroup_distribution_of_power = {
@@ -4437,8 +4437,8 @@ ideology_integralist = {
 	}
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_approve
-		law_freedom_of_conscience = disapprove
-		law_total_separation = strongly_disapprove
+		law_church_disestablishment = disapprove
+		law_church_disestablishment = strongly_disapprove
 		law_state_atheism = strongly_disapprove
 	}
 	lawgroup_citizenship = {
@@ -4484,7 +4484,7 @@ ideology_integralist = {
 			owner = {
 				has_law = law_type:law_autocracy
 				has_law = law_type:law_cultural_exclusion
-				has_law = law_type:law_state_religion
+				has_law = law_type:law_religious_nationalism
 				has_law = law_type:law_militarized_police
 				has_law = law_type:law_confederated
 			}
@@ -4549,7 +4549,7 @@ ideology_integralist = {
 				owner = {
 					NOT = {
 						has_law = law_type:law_autocracy
-						has_law = law_type:law_state_religion
+						has_law = law_type:law_religious_nationalism
 					}
 				}
 				scope:interest_group = {
@@ -4567,7 +4567,7 @@ ideology_integralist = {
 				owner = {
 					NOT = {
 						has_law = law_type:law_autocracy
-						has_law = law_type:law_state_religion
+						has_law = law_type:law_religious_nationalism
 					}
 				}
 				scope:interest_group = {
@@ -4765,7 +4765,7 @@ ideology_corporatist_leader = {
 	lawgroup_labor_rights = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = approve
-		law_worker_protections = neutral
+		law_wrongful_dismissal_protections = neutral
 	}
 	lawgroup_childrens_rights = {
 		law_child_labor_allowed = disapprove
@@ -4775,7 +4775,7 @@ ideology_corporatist_leader = {
 	lawgroup_welfare = {
 		law_no_social_security = neutral
 		law_poor_laws = approve
-		law_wage_subsidies = neutral
+		law_income_supplementation = neutral
 		law_old_age_pension = disapprove
 	}
 	lawgroup_work_time_regulations = {
@@ -4807,8 +4807,8 @@ ideology_corporatist_leader = {
 					has_law = law_type:law_socialist_republic
 				}
 				has_law = law_type:law_public_schools
-				has_law = law_type:law_regulatory_bodies
-				has_law = law_type:law_compulsory_primary_school
+				has_law = law_type:law_workplace_safety_standards
+				#has_law = law_type:law_compulsory_education
 				has_law = law_type:law_state_controlled_labor_unions
 			}
 		}
@@ -4850,8 +4850,8 @@ ideology_corporatist_leader = {
 						has_law = law_type:law_socialist_republic
 					}
 					has_law = law_type:law_public_schools
-					has_law = law_type:law_regulatory_bodies
-					has_law = law_type:law_wage_subsidies
+					has_law = law_type:law_workplace_safety_standards
+					has_law = law_type:law_income_supplementation
 					has_law = law_type:law_state_controlled_labor_unions
 				}
 			}
@@ -4942,9 +4942,9 @@ ideology_humanitarian_royalist = {
 				NOT = {
 					bpm_country_laws_are_racist = yes
 				}
-				has_law = law_type:law_guaranteed_liberties
+				#has_law = law_type:law_guaranteed_liberties
 				has_law = law_type:law_womens_suffrage
-				has_law = law_type:law_compulsory_primary_school
+				#has_law = law_type:law_compulsory_education
 			}
 		}
 		scope:interest_group = {
@@ -5000,7 +5000,7 @@ ideology_humanitarian_royalist = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_compulsory_primary_school
+					#has_law = law_type:law_compulsory_education
 				}
 			}
 			add = -25
@@ -5043,7 +5043,7 @@ ideology_humanitarian_royalist = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_no_womens_rights
+						#has_law = law_type:law_legal_guardianship
 						has_law = law_type:law_women_own_property
 					}
 				}
@@ -5055,7 +5055,7 @@ ideology_humanitarian_royalist = {
 				owner = {
 					OR = {
 						has_law = law_type:law_restricted_child_labor
-						has_law = law_type:law_compulsory_primary_school
+						#has_law = law_type:law_compulsory_education
 					}
 				}
 			}
@@ -5292,8 +5292,8 @@ ideology_legitimist = {
 	}
 	lawgroup_church_and_state = {
 		law_state_religion = approve
-		law_freedom_of_conscience = disapprove
-		law_total_separation = strongly_disapprove
+		law_church_disestablishment = disapprove
+		law_church_disestablishment = strongly_disapprove
 		law_state_atheism = strongly_disapprove
 	}
 	lawgroup_free_speech = {

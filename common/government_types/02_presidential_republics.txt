@@ -53,7 +53,7 @@ gov_bhutanese_dual_system_temporal = {
 		exists = c:BHU
 		c:BHU = ROOT
 		has_law = law_type:law_presidential_republic
-		has_law = law_type:law_state_religion
+		has_law = law_type:law_religious_nationalism
 		has_voting_rights = no
 	}
 	on_government_type_change = {

@@ -12,8 +12,8 @@ ideology_cit_internationalist = {
 	}
 
     lawgroup_migration = {
-		law_no_migration_controls = approve
-		law_migration_controls = neutral
+		law_open_borders = approve
+		law_selective_immigration = neutral
 		law_closed_borders = disapprove
 	}
 
@@ -31,8 +31,8 @@ ideology_cit_closed_internationalist = {
 	}
 
     lawgroup_migration = {
-		law_no_migration_controls = strongly_disapprove
-		law_migration_controls = neutral
+		law_open_borders = strongly_disapprove
+		law_selective_immigration = neutral
 		law_closed_borders = approve
 	}
 
@@ -50,8 +50,8 @@ ideology_cit_immigrant_nationalist = {
 	}
 
     lawgroup_migration = {
-		law_no_migration_controls = approve
-		law_migration_controls = neutral
+		law_open_borders = approve
+		law_selective_immigration = neutral
 		law_closed_borders = strongly_disapprove
 	}
 
@@ -69,8 +69,8 @@ ideology_cit_liberal_nationalist = {
 	}
 
     lawgroup_migration = {
-		law_no_migration_controls = disapprove
-		law_migration_controls = approve
+		law_open_borders = disapprove
+		law_selective_immigration = approve
 		law_closed_borders = strongly_disapprove
 	}
 
@@ -88,8 +88,8 @@ ideology_cit_nationalist = {
 	}
 
     lawgroup_migration = {
-		law_no_migration_controls = strongly_disapprove
-		law_migration_controls = strongly_approve
+		law_open_borders = strongly_disapprove
+		law_selective_immigration = strongly_approve
 		law_closed_borders = disapprove
 	}
 
@@ -107,8 +107,8 @@ ideology_cit_segregationist = {
 	}
 
     lawgroup_migration = {
-		law_no_migration_controls = disapprove
-		law_migration_controls = strongly_approve
+		law_open_borders = disapprove
+		law_selective_immigration = strongly_approve
 		law_closed_borders = disapprove
 	}
 
@@ -126,8 +126,8 @@ ideology_cit_ethnonationalist = {
 	}
 
     lawgroup_migration = {
-		law_no_migration_controls = strongly_disapprove
-		law_migration_controls = disapprove
+		law_open_borders = strongly_disapprove
+		law_selective_immigration = disapprove
 		law_closed_borders = approve
 	}
 
@@ -145,8 +145,8 @@ ideology_cit_multiethnic_nationalist = {
 	}
 
     lawgroup_migration = {
-		law_no_migration_controls = strongly_disapprove
-		law_migration_controls = strongly_approve
+		law_open_borders = strongly_disapprove
+		law_selective_immigration = strongly_approve
 		law_closed_borders = disapprove
 	}
 	

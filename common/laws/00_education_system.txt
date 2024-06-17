@@ -44,7 +44,7 @@ law_religious_schools = {
 	}
 
 	disallowing_laws = {
-		law_total_separation
+		law_church_disestablishment
 		law_state_atheism
 		law_serfdom
 	}

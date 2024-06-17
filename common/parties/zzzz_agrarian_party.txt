@@ -353,11 +353,11 @@ agrarian_party = {
 			# anti-immigration alliance
 			limit = {
 				law_stance = {
-					law = law_type:law_no_migration_controls
+					law = law_type:law_open_borders
 					value < neutral
 				}
 				owner = {
-					has_law = law_type:law_no_migration_controls
+					has_law = law_type:law_open_borders
 				}
 			}
 			add = {

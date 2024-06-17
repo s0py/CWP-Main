@@ -155,7 +155,7 @@ bpm_political_stability_rate = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_GUARANTEED_LIBERTIES"
 		if = {
 			limit = {
-				has_law = law_type:law_guaranteed_liberties
+				#has_law = law_type:law_guaranteed_liberties
 			}
 			subtract = institution:institution_home_affairs.investment
 			multiply = 0.05
@@ -322,7 +322,7 @@ bpm_political_stability_baseline_target = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_GUARANTEED_LIBERTIES"
 		if = {
 			limit = {
-				has_law = law_type:law_guaranteed_liberties
+				#has_law = law_type:law_guaranteed_liberties
 			}
 			subtract = institution:institution_home_affairs.investment
 			multiply = 2

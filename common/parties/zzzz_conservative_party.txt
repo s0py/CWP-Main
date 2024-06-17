@@ -559,12 +559,12 @@ conservative_party = {
 			# devout more likely to join conservatives with total separation
 			limit = {
 				law_stance = {
-					law = law_type:law_total_separation
+					law = law_type:law_church_disestablishment
 					value < neutral
 				}
 				OR = {
 					owner = {
-						has_law = law_type:law_total_separation
+						has_law = law_type:law_church_disestablishment
 					}
 					owner = {
 						has_law = law_type:law_state_atheism
@@ -580,11 +580,11 @@ conservative_party = {
 			# devout more likely to join conservatives with freedom of conscience
 			limit = {
 				law_stance = {
-					law = law_type:law_total_separation
+					law = law_type:law_church_disestablishment
 					value < neutral
 				}
 				owner = {
-					has_law = law_type:law_freedom_of_conscience
+					has_law = law_type:law_church_disestablishment
 				}
 			}
 			add = {

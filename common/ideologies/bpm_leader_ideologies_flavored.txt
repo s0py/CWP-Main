@@ -19,9 +19,9 @@
 	}
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_disapprove
-		law_freedom_of_conscience = neutral
+		law_church_disestablishment = neutral
 		law_state_atheism = neutral
-		law_total_separation = approve
+		law_church_disestablishment = approve
 	}
 	lawgroup_citizenship = {
 		law_ethnostate = strongly_disapprove

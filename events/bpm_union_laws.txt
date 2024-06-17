@@ -31,9 +31,9 @@ bpm_union_laws.1 = {
 		name = bpm_union_laws.1.a
 		trigger = {
 			NOR = {
-				has_law = law_type:law_guaranteed_liberties
+				#has_law = law_type:law_guaranteed_liberties
 				has_law = law_type:law_protected_speech
-				has_law = law_type:law_worker_protections
+				has_law = law_type:law_wrongful_dismissal_protections
 			}
 		}
 		ai_chance = {
@@ -78,7 +78,7 @@ bpm_union_laws.1 = {
 		}
 		trigger = {
 			OR = {
-				has_law = law_type:law_guaranteed_liberties
+				#has_law = law_type:law_guaranteed_liberties
 				has_law = law_type:law_protected_speech
 			}
 		}

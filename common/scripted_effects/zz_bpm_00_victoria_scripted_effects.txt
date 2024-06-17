@@ -143,7 +143,7 @@ calculate_populism_progress = {
 	}
 	else_if = {
 		limit = {
-			has_law = law_type:law_guaranteed_liberties
+			#has_law = law_type:law_guaranteed_liberties
 		}
 		change_variable = {
 			name = temp_ha_var_contribution
@@ -792,7 +792,7 @@ calculate_communism_progress = {
 	}
 	else_if = {
 		limit = {
-			has_law = law_type:law_guaranteed_liberties
+			#has_law = law_type:law_guaranteed_liberties
 		}
 		change_variable = {
 			name = temp_ha_var_contribution

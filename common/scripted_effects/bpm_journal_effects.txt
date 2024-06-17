@@ -317,7 +317,7 @@ bpm_socialist_electoralism_update_baseline_target = {
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_guaranteed_liberties
+			#has_law = law_type:law_guaranteed_liberties
 		}
 		change_variable = {
 			name = bpm_je_socialist_electoralism_from_home_affairs
