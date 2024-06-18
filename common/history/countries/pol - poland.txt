@@ -4,16 +4,6 @@
 		effect_un_member = yes
 		set_tax_level = medium
 		# Laws
-		# IMF
-		set_imf_member = yes
-		set_imf_starting_values = {
-			debtValue = 0
-			creditValue = 0
-			contributionValue = 0
-			debtYearsValue = 0
-			interestRateValue = 0
-			loanType = 1
-		}
 		effect_currency_pln = yes
 		ig:ig_socialists = {
 			add_ruling_interest_group = yes
@@ -30,6 +20,5 @@
 		ig:ig_market_liberals = {
 			set_ig_suppression = yes
 		}
-		effect_bretton_woods_signatory = yes
 	}
 }

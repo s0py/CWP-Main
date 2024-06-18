@@ -8,15 +8,6 @@
 		effect_currency_itl = yes
 		# Institutions
 		# laws
-		set_imf_member = yes
-		set_imf_starting_values = {
-			debtValue = 4430455
-			creditValue = 1476818
-			contributionValue = 4430898
-			debtYearsValue = 15
-			interestRateValue = 2.5
-			loanType = 1
-		}
 		#IG in government to match ruler
 		ig:ig_market_liberals = {
 			add_ruling_interest_group = yes

@@ -4,6 +4,16 @@
 		#todo IGs and Ideologies
 		# Tech and Tax
 		effect_starting_technology_tier_4_tech = yes
+		# IMF
+		set_imf_member = yes
+		set_imf_starting_values = {
+			debtValue = 0
+			creditValue = 0
+			contributionValue = 0
+			debtYearsValue = 0
+			interestRateValue = 0
+			loanType = 1
+		}
 		# Institutions
 		# Starting Religion
 		set_state_religion = rel:theravada

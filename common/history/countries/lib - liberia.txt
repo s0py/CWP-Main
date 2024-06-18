@@ -6,6 +6,6 @@
 		# Tech and Tax
 		effect_starting_technology_tier_4_tech = yes
 		# Institutions
-		effect_bretton_woods_signatory = yes
+		
 	}
 }

@@ -7,16 +7,7 @@
 		effect_starting_technology_tier_4_tech = yes
 		effect_currency_veb = yes
 		# Institutions
-		# Laws
 		effect_bretton_woods_signatory = yes
-		set_imf_member = yes
-		set_imf_starting_values = {
-			debtValue = 0
-			creditValue = 0
-			contributionValue = 369241
-			debtYearsValue = 0
-			interestRateValue = 0
-			loanType = 1
-		}
+		# Laws
 	}
 }

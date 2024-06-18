@@ -17,6 +17,6 @@
 		ig:ig_socialists = {
 			set_ig_suppression = yes
 		}
-		effect_bretton_woods_signatory = yes
+		
 	}
 }

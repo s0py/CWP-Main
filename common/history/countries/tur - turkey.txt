@@ -7,15 +7,6 @@
 		}
 		effect_currency_trl = yes
 		set_tax_level = high
-		set_imf_member = yes
-		set_imf_starting_values = {
-			debtValue = 0
-			creditValue = 0
-			contributionValue = 1058492
-			debtYearsValue = 0
-			interestRateValue = 2.5
-			loanType = 1
-		}
 		#IG in government to match ruler
 		ig:ig_intelligentsia = {
 			add_ruling_interest_group = yes
@@ -30,6 +21,6 @@
 			set_ig_suppression = yes
 			remove_ruling_interest_group = yes
 		}
-		effect_bretton_woods_signatory = yes
+		
 	}
 }
