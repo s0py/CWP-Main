@@ -35,16 +35,7 @@
 			biotech = unrestricted_human_testing
 			recreationalDrugs = tobacco_allowed
 		}
-		set_imf_member = yes
-		set_imf_starting_values = {
-			debtValue = 110761
-			creditValue = 36920
-			contributionValue = 110772
-			debtYearsValue = 5
-			interestRateValue = 2.5
-			loanType = 1
-		}
 		# Institutions
-		effect_bretton_woods_signatory = yes
+		
 	}
 }

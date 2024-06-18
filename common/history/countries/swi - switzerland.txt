@@ -42,6 +42,6 @@
 		set_tax_level = high
 		effect_starting_technology_tier_1_tech = yes
 		# Institutions
-		effect_bretton_woods_signatory = yes
+		
 	}
 }

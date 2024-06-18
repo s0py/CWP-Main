@@ -34,16 +34,6 @@
 			biotech = unrestricted_human_testing
 			recreationalDrugs = alcohol_allowed
 		}
-		# IMF
-		set_imf_member = yes
-		set_imf_starting_values = {
-			debtValue = 0
-			creditValue = 0
-			contributionValue = 0
-			debtYearsValue = 0
-			interestRateValue = 0
-			loanType = 1
-		}
 		effect_currency_pln = yes
 		ig:ig_laborists = {
 			add_ruling_interest_group = yes
@@ -60,6 +50,5 @@
 		ig:ig_capitalists = {
 			set_ig_suppression = yes
 		}
-		effect_bretton_woods_signatory = yes
 	}
 }
