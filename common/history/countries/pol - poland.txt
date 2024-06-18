@@ -37,11 +37,11 @@
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {
-			debtValue = 3076705
-			creditValue = 1025568
-			contributionValue = 3077012
-			debtYearsValue = 15
-			interestRateValue = 2.5
+			debtValue = 0
+			creditValue = 0
+			contributionValue = 0
+			debtYearsValue = 0
+			interestRateValue = 0
 			loanType = 1
 		}
 		effect_currency_pln = yes
