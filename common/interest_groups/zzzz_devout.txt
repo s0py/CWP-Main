@@ -106,8 +106,8 @@ ig_devout = {
 				limit = {
 					owner = {
 						OR = {
-							has_law = law_type:law_religious_schools
-							has_law = law_type:law_charitable_health_system
+							has_law = law_type:law_church_run_schools
+							has_law = law_type:law_charity_health_system
 						}
 					}
 				}

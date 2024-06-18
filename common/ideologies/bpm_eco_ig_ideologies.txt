@@ -30,10 +30,10 @@ ideology_eco_laissez_faire = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = neutral
-		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = disapprove
 		law_per_capita_based_taxation = approve
 		law_proportional_taxation = disapprove
-		law_graduated_taxation = strongly_disapprove
+		law_wealth_taxation = strongly_disapprove
 	}
 
     #lawgroup_slavery = {
@@ -75,10 +75,10 @@ ideology_eco_interventionist = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = neutral
-		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = disapprove
 		law_per_capita_based_taxation = approve
 		law_proportional_taxation = disapprove
-		law_graduated_taxation = strongly_disapprove
+		law_wealth_taxation = strongly_disapprove
 	}
 
     #lawgroup_slavery = {
@@ -120,10 +120,10 @@ ideology_eco_traditional_agrarian = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = neutral
-		law_land_based_taxation = approve
+		law_per_capita_based_taxation = approve
 		law_per_capita_based_taxation = approve
 		law_proportional_taxation = disapprove
-		law_graduated_taxation = strongly_disapprove
+		law_wealth_taxation = strongly_disapprove
 	}
 
     #lawgroup_slavery = {
@@ -165,10 +165,10 @@ ideology_eco_modern_agrarian = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = disapprove
-		law_land_based_taxation = strongly_disapprove
+		law_per_capita_based_taxation = strongly_disapprove
 		law_per_capita_based_taxation = neutral
 		law_proportional_taxation = approve
-		law_graduated_taxation = approve
+		law_wealth_taxation = approve
 	}
 
     #lawgroup_slavery = {
@@ -210,10 +210,10 @@ ideology_eco_agrarian_socialist = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = neutral
-		law_land_based_taxation = strongly_disapprove
+		law_per_capita_based_taxation = strongly_disapprove
 		law_per_capita_based_taxation = strongly_disapprove
 		law_proportional_taxation = approve
-		law_graduated_taxation = strongly_approve
+		law_wealth_taxation = strongly_approve
 	}
 
     #lawgroup_slavery = {
@@ -255,10 +255,10 @@ ideology_eco_autarky = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = disapprove
-		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = disapprove
 		law_per_capita_based_taxation = approve
 		law_proportional_taxation = approve
-		law_graduated_taxation = neutral
+		law_wealth_taxation = neutral
 	}
 
     #lawgroup_slavery = {
@@ -300,10 +300,10 @@ ideology_eco_socialist_autarky = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = neutral
-		law_land_based_taxation = strongly_disapprove
+		law_per_capita_based_taxation = strongly_disapprove
 		law_per_capita_based_taxation = disapprove
 		law_proportional_taxation = neutral
-		law_graduated_taxation = approve
+		law_wealth_taxation = approve
 	}
 
     #lawgroup_slavery = {
@@ -345,10 +345,10 @@ ideology_eco_socialist_mixed_economy = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = disapprove
-		law_land_based_taxation = strongly_disapprove
+		law_per_capita_based_taxation = strongly_disapprove
 		law_per_capita_based_taxation = neutral
 		law_proportional_taxation = approve
-		law_graduated_taxation = strongly_approve
+		law_wealth_taxation = strongly_approve
 	}
 
     #lawgroup_slavery = {
@@ -390,10 +390,10 @@ ideology_eco_proletarian_economy = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = approve
-		law_land_based_taxation = strongly_disapprove
+		law_per_capita_based_taxation = strongly_disapprove
 		law_per_capita_based_taxation = disapprove
 		law_proportional_taxation = neutral
-		law_graduated_taxation = approve
+		law_wealth_taxation = approve
 	}
 
     #lawgroup_slavery = {
@@ -435,10 +435,10 @@ ideology_eco_serf_economy = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = approve
-		law_land_based_taxation = strongly_approve
+		law_per_capita_based_taxation = strongly_approve
 		law_per_capita_based_taxation = approve
 		law_proportional_taxation = disapprove
-		law_graduated_taxation = strongly_disapprove
+		law_wealth_taxation = strongly_disapprove
 	}
 
     #lawgroup_slavery = {
@@ -480,10 +480,10 @@ ideology_eco_trad_isolationist = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = approve
-		law_land_based_taxation = strongly_approve
+		law_per_capita_based_taxation = strongly_approve
 		law_per_capita_based_taxation = approve
 		law_proportional_taxation = disapprove
-		law_graduated_taxation = strongly_disapprove
+		law_wealth_taxation = strongly_disapprove
 	}
 
     #lawgroup_slavery = {
@@ -525,10 +525,10 @@ ideology_eco_slave_economy = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = approve
-		law_land_based_taxation = approve
+		law_per_capita_based_taxation = approve
 		law_per_capita_based_taxation = approve
 		law_proportional_taxation = disapprove
-		law_graduated_taxation = strongly_disapprove
+		law_wealth_taxation = strongly_disapprove
 	}
 
     #lawgroup_slavery = {
@@ -570,10 +570,10 @@ ideology_eco_modernizer = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = neutral
-		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = disapprove
 		law_per_capita_based_taxation = approve
 		law_proportional_taxation = approve
-		law_graduated_taxation = disapprove
+		law_wealth_taxation = disapprove
 	}
 
     #lawgroup_slavery = {
@@ -615,10 +615,10 @@ ideology_eco_conservative_agrarian = {
 
     lawgroup_taxation = {
 		law_consumption_based_taxation = neutral
-		law_land_based_taxation = approve
+		law_per_capita_based_taxation = approve
 		law_per_capita_based_taxation = approve
 		law_proportional_taxation = disapprove
-		law_graduated_taxation = strongly_disapprove
+		law_wealth_taxation = strongly_disapprove
 	}
 
     #lawgroup_slavery = {

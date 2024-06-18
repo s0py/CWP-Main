@@ -255,7 +255,7 @@ bpm_setup_country_mil_cit_ideologies = {
 			limit = {
 				has_ideology = ideology:ideology_mil_patriotic
 				owner = {
-					has_law = law_type:law_national_militia
+					has_law = law_type:law_irregular_military
 				}
 			}
 			remove_ideology = ideology_mil_patriotic

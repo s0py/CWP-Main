@@ -191,7 +191,7 @@ military_party = {
 					}
 				}
 				owner = {
-					has_law = law_type:law_peasant_levies
+					has_law = law_type:law_irregular_military
 				}
 			}
 			add = {
@@ -213,7 +213,7 @@ military_party = {
 					NOR = {
 						has_law = law_type:law_proportional_taxation
 						has_law = law_type:law_per_capita_based_taxation
-						has_law = law_type:law_graduated_taxation
+						has_law = law_type:law_wealth_taxation
 					}
 				}
 			}
@@ -231,7 +231,7 @@ military_party = {
 						has_ideology = ideology:ideology_loyalist
 						owner = {
 							NOT = {
-								has_law = law_type:law_graduated_taxation
+								has_law = law_type:law_wealth_taxation
 							}
 						}
 					}

@@ -309,7 +309,7 @@ free_trade_party = {
 			# capitalist-conservative taxation alliance
 			limit = {
 				owner = {
-					has_law = law_type:law_graduated_taxation
+					has_law = law_type:law_wealth_taxation
 				}
 				OR = {
 					has_ideology = ideology:ideology_plutocratic
@@ -370,8 +370,8 @@ free_trade_party = {
 				owner = {
 					#has_technology_researched = academia
 					OR = {
-						has_law = law_type:law_no_schools
-						has_law = law_type:law_religious_schools
+						has_law = law_type:law_informal_schooling
+						has_law = law_type:law_church_run_schools
 					}
 				}
 				OR = {

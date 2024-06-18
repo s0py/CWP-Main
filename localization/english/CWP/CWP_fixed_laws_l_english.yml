@@ -224,6 +224,19 @@
   law_profit_expropriation: "Profit Expropriation"
   law_profit_expropriation_desc: "Tax burden is decided solely on the basis of profits."
 
+  # Corporate Affairs
+  lawgroup_corporate_affairs: "Corporate Affairs"
+  law_no_legal_corporations: "No Legal Corporations"
+  law_no_legal_corporations_desc: "No legal provisions for corporations exist."
+  law_state_corporations: "State Corporations"
+  law_state_corporations_desc: "Corporations are solely owned by the state."
+  law_corporate_friendly_policies: "Corporate Friendly Policies"
+  law_corporate_friendly_policies_desc: "The government has policies in place to encourage corporate growth."
+  law_anti_trust_regulation: "Anti Trust Regulation"
+  law_anti_trust_regulation_desc: "The government has policies in place to prevent monopolies."
+  law_consumer_protection: "Consumer Protection"
+  law_consumer_protection_desc: "The government has policies in place to protect consumers."
+
   # Land Reform
   lawgroup_land_reform: "Land Reform"
   lawgroup_land_reform_desc: "The laws governing agricultural land and the people who work it."

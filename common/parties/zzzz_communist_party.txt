@@ -586,17 +586,17 @@
 			# against illiteracy and religious education
 			limit = {
 				law_stance = {
-					law = law_type:law_religious_schools
+					law = law_type:law_church_run_schools
 					value < neutral
 				}
 				law_stance = {
-					law = law_type:law_no_schools
+					law = law_type:law_informal_schooling
 					value < neutral
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_religious_schools
-						has_law = law_type:law_no_schools
+						has_law = law_type:law_church_run_schools
+						has_law = law_type:law_informal_schooling
 					}
 				}
 			}

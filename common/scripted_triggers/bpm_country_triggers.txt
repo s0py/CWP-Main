@@ -190,36 +190,36 @@ bpm_country_laws_are_moderately_undemocratic = {
 
 bpm_country_laws_are_colonial = {
 	OR = {
-		has_law = law_type:law_colonial_resettlement
-		has_law = law_type:law_colonial_exploitation
+		#has_law = law_type:law_colonial_resettlement
+		#has_law = law_type:law_colonial_exploitation
 	}
 }
 
 bpm_country_laws_are_militaristic = {
 	OR = {
-		has_law = law_type:law_peasant_levies
-		has_law = law_type:law_mass_conscription
+		has_law = law_type:law_irregular_military
+		has_law = law_type:law_reserve_military
 	}
 }
 
 bpm_country_laws_are_very_militaristic = {
-	has_law = law_type:law_mass_conscription
-	has_law = law_type:law_colonial_exploitation
+	has_law = law_type:law_reserve_military
+	#has_law = law_type:law_colonial_exploitation
 }
 
 bpm_country_laws_are_pacifistic = {
 	bpm_country_laws_are_colonial = no
 	bpm_country_laws_are_militaristic = no
 	NOT = {
-		has_law = law_type:law_professional_army
+		has_law = law_type:law_professional_military
 	}
 }
 
 bpm_country_laws_have_max_welfare = {
 	has_law = law_type:law_income_supplementation
 	has_law = law_type:law_wrongful_dismissal_protections
-	has_law = law_type:law_public_health_insurance
-	has_law = law_type:law_public_schools
+	has_law = law_type:law_universal_healthcare
+	has_law = law_type:law_state_funded_schools
 }
 
 bpm_country_laws_are_very_capitalist = {

@@ -988,10 +988,10 @@ ideology_pacifist = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_pacifist.dds"
 	character_ideology = yes
 	lawgroup_army_model = {
-		law_national_militia = approve
-		law_professional_army = disapprove
-		law_peasant_levies = disapprove
-		law_mass_conscription = disapprove
+		law_irregular_military = approve
+		law_professional_military = disapprove
+		law_irregular_military = disapprove
+		law_reserve_military = disapprove
 	}
 	#lawgroup_colonization = {
 	#	law_no_colonial_affairs = approve
@@ -1091,10 +1091,10 @@ ideology_jingoist_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_jingoist.dds"
 	character_ideology = yes
 	lawgroup_army_model = {
-		law_mass_conscription = strongly_approve
-		law_professional_army = approve
-		law_national_militia = neutral
-		law_peasant_levies = disapprove
+		law_reserve_military = strongly_approve
+		law_professional_military = approve
+		law_irregular_military = neutral
+		law_irregular_military = disapprove
 	}
 	#lawgroup_colonization = {
 	#	law_no_colonial_affairs = neutral
@@ -1680,16 +1680,16 @@ ideology_social_democrat = {
 	}
 	lawgroup_taxation = {
 		law_consumption_based_taxation = disapprove
-		law_land_based_taxation = strongly_disapprove
+		law_per_capita_based_taxation = strongly_disapprove
 		law_per_capita_based_taxation = neutral
 		law_proportional_taxation = approve
-		law_graduated_taxation = strongly_approve
+		law_wealth_taxation = strongly_approve
 	}
 	lawgroup_education_system = {
-		law_no_schools = strongly_disapprove
-		law_religious_schools = disapprove
+		law_informal_schooling = strongly_disapprove
+		law_church_run_schools = disapprove
 		law_private_schools = disapprove
-		law_public_schools = strongly_approve
+		law_state_funded_schools = strongly_approve
 	}
 	lawgroup_labor_rights = {
 		law_no_workers_rights = strongly_disapprove
@@ -2324,10 +2324,10 @@ ideology_fascist = {
 		law_multicultural = strongly_disapprove
 	}
 	lawgroup_army_model = {
-		law_mass_conscription = strongly_approve
-		law_professional_army = approve
-		law_national_militia = disapprove
-		law_peasant_levies = disapprove
+		law_reserve_military = strongly_approve
+		law_professional_military = approve
+		law_irregular_military = disapprove
+		law_irregular_military = disapprove
 	}
 	lawgroup_free_speech = {
 		law_protected_speech = strongly_disapprove
@@ -2364,7 +2364,7 @@ ideology_fascist = {
 				bpm_country_laws_are_very_undemocratic = yes
 				has_law = law_type:law_ethnostate
 				has_law = law_type:law_militarized_police
-				has_law = law_type:law_mass_conscription
+				has_law = law_type:law_reserve_military
 			}
 		}
 		# Any Interest Group
@@ -2563,10 +2563,10 @@ ideology_anarchist = {
 		law_industry_banned = strongly_disapprove
 	}
 	lawgroup_army_model = {
-		law_professional_army = disapprove
-		law_national_militia = neutral
-		law_peasant_levies = disapprove
-		law_mass_conscription = strongly_disapprove
+		law_professional_military = disapprove
+		law_irregular_military = neutral
+		law_irregular_military = disapprove
+		law_reserve_military = strongly_disapprove
 	}
 	lawgroup_free_speech = {
 		law_protected_speech = strongly_approve
@@ -2771,10 +2771,10 @@ ideology_anarchist_syndicalist = {
 		law_industry_banned = strongly_disapprove
 	}
 	lawgroup_army_model = {
-		law_professional_army = disapprove
-		law_national_militia = neutral
-		law_peasant_levies = disapprove
-		law_mass_conscription = strongly_disapprove
+		law_professional_military = disapprove
+		law_irregular_military = neutral
+		law_irregular_military = disapprove
+		law_reserve_military = strongly_disapprove
 	}
 	lawgroup_free_speech = {
 		law_protected_speech = strongly_approve
@@ -2966,10 +2966,10 @@ ideology_agrarian_socialist_leader = {
 		law_commercialized_agriculture = disapprove
 	}
 	lawgroup_army_model = {
-		law_professional_army = strongly_disapprove
-		law_national_militia = neutral
-		law_peasant_levies = strongly_disapprove
-		law_mass_conscription = strongly_disapprove
+		law_professional_military = strongly_disapprove
+		law_irregular_military = neutral
+		law_irregular_military = strongly_disapprove
+		law_reserve_military = strongly_disapprove
 	}
 	lawgroup_policing = {
 		law_no_police = approve
@@ -4281,11 +4281,11 @@ ideology_land_reformer = {
 		law_ad_hoc_centralization = strongly_disapprove
 	}
 	lawgroup_taxation = {
-		law_land_based_taxation = strongly_disapprove
+		law_per_capita_based_taxation = strongly_disapprove
 		law_consumption_based_taxation = neutral
 		law_per_capita_based_taxation = neutral
 		law_proportional_taxation = neutral
-		law_graduated_taxation = neutral
+		law_wealth_taxation = neutral
 	}
 	lawgroup_land_reform = {
 		law_serfdom = strongly_disapprove
@@ -4306,7 +4306,7 @@ ideology_land_reformer = {
 			has_role = agitator
 			owner = {
 				NOR = {
-					has_law = law_type:law_land_based_taxation
+					has_law = law_type:law_per_capita_based_taxation
 					has_law = law_type:law_ad_hoc_centralization
 				}
 				has_law = law_type:law_homesteading
@@ -4349,7 +4349,7 @@ ideology_land_reformer = {
 				owner = {
 					OR = {
 						has_law = law_type:law_serfdom
-						has_law = law_type:law_land_based_taxation
+						has_law = law_type:law_per_capita_based_taxation
 						has_law = law_type:law_ad_hoc_centralization
 					}
 				}
@@ -4367,7 +4367,7 @@ ideology_land_reformer = {
 					OR = {
 						has_law = law_type:law_serfdom
 						has_law = law_type:law_tenant_farmers
-						has_law = law_type:law_land_based_taxation
+						has_law = law_type:law_per_capita_based_taxation
 					}
 				}
 			}
@@ -4403,7 +4403,7 @@ ideology_land_reformer = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law = law_type:law_land_based_taxation
+						has_law = law_type:law_per_capita_based_taxation
 					}
 					OR = {
 						has_law = law_type:law_homesteading
@@ -4751,16 +4751,16 @@ ideology_corporatist_leader = {
 		law_military_junta = neutral
 	}
 	lawgroup_education_system = {
-		law_no_schools = disapprove
-		law_religious_schools = neutral
+		law_informal_schooling = disapprove
+		law_church_run_schools = neutral
 		law_private_schools = neutral
-		law_public_schools = approve
+		law_state_funded_schools = approve
 	}
 	lawgroup_health_system = {
 		law_no_health_system = disapprove
-		law_charitable_health_system = neutral
+		law_charity_health_system = neutral
 		law_private_health_insurance = approve
-		law_public_health_insurance = neutral
+		law_universal_healthcare = neutral
 	}
 	lawgroup_labor_rights = {
 		law_no_workers_rights = neutral
@@ -4806,7 +4806,7 @@ ideology_corporatist_leader = {
 				NOT = {
 					has_law = law_type:law_socialist_republic
 				}
-				has_law = law_type:law_public_schools
+				has_law = law_type:law_state_funded_schools
 				has_law = law_type:law_workplace_safety_standards
 				#has_law = law_type:law_compulsory_education
 				has_law = law_type:law_state_controlled_labor_unions
@@ -4849,7 +4849,7 @@ ideology_corporatist_leader = {
 					NOT = {
 						has_law = law_type:law_socialist_republic
 					}
-					has_law = law_type:law_public_schools
+					has_law = law_type:law_state_funded_schools
 					has_law = law_type:law_workplace_safety_standards
 					has_law = law_type:law_income_supplementation
 					has_law = law_type:law_state_controlled_labor_unions
@@ -5431,10 +5431,10 @@ ideology_bonapartist = {
 		law_managerial_state = strongly_disapprove
 	}
 	lawgroup_army_model = {
-		law_mass_conscription = approve
-		law_professional_army = strongly_approve
-		law_national_militia = disapprove
-		law_peasant_levies = disapprove
+		law_reserve_military = approve
+		law_professional_military = strongly_approve
+		law_irregular_military = disapprove
+		law_irregular_military = disapprove
 	}
 	lawgroup_economic_system = {
 		law_laissez_faire = neutral

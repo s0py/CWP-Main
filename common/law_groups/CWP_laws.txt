@@ -166,6 +166,22 @@ lawgroup_health_system = {
 	regressive_movement_chance = 0.25
 }
 
+# Corporate Affairs
+lawgroup_corporate_affairs = {
+	law_group_category = economy
+	progressive_movement_chance = 0.25
+	regressive_movement_chance = 0.25
+	affected_by_regime_change = yes
+}
+
+# Environmental Regulations
+lawgroup_environmental_regulations = {
+	law_group_category = economy
+	progressive_movement_chance = 0.25
+	regressive_movement_chance = 0.2
+	affected_by_regime_change = yes
+}
+
 # Weapons of Mass Destruction
 lawgroup_wmds = {
 	law_group_category = economy
@@ -217,8 +233,8 @@ lawgroup_rights_of_women = {
 	regressive_movement_chance = 0.25
 }
 
-# Reproductive Rights
-lawgroup_reproductive_rights = {
+# Reproductive Rights & Family Planning
+lawgroup_family_planning = {
 	law_group_category = human_rights
 	progressive_movement_chance = 2.5
 	regressive_movement_chance = 0.25
@@ -229,14 +245,6 @@ lawgroup_welfare = {
 	law_group_category = human_rights
 	progressive_movement_chance = 2.5
 	regressive_movement_chance = 0.25
-}
-
-# Environmental Regulations
-lawgroup_environmental_regulations = {
-	law_group_category = human_rights
-	progressive_movement_chance = 0.25
-	regressive_movement_chance = 0.2
-	affected_by_regime_change = yes
 }
 
 # Migration
