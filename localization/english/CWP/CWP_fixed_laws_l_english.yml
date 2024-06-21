@@ -67,16 +67,16 @@
 
   # Bureaucracy
   lawgroup_bureaucratic_systems: "Bureaucratic Systems"
-  law_politicized_bureaucrats: "Politicized Bureaucrats"
-  law_politicized_bureaucrats_desc: "Bureaucrats are chosen based on loyalty, and often use their positions to further political agendas."
-  law_appointed_bureaucrats: "Appointed Bureaucrats"
-  law_appointed_bureaucrats_desc: "Bureaucrats are appointed by the government and can be dismissed with minimal cause."
+  law_sovereign_bureaucrats: "Sovereign Bureaucrats"
+  llaw_sovereign_bureaucrats_desc: "The Bureaucracy is not only separate from government but entirely protected and in a position to overpower government decisions."
   law_independent_bureaucrats: "Independent Bureaucrats"
   law_independent_bureaucrats_desc: "Bureaucrats, once appointed, have a significant amount of protection from politics."
+  law_appointed_bureaucrats: "Appointed Bureaucrats"
+  law_appointed_bureaucrats_desc: "Bureaucrats are appointed by the government and can be dismissed by them, giving the government power over the civil service while it remains nominal independent."
   law_elected_bureaucrats: "Elected Bureaucrats"
-  law_elected_bureaucrats_desc: "Bureaucrats are elected by the people, and are thus directly accountable to them."
-  law_technocrats: "Technocrats"
-  law_technocrats_desc: "Bureaucrats are appointed based solely on merit, and operate with relative impunity."
+  law_elected_bureaucrats_desc: "Bureaucrats and local officials elected by the people, and are thus directly accountable to them."
+  law_party_bureaucrats: "Party Bureaucrats"
+  law_party_bureaucrats_desc: "The Bureaucracy of the state and the ruling single party have merged to form a hybridized system of party-state governing."
 
   # Judiciary
   lawgroup_criminal_justice: "Criminal Justice"
