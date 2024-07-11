@@ -81,21 +81,6 @@ law_restricted_child_labor = {
 	possible_political_movements = {
 		law_compulsory_primary_school
 	}
-
-	pop_support = {
-		value = 0
-		# Get back in the mines!
-		add = {
-			desc = "POP_CAPITALISTS"
-			if = {
-				limit = {
-					owner = { has_law = law_type:law_compulsory_primary_school }
-					is_pop_type = investors
-				}
-			}
-			value = 0.33
-		}
-	}
 	
 	ai_will_do = {
 		OR = {
