@@ -3,7 +3,7 @@
 		effect_un_member = yes
 		effect_currency_grd = yes
 		# Politics
-		#Im not sure if greece was a rep democracy or more of an anocracy at this point -Mercur3
+		effect_liberal_republic_law_package = yes
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {

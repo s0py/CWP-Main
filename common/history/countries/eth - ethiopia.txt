@@ -13,5 +13,6 @@
 			interestRateValue = 2.5
 			loanType = 1
 		}
+		effect_absolute_monarchy_law_package = yes
 	}
 }

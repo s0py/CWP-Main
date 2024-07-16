@@ -4,9 +4,7 @@
 		set_tax_level = medium
 		set_market_capital = STATE_PYONGYANG
 		effect_starting_technology_tier_2_tech = yes
-		ig:ig_conservatives = {
-			add_ruling_interest_group = yes
-		}
+		effect_communist_state_law_package = yes
 		#IG in government to match ruler
 		ig:ig_socialists = {
 			add_ruling_interest_group = yes

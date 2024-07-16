@@ -1,6 +1,7 @@
 ﻿COUNTRIES = {
 	c:WPP ?= {
 		# Politics
+		effect_colonial_state_law_package = yes
 		#todo IGs and Ideologies
 		# Tech and Tax
 		effect_starting_technology_tier_4_tech = yes

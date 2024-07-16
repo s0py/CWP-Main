@@ -10,5 +10,6 @@
 		}
 		# Institutions
 		#laws
+		effect_colonial_state_law_package = yes
 	}
 }

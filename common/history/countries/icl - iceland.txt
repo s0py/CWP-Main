@@ -15,6 +15,7 @@
 			loanType = 1
 		}
 		#IG in government to match ruler
+		effect_parliamentary_monarchy_law_package = yes
 		ig:ig_conservatives = {
 			add_ruling_interest_group = yes
 		}

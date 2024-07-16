@@ -9,6 +9,7 @@
 		add_technology_researched = guerilla_warfare
 		effect_currency_cny = yes
 		set_state_religion = rel:atheist
+		effect_communist_state_law_package = yes
 		ig:ig_socialists = {
 			add_ruling_interest_group = yes
 		}

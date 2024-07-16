@@ -4,6 +4,7 @@
 		effect_un_member = yes
 		set_tax_level = medium
 		# Laws
+		effect_liberal_republic_law_package = yes
 		effect_currency_pln = yes
 		ig:ig_socialists = {
 			add_ruling_interest_group = yes

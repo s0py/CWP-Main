@@ -11,6 +11,7 @@
 		set_market_capital = STATE_KANTO
 		set_capital = STATE_KANTO
 		effect_currency_jpy = yes
+		effect_parliamentary_monarchy_law_package = yes
 		#IG Ideologies subject to change
 		ig:ig_conservatives = {
 			add_ruling_interest_group = yes

@@ -5,10 +5,7 @@
 		effect_starting_technology_wartime_participant_tech = yes
 		set_tax_level = medium
 		# Laws
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 1
-		}
+		effect_colonial_state_law_package = yes
 		ig:ig_conservatives = {
 			add_ruling_interest_group = yes
 		}

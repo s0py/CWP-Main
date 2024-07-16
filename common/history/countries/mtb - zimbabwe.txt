@@ -9,5 +9,6 @@
 		add_primary_culture = cu:english
 		add_primary_culture = cu:boer
 		#laws
+		effect_colonial_state_law_package = yes
 	}
 }

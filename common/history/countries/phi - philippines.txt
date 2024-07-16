@@ -5,6 +5,7 @@
 		set_market_capital = STATE_LUZON
 		effect_starting_technology_tier_2_tech = yes
 		effect_currency_php = yes
+		effect_colonial_state_law_package = yes
 		set_institution_investment_level = {
 			institution = institution_police
 			level = 2

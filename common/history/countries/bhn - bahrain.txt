@@ -4,5 +4,6 @@
 		#todo IGs and Ideologies
 		# Tech and Tax
 		effect_starting_technology_tier_4_tech = yes
+		effect_absolute_monarchy_law_package = yes
 	}
 }

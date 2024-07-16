@@ -1,6 +1,7 @@
 ﻿COUNTRIES = {
 	c:TUN ?= {
 		# Politics
+		effect_colonial_state_law_package = yes
 		#todo IGs and Ideologies
 		# Tech and Tax
 		#IG in government to match ruler

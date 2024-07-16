@@ -7,6 +7,7 @@
 		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
 		}
+		effect_parliamentary_monarchy_law_package = yes
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {

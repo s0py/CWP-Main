@@ -14,6 +14,7 @@
 		set_tax_level = medium
 		set_market_capital = STATE_TONKIN
 		effect_starting_technology_tier_4_tech = yes
+		effect_colonial_state_law_package = yes
 		ig:ig_conservatives = {
 			add_ruling_interest_group = yes
 		}

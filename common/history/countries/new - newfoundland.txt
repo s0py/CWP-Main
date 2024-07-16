@@ -4,5 +4,6 @@
 		add_journal_entry = {
 			type = newfoundland_referendum
 		}
+		effect_parliamentary_monarchy_law_package = yes
 	}
 }

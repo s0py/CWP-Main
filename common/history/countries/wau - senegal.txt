@@ -18,5 +18,6 @@
 		remove_primary_culture = cu:nilotes
 		remove_primary_culture = cu:hausa
 		add_primary_culture = cu:french
+		effect_colonial_state_law_package = yes
 	}
 }

@@ -2,6 +2,7 @@
 	c:AST ?= {
 		effect_un_member = yes
 		# Politics
+		effect_parliamentary_monarchy_law_package = yes
 		# Capital
 		set_market_capital = STATE_NEW_SOUTH_WALES
 		set_capital = STATE_NEW_SOUTH_WALES

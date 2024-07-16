@@ -7,5 +7,6 @@
 		set_market_capital = STATE_BLUE_NILE
 		set_capital = STATE_BLUE_NILE
 		#laws
+		effect_colonial_state_law_package = yes
 	}
 }

@@ -32,6 +32,106 @@ effect_create_law_package = {
 	activate_law = law_type:law_$monetaryPolicy$
 }
 
+# United States of America
+effect_united_states_law_package = {
+	activate_law = law_type:law_presidential_republic
+	activate_law = law_type:law_majoritarian_voting
+	activate_law = law_type:law_racial_segregation
+	activate_law = law_type:law_church_disestablishment
+	activate_law = law_type:law_appointed_bureaucrats
+	activate_law = law_type:law_professional_military
+	activate_law = law_type:law_security_agency
+	activate_law = law_type:law_laissez_faire
+	activate_law = law_type:law_free_trade
+	activate_law = law_type:law_proportional_taxation
+	activate_law = law_type:law_homesteading
+	activate_law = law_type:law_private_schools
+	activate_law = law_type:law_private_health_insurance
+	activate_law = law_type:law_protected_speech
+	activate_law = law_type:law_restricted_child_labor
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_income_supplementation
+	activate_law = law_type:law_open_borders
+    #BMP Laws
+	activate_law = law_type:law_professional_officers
+	activate_law = law_type:law_federated
+	activate_law = law_type:law_no_party_bans
+	activate_law = law_type:law_limited_work_hours
+	activate_law = law_type:law_all_labor_unions_allowed
+
+    #CWP Special
+	activate_law = law_type:law_no_environment_regulations
+	activate_law = law_type:law_first_strike
+	activate_law = law_type:law_government_interference
+}
+
+# Union of Soviet Socialist Republics
+effect_soviet_union_law_package = {
+	activate_law = law_type:law_socialist_republic
+	activate_law = law_type:law_oligarchy
+	activate_law = law_type:law_racial_segregation
+	activate_law = law_type:law_state_atheism
+	activate_law = law_type:law_party_bureaucrats
+	activate_law = law_type:law_professional_military
+	activate_law = law_type:law_secret_police
+	activate_law = law_type:law_command_economy
+	activate_law = law_type:law_protectionism
+	activate_law = law_type:law_wealth_taxation
+	activate_law = law_type:law_collectivized_agriculture
+	activate_law = law_type:law_state_funded_schools
+	activate_law = law_type:law_public_health_insurance
+	activate_law = law_type:law_outlawed_dissent
+	activate_law = law_type:law_restricted_child_labor
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_income_supplementation
+	activate_law = law_type:law_closed_borders
+    #BMP Laws
+	activate_law = law_type:law_political_officers
+	activate_law = law_type:law_devolved
+	activate_law = law_type:law_single_party_state
+	activate_law = law_type:law_limited_work_hours
+	activate_law = law_type:law_state_controlled_labor_unions
+
+    #CWP Special
+	activate_law = law_type:law_no_environment_regulations
+	activate_law = law_type:law_first_strike
+	activate_law = law_type:law_government_interference
+}
+
+# Communist State
+effect_communist_state_law_package = {
+	activate_law = law_type:law_socialist_republic
+	activate_law = law_type:law_oligarchy
+	activate_law = law_type:law_racial_segregation
+	activate_law = law_type:law_state_atheism
+	activate_law = law_type:law_party_bureaucrats
+	activate_law = law_type:law_professional_military
+	activate_law = law_type:law_security_agency
+	activate_law = law_type:law_command_economy
+	activate_law = law_type:law_protectionism
+	activate_law = law_type:law_wealth_taxation
+	activate_law = law_type:law_collectivized_agriculture
+	activate_law = law_type:law_state_funded_schools
+	activate_law = law_type:law_public_health_insurance
+	activate_law = law_type:law_outlawed_dissent
+	activate_law = law_type:law_restricted_child_labor
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_income_supplementation
+	activate_law = law_type:law_selective_immigration
+    #BMP Laws
+	activate_law = law_type:law_political_officers
+	activate_law = law_type:law_devolved
+	activate_law = law_type:law_single_party_state
+	activate_law = law_type:law_limited_work_hours
+	activate_law = law_type:law_state_controlled_labor_unions
+
+    #CWP Special
+	activate_law = law_type:law_no_environment_regulations
+	activate_law = law_type:law_no_wmds
+	activate_law = law_type:law_government_interference
+}
+
+
 # Generic Liberal Republics
 effect_liberal_republic_law_package = {
 	activate_law = law_type:law_presidential_republic
@@ -58,6 +158,138 @@ effect_liberal_republic_law_package = {
 	activate_law = law_type:law_no_party_bans
 	activate_law = law_type:law_limited_work_hours
 	activate_law = law_type:law_all_labor_unions_allowed
+
+    #CWP Special
+	activate_law = law_type:law_no_environment_regulations
+	activate_law = law_type:law_no_wmds
+	activate_law = law_type:law_government_interference
+}
+
+# Generic Parliamentary Monarchy
+effect_parliamentary_monarchy_law_package = {
+	activate_law = law_type:law_parliamentary_republic
+	activate_law = law_type:law_majoritarian_voting
+	activate_law = law_type:law_cultural_exclusion
+	activate_law = law_type:law_religious_policies
+	activate_law = law_type:law_independent_bureaucrats
+	activate_law = law_type:law_professional_military
+	activate_law = law_type:law_no_home_affairs
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_protectionism
+	activate_law = law_type:law_proportional_taxation
+	activate_law = law_type:law_tenant_farmers
+	activate_law = law_type:law_state_funded_schools
+	activate_law = law_type:law_private_health_insurance
+	activate_law = law_type:law_right_of_assembly
+	activate_law = law_type:law_restricted_child_labor
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_income_supplementation
+	activate_law = law_type:law_selective_immigration
+    #BMP Laws
+	activate_law = law_type:law_professional_officers
+	activate_law = law_type:law_devolved
+	activate_law = law_type:law_no_party_bans
+	activate_law = law_type:law_limited_work_hours
+	activate_law = law_type:law_all_labor_unions_allowed
+
+    #CWP Special
+	activate_law = law_type:law_no_environment_regulations
+	activate_law = law_type:law_no_wmds
+	activate_law = law_type:law_government_interference
+}
+
+# Generic Absolute Monarchy
+effect_absolute_monarchy_law_package = {
+	activate_law = law_type:law_monarchy
+	activate_law = law_type:law_oligarchy
+	activate_law = law_type:law_cultural_exclusion
+	activate_law = law_type:law_religious_institutions
+	activate_law = law_type:law_independent_bureaucrats
+	activate_law = law_type:law_professional_military
+	activate_law = law_type:law_no_home_affairs
+	activate_law = law_type:law_traditionalism
+	activate_law = law_type:law_mercantilism
+	activate_law = law_type:law_per_capita_based_taxation
+	activate_law = law_type:law_tenant_farmers
+	activate_law = law_type:law_religious_schools
+	activate_law = law_type:law_private_health_insurance
+	activate_law = law_type:law_censorship
+	activate_law = law_type:law_child_labor_allowed
+	activate_law = law_type:law_legal_guardianship
+	activate_law = law_type:law_income_supplementation
+	activate_law = law_type:law_open_borders
+    #BMP Laws
+	activate_law = law_type:law_professional_officers
+	activate_law = law_type:law_devolved
+	activate_law = law_type:law_no_party_bans
+	activate_law = law_type:law_limited_work_hours
+	activate_law = law_type:law_illegal_labor_unions
+
+    #CWP Special
+	activate_law = law_type:law_no_environment_regulations
+	activate_law = law_type:law_no_wmds
+	activate_law = law_type:law_government_interference
+}
+
+# Generic Authoritarian Republics
+effect_authoritarian_republic_law_package = {
+	activate_law = law_type:law_presidential_republic
+	activate_law = law_type:law_oligarchy
+	activate_law = law_type:law_cultural_exclusion
+	activate_law = law_type:law_church_disestablishment
+	activate_law = law_type:law_appointed_bureaucrats
+	activate_law = law_type:law_professional_military
+	activate_law = law_type:law_security_agency
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_protectionism
+	activate_law = law_type:law_proportional_taxation
+	activate_law = law_type:law_tenant_farmers
+	activate_law = law_type:law_state_funded_schools
+	activate_law = law_type:law_private_health_insurance
+	activate_law = law_type:law_censorship
+	activate_law = law_type:law_restricted_child_labor
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_no_welfare
+	activate_law = law_type:law_selective_immigration
+    #BMP Laws
+	activate_law = law_type:law_professional_officers
+	activate_law = law_type:law_devolved
+	activate_law = law_type:law_party_anti_socialist
+	activate_law = law_type:law_limited_work_hours
+	activate_law = law_type:law_state_controlled_labor_unions
+
+    #CWP Special
+	activate_law = law_type:law_no_environment_regulations
+	activate_law = law_type:law_no_wmds
+	activate_law = law_type:law_government_interference
+}
+
+# Generic Colonial State
+effect_colonial_state_law_package = {
+	activate_law = law_type:law_presidential_republic
+	activate_law = law_type:law_oligarchy
+	activate_law = law_type:law_racial_segregation
+	activate_law = law_type:law_church_disestablishment
+	activate_law = law_type:law_independent_bureaucrats
+	activate_law = law_type:law_reserve_military
+	activate_law = law_type:law_no_home_affairs
+	activate_law = law_type:law_agrarianism
+	activate_law = law_type:law_mercantilism
+	activate_law = law_type:law_income_taxation
+	activate_law = law_type:law_tenant_farmers
+	activate_law = law_type:law_no_schools
+	activate_law = law_type:law_no_health_system
+	activate_law = law_type:law_right_of_assembly
+	activate_law = law_type:law_child_labor_allowed
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_no_welfare
+	activate_law = law_type:law_open_borders
+    #BMP Laws
+	activate_law = law_type:law_professional_officers
+	activate_law = law_type:law_unitary
+	activate_law = law_type:law_no_party_bans
+	activate_law = law_type:law_limited_work_hours
+	activate_law = law_type:law_limited_labor_unions
 
     #CWP Special
 	activate_law = law_type:law_no_environment_regulations

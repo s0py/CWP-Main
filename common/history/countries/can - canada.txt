@@ -12,6 +12,7 @@
 		effect_starting_technology_wartime_participant_tech = yes
 		effect_currency_cad = yes
 		# Laws
+		effect_parliamentary_monarchy_law_package = yes
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {

@@ -2,6 +2,7 @@
 	c:NEJ ?= {
 		effect_un_member = yes
 		# Politics
+		effect_absolute_monarchy_law_package = yes
 		#IG in government to match ruler
 		ig:ig_conservatives = {
 			add_ruling_interest_group = yes

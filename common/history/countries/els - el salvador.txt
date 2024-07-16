@@ -7,6 +7,7 @@
 		effect_starting_technology_tier_2_tech = yes
 		effect_un_member = yes
 		# Laws
+		effect_liberal_republic_law_package = yes
 		#IG in government to match ruler
 		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes

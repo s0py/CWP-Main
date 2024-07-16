@@ -6,6 +6,7 @@
 		effect_starting_technology_tier_1_tech = yes
 		effect_starting_technology_wartime_participant_tech = yes
 		effect_currency_itl = yes
+		effect_parliamentary_monarchy_law_package = yes
 		# Institutions
 		# laws
 		#IG in government to match ruler

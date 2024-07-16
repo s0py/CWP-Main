@@ -1,6 +1,7 @@
 ﻿COUNTRIES = {
 	c:QAT ?= {
 		# Politics
+		effect_colonial_state_law_package = yes
 		#todo IGs and Ideologies
 		#todo laws
 		# Tech and Tax

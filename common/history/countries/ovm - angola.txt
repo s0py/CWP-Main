@@ -4,5 +4,6 @@
 		#tax and tech
 		effect_starting_technology_tier_2_tech = yes
 		#laws
+		effect_colonial_state_law_package = yes
 	}
 }

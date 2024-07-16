@@ -304,11 +304,6 @@ law_state_atheism = {
 		country_authority_add = 200
 		country_clergy_pol_str_mult = -0.9
 	}
-	can_enact = {
-		ig:ig_moralists = {
-			is_in_government = no
-		}
-	}
 	on_enact = {
 		recalculate_pop_ig_support = yes
 		set_state_religion = rel:atheist

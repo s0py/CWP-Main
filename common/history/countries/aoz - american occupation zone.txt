@@ -5,6 +5,7 @@
 		effect_starting_technology_tier_1_tech = yes
 		effect_starting_technology_wartime_participant_tech = yes
 		#Igs
+		effect_colonial_state_law_package = yes
 		ig:ig_petty_bourgeoisie = {
 			set_ig_suppression = yes
 		}

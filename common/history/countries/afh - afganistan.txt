@@ -11,6 +11,7 @@
 			interestRateValue = 0
 			loanType = 1
 		}
+		effect_parliamentary_monarchy_law_package = yes
 		# Institutions
 		effect_bretton_woods_signatory = yes
 	}

@@ -4,6 +4,7 @@
 		set_tax_level = medium
 		effect_starting_technology_tier_3_tech = yes
 		#laws
+		effect_liberal_republic_law_package = yes
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {

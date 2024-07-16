@@ -11,6 +11,7 @@
 		set_tax_level = very_high
 		effect_starting_technology_tier_1_tech = yes
 		effect_starting_technology_wartime_participant_tech = yes
+		effect_parliamentary_monarchy_law_package = yes
 		# laws
 		# IMF
 		set_imf_member = yes

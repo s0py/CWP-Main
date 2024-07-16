@@ -8,6 +8,7 @@
 		effect_currency_dkk = yes
 		effect_un_member = yes
 		# Laws
+		effect_parliamentary_monarchy_law_package = yes
 		#IG in government to match ruler
 		ig:ig_market_liberals = {
 			add_ruling_interest_group = yes

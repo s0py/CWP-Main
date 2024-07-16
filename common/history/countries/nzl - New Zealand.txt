@@ -10,6 +10,7 @@
 		effect_un_member = yes
 		# Laws
 		#IG in government to match ruler
+		effect_parliamentary_monarchy_law_package = yes
 		ig:ig_socialists = {
 			add_ruling_interest_group = yes
 		}

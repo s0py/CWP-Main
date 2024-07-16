@@ -5,6 +5,7 @@
 		set_tax_level = medium
 		effect_un_member = yes
 		# Laws
+		effect_communist_state_law_package = yes
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {

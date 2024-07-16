@@ -7,6 +7,7 @@
 		set_tax_level = high
 		effect_starting_technology_tier_1_tech = yes
 		effect_currency_nok = yes
+		effect_parliamentary_monarchy_law_package = yes
 		# Institutions
 		# Laws
 		# IMF

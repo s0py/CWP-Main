@@ -11,6 +11,7 @@
 		effect_currency_pte = yes
 		# Institutions
 		#laws
+		effect_authoritarian_republic_law_package = yes
 		#IG in government to match ruler
 		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes

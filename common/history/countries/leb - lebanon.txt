@@ -2,6 +2,7 @@
 	c:LEB ?= {
 		# Politics
 		#todo IGs and Ideologies
+		effect_colonial_state_law_package = yes
 		effect_un_member = yes
 		# Tech and Tax
 		effect_starting_technology_tier_4_tech = yes

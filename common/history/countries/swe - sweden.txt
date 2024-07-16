@@ -6,6 +6,7 @@
 		set_tax_level = high
 		effect_starting_technology_tier_1_tech = yes
 		effect_currency_sek = yes
+		effect_parliamentary_monarchy_law_package = yes
 		# Laws
 		#IG in government to match ruler
 		ig:ig_socialists = {

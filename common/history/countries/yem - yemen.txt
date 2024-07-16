@@ -1,5 +1,6 @@
 ﻿COUNTRIES = {
 	c:YEM ?= {
 		effect_starting_technology_tier_5_tech = yes
+		effect_colonial_state_law_package = yes
 	}
 }

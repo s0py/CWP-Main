@@ -6,5 +6,6 @@
 		effect_starting_technology_tier_4_tech = yes
 		# Institutions
 		#laws
+		effect_colonial_state_law_package = yes
 	}
 }

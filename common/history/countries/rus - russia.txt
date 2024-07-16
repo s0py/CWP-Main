@@ -19,6 +19,7 @@
 		remove_primary_culture = cu:kirgiz
 		remove_primary_culture = cu:tajik
 		# Laws
+		effect_soviet_union_law_package = yes
 		set_tax_level = very_high
 		ig:ig_socialists = {
 			add_ruling_interest_group = yes
