@@ -34,7 +34,7 @@
 	possible = {
 		any_scope_character = {
 			is_ruler = yes
-			has_ideology = ideology:ideology_third_international_theory 
+			has_ideology = ideology:ideology_centrist 
 		}
 		is_subject = no
 	}

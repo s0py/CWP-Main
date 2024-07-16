@@ -142,7 +142,7 @@
   ideology_atheist_desc: "#Lore M'lady#"
   ideology_autarky: "Autarkist"
   ideology_autarky_desc: "#Lore This character wants their nation's economy to be as self sufficient as possible#"
-  ideology_centralist: "Centralist"
+  ideology_centrist: "Centralist"
   ideology_centrist_desc: "#Lore This character wants state authority to be centralized in the government and is against sharing power with regional authorities#"
   ideology_christian_democrat: "Christian Democrat"
   ideology_christian_democrat_desc: "#Lore This character believes in a reformed and democratic version of christianity#"
@@ -222,8 +222,8 @@
   ideology_neocommunist_desc: "#Lore This character wants to establish a communist society but within a democratic framework and working within a liberal democratic system rather than overthrowing it#"
   ideology_democratic_socialist: "Democratic Socialist"
   ideology_democratic_socialist_desc: "#Lore This character wants a socialist economy operating within the framework of a liberal-democracy#"
-  ideology_third_international_theory: "Third International Theory"
-  ideology_third_international_theory_desc: "#Lore This character believes in Islamic socialism as an alternative to capitalism and marxism-leninism and rejects European-style democracy#"
+  ideology_centrist: "Third International Theory"
+  ideology_centrist_desc: "#Lore This character believes in Islamic socialism as an alternative to capitalism and marxism-leninism and rejects European-style democracy#"
 
  # Monetary Ideologies
   ideology_confident_monetarist: "Confident Monetarist"

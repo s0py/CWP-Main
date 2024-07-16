@@ -47,7 +47,7 @@
 			birth_date = 1900.2.5
 			interest_group = ig:ig_intelligentsia
 			# temporary pending creation of dixiecrat unique ideology
-			ideology = ideology_dixiecrat
+			ideology = ideology_moderate
 		}
 		create_character = {
 			first_name = George

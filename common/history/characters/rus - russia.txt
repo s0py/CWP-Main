@@ -12,7 +12,7 @@
 			birth_date = 1878.12.18
 			dna = dna_joseph_stalin
 			interest_group = ig:ig_agrarian_populists
-			ideology = ideology_hardliner
+			ideology = ideology_moderate
 			traits = {
 			}
 		}
@@ -26,7 +26,7 @@
 			religion = atheist
 			birth_date = 1896.12.1
 			interest_group = ig:ig_armed_forces
-			ideology = ideology_revisionist
+			ideology = ideology_moderate
 			traits = {
 			}
 		}
@@ -40,7 +40,7 @@
 			birth_date = 1901.12.6
 			ig_leader = yes
 			interest_group = ig:ig_intelligentsia
-			ideology = ideology_technocratic_socialist
+			ideology = ideology_moderate
 			traits = {
 			}
 		}
@@ -54,7 +54,7 @@
 			ig_leader = no
 			birth_date = 1894.4.15
 			interest_group = ig:ig_socialists
-			ideology = ideology_revisionist
+			ideology = ideology_moderate
 			traits = {
 			}
 		}
@@ -68,7 +68,7 @@
 			ig_leader = yes
 			birth_date = 1899.3.29
 			interest_group = ig:ig_armed_forces
-			ideology = ideology_market_socialist
+			ideology = ideology_moderate
 			traits = {
 			}
 		}

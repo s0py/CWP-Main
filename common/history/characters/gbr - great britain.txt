@@ -9,7 +9,7 @@
 			ig_leader = yes
 			birth_date = 1883.01.03
 			interest_group = ig:ig_intelligentsia
-			ideology = ideology_state_interventionist
+			ideology = ideology_moderate
 			traits = {
 			}
 		}
@@ -21,7 +21,7 @@
 			ig_leader = yes
 			birth_date = 1887.11.15
 			interest_group = ig:ig_socialists
-			ideology = ideology_democratic_socialist
+			ideology = ideology_moderate
 			traits = {
 			}
 		}
@@ -45,7 +45,7 @@
 			ig_leader = yes
 			birth_date = 1883.8.23
 			interest_group = ig:ig_market_liberals
-			ideology = ideology_market_liberal
+			ideology = ideology_moderate
 			traits = {
 			}
 		}
