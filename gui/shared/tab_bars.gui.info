@@ -1,4 +1,4 @@
-template selected_tabs 
+﻿template selected_tabs 
 {
 	texture = "gfx/interface/tabs/tab_button_1_selected.dds"
 	spriteType = Corneredstretched
@@ -311,6 +311,55 @@ types tab_bars
 				using = tab_text_properties
 			}
 		}
+
+		### TAB 6
+		tab_button = {
+			block "sixth_button_name" {}
+			layoutstretchfactor_horizontal = 1
+			layoutpolicy_horizontal = preferred
+			block "height" {}
+			
+			block "sixth_button_visibility_checked" {
+				visible = no
+			}
+			
+			block "sixth_button_tooltip" {
+				tooltip = "TAB_6"
+			}
+			input_action = "tab_6"
+			using = tooltip_above
+
+			block "sixth_button_click" {}
+			block "sixth_button_icon" {}
+			
+			textbox = {
+				block "sixth_button" {
+					raw_text = "Placeholder"
+				}
+				default_format = "#title"
+				using = tab_text_properties
+			}
+		}
+		icon = {
+			block "sixth_button_name" {}
+			using = selected_tabs
+			layoutstretchfactor_horizontal = 1
+			layoutpolicy_horizontal = preferred
+			block "height" {}
+			
+			block "sixth_button_visibility" {
+				visible = no
+			}
+			block "fourth_button_icon" {}
+
+			textbox = {
+				block "sixth_button_selected" {
+					raw_text = "#BOLD Placeholder#!"
+				}
+				default_format = "#variable"
+				using = tab_text_properties
+			}
+		}
 		
 		### END DIVIDER
 		icon = {
@@ -326,33 +375,5 @@ types tab_bars
 			block "divider_fade_right" {
 			}
 		}
-	}
-
-	### ICON-ONLY TABS
-	type tab_buttons_icon_only = flowcontainer {
-		margin = { 5 5 }
-
-		### START DIVIDER
-		icon = {
-			texture = "gfx/interface/tabs/tab_divider.dds"
-			layoutpolicy_horizontal = fixed
-			layoutpolicy_vertical = expanding
-			block = "divider_size" {
-				size = { 5 -1 }
-			}
-			spriteType = Corneredstretched
-			spriteborder = { 0 20 }
-			
-			block "divider_fade_left" {
-			}
-		}
-
-		### TAB 1
-		tab_button = {
-			block 'button_size' {
-				size = { 60 30 }
-			}
-		}
-
 	}
 }

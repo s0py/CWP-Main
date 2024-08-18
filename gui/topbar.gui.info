@@ -1,4 +1,4 @@
-template hud_elements_alpha {
+﻿template hud_elements_alpha {
 	alpha = 1
 }
 
@@ -8,12 +8,13 @@ template hud_visibility {
 }
 
 @secondary_icon_size = 26
+@tertiary_icon_size = 15
 
 types topbar_components
 {
 	### SECONDARY ICONS
 	type topbar_secondary_icons = container {
-		position = { 120 0 }
+		position = { 130 0 }
 
 		flowcontainer = {
 			visible = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
@@ -41,44 +42,36 @@ types topbar_components
 				using = dark_area_rounded
 				margin = { 0 -5 }
 				margin_left = 5
-				margin_right = 20
 			}
 
 			flowcontainer = {
 				name = "tutorial_highlight_gdp"
-				minimumsize = { 88 30 }
-				maximumsize = { 88 30 }
+				minimumsize = { 90 30 }
+				maximumsize = { 90 30 }
 				spacing = 2
 				using = GDP_tooltip_with_graph
 				using = tooltip_below
 
 				onmousehierarchyenter = "[SetTempMapModeByKey('mm_gdp')]"
-				onmousehierarchyleave = "[RemoveTempMapMode]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alwaystransparent = no
 
-				icon = {
-					texture = "gfx/interface/icons/generic_icons/gdp.dds"
-					size = { @secondary_icon_size @secondary_icon_size }
-					parentanchor = vcenter
-				}
 				textbox = {
 					parentanchor = vcenter
-					raw_text = "#variable [Country.GetGDP|1*]#!"
+					raw_text = "#variable [GetGlobalVariable('global_currency').GetCountry.MakeScope.Var('cwp_currency').GetFlagName][SelectLocalization(LessThan_CFixedPoint(Country.MakeScope.ScriptValue('cwp_gdp_with_inflation'), '(CFixedPoint)1000000000000'), 'CWP_NORMAL', 'CWP_TRILLION')]#!"
 					autoresize = yes
 					align = left|nobaseline
-					elide = right
-					fontsize_min = 12
 				}
 			}
 
 			flowcontainer = {
-				minimumsize = { 84 30 }
-				maximumsize = { 84 30 }
+				minimumsize = { 90 30 }
+				maximumsize = { 90 30 }
 				spacing = 2
 				using = literacy_tooltip_with_graph
 				using = tooltip_below
 				onmousehierarchyenter = "[SetTempMapModeByKey('mm_literacy')]"
-				onmousehierarchyleave = "[RemoveTempMapMode]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alwaystransparent = no
 
 				icon = {
@@ -91,18 +84,16 @@ types topbar_components
 					raw_text = "#variable [Country.GetIncorporatedLiteracyRate|%1]#!"
 					autoresize = yes
 					align = left|nobaseline
-					elide = right
-					fontsize_min = 12
 				}
 			}
 			flowcontainer = {
-				minimumsize = { 68 30 }
-				maximumsize = { 68 30 }
+				minimumsize = { 90 30 }
+				maximumsize = { 90 30 }
 				spacing = 2
 				using = average_standard_of_living_tooltip_with_graph
 				using = tooltip_below
 				onmousehierarchyenter = "[SetTempMapModeByKey('mm_standard_of_living')]"
-				onmousehierarchyleave = "[RemoveTempMapMode]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alwaystransparent = no
 
 				textbox = {
@@ -118,19 +109,17 @@ types topbar_components
 					text = "[Country.GetFormattedStandardOfLivingAll|v]"
 					autoresize = yes
 					align = left|nobaseline
-					elide = right
-					fontsize_min = 12
-					margin_right = 3
+					margin_left = 3
 				}
 			}
 			flowcontainer = {
-				minimumsize = { 78 30 }
-				maximumsize = { 78 30 }
+				minimumsize = { 90 30 }
+				maximumsize = { 90 30 }
 				spacing = 2
 				using = population_tooltip_with_graph
 				using = tooltip_below
 				onmousehierarchyenter = "[SetTempMapModeByKey('mm_population')]"
-				onmousehierarchyleave = "[RemoveTempMapMode]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alwaystransparent = no
 
 				icon = {
@@ -143,19 +132,16 @@ types topbar_components
 					raw_text = "#variable [Country.GetTotalPopulation|D]#!"
 					autoresize = yes
 					align = left|nobaseline
-					elide = right
-					fontsize_min = 12
-					margin_right = 3
 				}
 			}
 			flowcontainer = {
-				minimumsize = { 76 30 }
-				maximumsize = { 76 30 }
+				minimumsize = { 90 30 }
+				maximumsize = { 90 30 }
 				spacing = 2
 				using = radicals_tooltip_with_graph
 				using = tooltip_below
 				onmousehierarchyenter = "[SetTempMapModeByKey('mm_radicals')]"
-				onmousehierarchyleave = "[RemoveTempMapMode]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alpha = "[TransparentIfZero_int64(Country.GetNumRadicals)]"
 				alwaystransparent = no
 
@@ -169,18 +155,16 @@ types topbar_components
 					raw_text = "#variable [Country.GetNumRadicals|D]#!"
 					autoresize = yes
 					align = left|nobaseline
-					elide = right
-					fontsize_min = 12
 				}
 			}
 			flowcontainer = {
-				minimumsize = { 76 30 }
-				maximumsize = { 76 30 }
+				minimumsize = { 90 30 }
+				maximumsize = { 90 30 }
 				spacing = 2
 				using = loyalists_tooltip_with_graph
 				using = tooltip_below
 				onmousehierarchyenter = "[SetTempMapModeByKey('mm_loyalists')]"
-				onmousehierarchyleave = "[RemoveTempMapMode]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alpha = "[TransparentIfZero_int64(Country.GetNumLoyalists)]"
 				alwaystransparent = no
 
@@ -194,35 +178,170 @@ types topbar_components
 					raw_text = "#variable [Country.GetNumLoyalists|D]#!"
 					autoresize = yes
 					align = left|nobaseline
-					elide = right
-					fontsize_min = 12
 				}
 			}
-			flowcontainer = {
-				minimumsize = { 66 30 }
-				maximumsize = { 66 30 }
-				spacing = 2
-				tooltip = "[Country.GetInfamyDesc]"
+			button = {
+				minimumsize = { 90 30 }
+				maximumsize = { 90 30 }
+				tooltip = NUCLEAR_TOOLTIP
 				using = tooltip_below
-				onmousehierarchyenter = "[SetTempMapModeByKey('mm_infamy')]"
-				onmousehierarchyleave = "[RemoveTempMapMode]"
-				alpha = "[TransparentIfZero(Country.GetInfamy)]"
+				visible = "[GetPlayer.MakeScope.Var('nuclear_stockpile').IsSet]"
+				onclick = "[InformationPanelBar.OpenPanelTab('military', 'wmd')]"
+				onclick = "[GetVariableSystem.Clear('international_open')]" 
+				onclick = "[GetVariableSystem.Clear('un_panel')]" 
+				onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+				onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+				onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
 				alwaystransparent = no
-
-				icon = {
-					size = { @secondary_icon_size @secondary_icon_size }
-					texture = "[Country.GetInfamyIconTexture]"
-					parentanchor = vcenter
+				flowcontainer = {
+					widget = {
+						size = { 28 28 }
+						parentanchor = vcenter
+						position = { 0 0 }
+						icon = {
+							texture = "gfx/interface/icons/lens_toolbar_icons/nuclear_weapons.dds"
+							size = { 30 30 }
+							parentanchor = vcenter
+						}
+					}
+	
+					textbox = {
+						parentanchor = vcenter
+						raw_text = "#variable [GetPlayer.MakeScope.ScriptValue('nuclear_stockpile_sv')]#!"
+						autoresize = yes
+						align = left|nobaseline
+					}
 				}
-				textbox = {
-					parentanchor = vcenter
-					raw_text = "#variable [Country.GetInfamy|0]#!"
-					autoresize = yes
-					align = left|nobaseline
-					elide = right
-					fontsize_min = 12
+
+			}
+		}
+	}
+	type topbar_tertiary_icons = container {
+		position = { 130 25 }
+
+		flowcontainer = {
+			visible = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+			block "animation" {
+				position = { 0 0 }
+				alpha = 0
+
+				state = {
+					name = show_topbar_secondary_stats
+					alpha = 1
+					position_y = 44
+					duration = 0.15
+					using = Animation_Curve_Default
+				}
+				state = {
+					name = hide_topbar_secondary_stats
+					alpha = 0
+					position_y = 0
+					duration = 0.15
+					using = Animation_Curve_Default
 				}
 			}
+
+			#button = {
+			#	name = "tutorial_highlight_currency"
+			#	minimumsize = { 90 20 }
+			#	maximumsize = { 90 20 }
+			#	tooltipwidget = {
+			#		bank_credibility_tooltip = {}
+			#	}
+			#	onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
+			#	onclick = "[GetVariableSystem.Clear('international_open')]" 
+			#	onclick = "[GetVariableSystem.Clear('un_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+			#	enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+			#	using = tooltip_below
+#
+			#	alwaystransparent = no
+#
+			#	textbox = {
+			#		parentanchor = vcenter
+			#		raw_text = "#variable [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName][GetPlayer.MakeScope.ScriptValue('currency_average_difference_to_global')|+d%]#!"
+			#		autoresize = yes
+			#		fontsize = 15
+			#		align = left|nobaseline
+			#	}
+			#}
+			#button = {
+			#	minimumsize = { 90 20 }
+			#	maximumsize = { 90 20 }
+			#	tooltipwidget = {
+			#		inflation_tooltip = {}
+			#	}
+			#	using = tooltip_below
+			#	alwaystransparent = no
+			#	onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
+			#	onclick = "[GetVariableSystem.Clear('international_open')]" 
+			#	onclick = "[GetVariableSystem.Clear('un_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+			#	enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+#
+			#	widget = {
+			#		size = { 28 28 }
+			#		parentanchor = vcenter
+			#		position = { 0 0 }
+#
+			#		icon = {
+			#			parentanchor = center
+			#			size = { @tertiary_icon_size @tertiary_icon_size }
+			#			texture = "gfx/interface/icons/generic_icons/inflation.dds"
+			#		}
+#
+			#	}
+			#	textbox = {
+			#		position = { 30 0 }
+			#		text = "[GetPlayer.MakeScope.ScriptValue('inflation_value')|nd%]"
+			#		fontsize = 15
+			#		align = left|nobaseline
+			#		autoresize = yes
+			#		parentanchor = vcenter
+			#	}
+			#}
+			#button = {
+			#	minimumsize = { 90 20 }
+			#	maximumsize = { 90 20 }
+			#	using = tooltip_below
+			#	tooltipwidget = {
+			#		money_supply_tooltip = {}
+			#	}
+			#	alwaystransparent = no
+			#	onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
+			#	onclick = "[GetVariableSystem.Clear('international_open')]" 
+			#	onclick = "[GetVariableSystem.Clear('un_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+			#	enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+#
+			#	widget = {
+			#		size = { 28 28 }
+			#		parentanchor = vcenter
+			#		position = { 0 0 }
+#
+			#		icon = {
+			#			parentanchor = center
+			#			size = { @tertiary_icon_size @tertiary_icon_size }
+			#			texture = "gfx/interface/icons/generic_icons/inflation.dds" #TODO, make icon
+			#		}
+#
+			#	}
+			#	textbox = {
+			#		position = { 30 0 }
+			#		raw_text = "#gold #bold [GetPlayer.MakeScope.ScriptValue('money_supply_percentage')|0]%#!#!"
+			#		fontsize = 15
+			#		align = left|nobaseline
+			#		autoresize = yes
+			#		parentanchor = vcenter
+			#	}
+			#}
+
 		}
 	}
 
@@ -232,7 +351,7 @@ types topbar_components
 			using = hud_visibility
 			datacontext = "[AccessMetaPlayer.AccessPlayedOrObservedCountry]"
 			using = clickthrough_blocker
-			size = { 705 80 }
+			size = { 780 100 }
 			allow_outside = yes
 			resizeparent = yes
 
@@ -345,6 +464,11 @@ types topbar_components
 									tooltip = "BUREAUCRACY_TOOLTIP"
 									using = tooltip_below
 									onclick = "[InformationPanelBar.OpenPanelTab('politics', 'institutions')]"
+									onclick = "[GetVariableSystem.Clear('international_open')]" 
+									onclick = "[GetVariableSystem.Clear('un_panel')]" 
+									onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+									onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+									onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
 									enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 
 									icon = {
@@ -387,6 +511,11 @@ types topbar_components
 									tooltip = "AUTHORITY_TOOLTIP"
 									using = tooltip_below
 									onclick = "[InformationPanelBar.OpenPanelTab('politics', 'default')]"
+									onclick = "[GetVariableSystem.Clear('international_open')]" 
+									onclick = "[GetVariableSystem.Clear('un_panel')]" 
+									onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+									onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+									onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
 									enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 
 									icon = {
@@ -429,6 +558,11 @@ types topbar_components
 									tooltip = "INFLUENCE_TOOLTIP"
 									using = tooltip_below
 									onclick = "[InformationPanelBar.OpenPanelTab('diplomatic_overview', 'default')]"
+									onclick = "[GetVariableSystem.Clear('international_open')]" 
+									onclick = "[GetVariableSystem.Clear('un_panel')]" 
+									onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+									onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+									onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
 									enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 
 									icon = {
@@ -472,6 +606,11 @@ types topbar_components
 									tooltip = "CONVOY_TOPBAR_TOOLTIP"
 									using = tooltip_below
 									onclick = "[InformationPanelBar.OpenMarketPanelTab(AccessPlayer.AccessFirstMarket, 'trade_routes')]"
+									onclick = "[GetVariableSystem.Clear('international_open')]" 
+									onclick = "[GetVariableSystem.Clear('un_panel')]" 
+									onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+									onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+									onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
 									enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 									alpha = "[TransparentIfZero(GetPlayer.GetSupplyNetworkStrength)]"
 
@@ -506,11 +645,14 @@ types topbar_components
 										blockoverride "value_left" {
 											value = "[Negate_float(FixedPointToFloat(GetPlayer.GetDeficitConvoyRatioForProgressBar))]"
 										}
+
 										blockoverride "value_right" {
 											value = "[FixedPointToFloat(GetPlayer.GetExcessConvoyRatioForProgressBar)]"
 										}
 									}
+
 								}
+
 							}
 
 							### MONEY
@@ -525,14 +667,18 @@ types topbar_components
 									using = tooltip_below
 									using = money_tooltip_with_graph
 									onclick = "[InformationPanelBar.OpenPanelTab('budget', 'default')]"
+									onclick = "[GetVariableSystem.Clear('international_open')]" 
+									onclick = "[GetVariableSystem.Clear('un_panel')]" 
+									onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+									onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+									onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
 									enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+									visible = "[Country.IsValid]"
 
-									icon = {
-										size = { 32 32 }
-										position = { 0 2 }
-										name = income_power_icon
-										texture = "gfx/interface/icons/topbar/income_power_icon.dds"
-										parentanchor = vcenter
+									textbox = {
+										position = { 5 17 }
+										raw_text = "[Country.MakeScope.Var('cwp_currency').GetFlagName]"
+										fontsize = 25
 									}
 
 									textbox = {
@@ -581,16 +727,26 @@ types topbar_components
 									}
 								}
 							}
-
 						}
 
 						#shows only on hover
 						topbar_secondary_icons = {
 							visible = "[GetVariableSystem.Exists('more_topbar_info')]"
 						}
+						#shows only on hover
+						topbar_tertiary_icons = {
+							visible = "[GetVariableSystem.Exists('more_topbar_info')]"
+						}
 
 						#locked
 						topbar_secondary_icons = {
+							visible = "[Not(GetVariableSystem.Exists('more_topbar_info'))]"
+
+							blockoverride "animation" {
+								position = { 0 44 }
+							}
+						}
+						topbar_tertiary_icons = {
 							visible = "[Not(GetVariableSystem.Exists('more_topbar_info'))]"
 
 							blockoverride "animation" {
@@ -606,7 +762,7 @@ types topbar_components
 				visible = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 				size = { 24 24 }
 				parentanchor = bottom|right
-				position = { -25 -9 }
+				position = { 10 -20 }
 
 				alpha = 0
 
@@ -649,7 +805,7 @@ types topbar_components
 
 			### FLAG
 			fancy_flag = {
-				blockoverride "rank_badge_block" {} # Show rank badge seperately from flag with topbar_rank
+				blockoverride "rank_badge_block" {} # Show rank badge separately from flag with topbar_rank
 
 				observer_mode_overlay = {
 					blockoverride "observer_properties" {

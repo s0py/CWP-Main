@@ -481,7 +481,7 @@ window = {
 								}
 
 								blockoverride "component_implementation_note" {
-									raw_text = "You can create more of these at the bottom of button_icons.gui, create a new type and link it to one of the base asset types below (make sure to use the correct version, if it is a navigational, action or map interaction). Our default shape should be round buttons, but in some rare cases we use square/rectangular. You only need to create new buttons inside this .gui file if they will be re-used alot, if you only need a button at one place you can just use the base asset and blockoverride the icon texture that you need."
+									raw_text = "You can create more of these at the bottom of button_icons.gui, create a new type and link it to one of the base asset types below (make sure to use the correct version, if it is a navigational, action or map interaction). Our default shape should be round buttons, but in some rare cases we use square/rectangular. You only need to create new buttons inside this .gui file if they will be re-used a lot, if you only need a button at one place you can just use the base asset and blockoverride the icon texture that you need."
 								}
 							}
 							
@@ -2450,7 +2450,7 @@ window = {
 									}
 									icon = {
 										size = { 50 50 }
-										texture = "gfx/interface/icons/pops_icons/peasants.dds"
+										texture = "gfx/interface/icons/pops_icons/informal_workers.dds"
 									}
 									icon = {
 										size = { 50 50 }
@@ -3698,6 +3698,25 @@ window = {
 								blockoverride "component_area" {
 									icon = {
 										texture = "gfx/interface/flag/power_rank_04.dds"
+										texture_density = 2
+									}
+								}
+
+								blockoverride "component_desc" {
+									raw_text = "Texture used in the rank_badge for Great Powers."
+								}
+							}
+							ui_guide_component_area = {
+								blockoverride "component_name" {
+									raw_text = "power_rank_05.dds"
+								}
+								blockoverride "component_name_type" {
+									raw_text = "(dds)"
+								}
+
+								blockoverride "component_area" {
+									icon = {
+										texture = "gfx/interface/flag/power_rank_05.dds"
 										texture_density = 2
 									}
 								}
@@ -5046,17 +5065,6 @@ types ComponentLibrary
         spriteType = Corneredtiled
         spriteborder = { 2 2 }
     }
-
-	type debug_text = textbox {
-		align = left|nobaseline
-		elide = right
-		fontsize_min = 14
-
-		autoresize = yes
-
-		default_format = "#TODO"
-		using = debug_square
-	}
 }
 
 template debug_square

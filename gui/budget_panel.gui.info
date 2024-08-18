@@ -46,7 +46,7 @@ types budget
 					name = "tutorial_highlight_weekly_balance_budget"
 					parentanchor = center
 					using = fontsize_mega
-					raw_text = "@money![AccessPlayer.PredictWeeklyBalanceWithEconomyHealthHint]"
+					raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName][AccessPlayer.PredictWeeklyBalanceWithEconomyHealthHint]"
 					autoresize = yes
 					align = center|nobaseline
 					using = money_tooltip_with_graph
@@ -84,55 +84,82 @@ types budget
 
 				blockoverride "second_button"
 				{
-					text = "STATES"
+					text = "BUDGET_TAB_FISCAL"
 				}
 				blockoverride "second_button_tooltip" {
-					tooltip = "STATES"
+					tooltip = "BUDGET_TAB_FISCAL"
 				}
 				blockoverride "second_button_click"
 				{
-					onclick = "[InformationPanel.SelectTab('states')]"
+					onclick = "[InformationPanel.SelectTab('fiscal')]"
 				}
 				blockoverride "second_button_visibility"
 				{
-					visible = "[InformationPanel.IsTabSelected('states')]"
+					visible = "[InformationPanel.IsTabSelected('fiscal')]"
 				}
 				blockoverride "second_button_visibility_checked"
 				{
-					visible = "[Not( InformationPanel.IsTabSelected('states') )]"
+					visible = "[Not( InformationPanel.IsTabSelected('fiscal') )]"
 				}
 				blockoverride "second_button_selected"
 				{
-					text = "STATES"
+					text = "BUDGET_TAB_FISCAL"
 				}
 				blockoverride "second_button_name" {
-					name = "tutorial_highlight_states"
+					name = "tutorial_highlight_fiscal"
 				}
 
 				blockoverride "third_button"
 				{
-					text = "BUDGET_TAB_ASSETS"
+					text = "STATES"
 				}
 				blockoverride "third_button_tooltip" {
-					tooltip = "BUDGET_TAB_ASSETS"
+					tooltip = "STATES"
 				}
 				blockoverride "third_button_click"
 				{
-					onclick = "[InformationPanel.SelectTab('assets')]"
+					onclick = "[InformationPanel.SelectTab('states')]"
 				}
 				blockoverride "third_button_visibility"
 				{
-					visible = "[InformationPanel.IsTabSelected('assets')]"
+					visible = "[InformationPanel.IsTabSelected('states')]"
 				}
 				blockoverride "third_button_visibility_checked"
 				{
-					visible = "[Not( InformationPanel.IsTabSelected('assets') )]"
+					visible = "[Not( InformationPanel.IsTabSelected('states') )]"
 				}
 				blockoverride "third_button_selected"
 				{
-					text = "BUDGET_TAB_ASSETS"
+					text = "STATES"
 				}
 				blockoverride "third_button_name" {
+					name = "tutorial_highlight_states"
+				}
+
+				blockoverride "fourth_button"
+				{
+					text = "BUDGET_TAB_ASSETS"
+				}
+				blockoverride "fourth_button_tooltip" {
+					tooltip = "BUDGET_TAB_ASSETS"
+				}
+				blockoverride "fourth_button_click"
+				{
+					onclick = "[InformationPanel.SelectTab('assets')]"
+				}
+				blockoverride "fourth_button_visibility"
+				{
+					visible = "[InformationPanel.IsTabSelected('assets')]"
+				}
+				blockoverride "fourth_button_visibility_checked"
+				{
+					visible = "[Not( InformationPanel.IsTabSelected('assets') )]"
+				}
+				blockoverride "fourth_button_selected"
+				{
+					text = "BUDGET_TAB_ASSETS"
+				}
+				blockoverride "fourth_button_name" {
 					name = "tutorial_highlight_assets"
 				}
 			}
@@ -161,7 +188,7 @@ types budget
 							text = "NATIONAL_REVENUE"
 						}
 						blockoverride "text2" {
-							raw_text = "#variable @money![GetPlayer.PredictWeeklyIncome|D+=]#!"
+							raw_text = "#variable [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.PredictWeeklyIncome|D+=]#!"
 							using = total_income_tooltip_with_graph
 						}
 					}					
@@ -173,7 +200,7 @@ types budget
 
 						tax_exp_frame_coin = {
 
-							blockoverride "tutorial_highilight_name" {
+							blockoverride "tutorial_highlight_name" {
 								name = "tutorial_highlight_tax_level"
 							}
 
@@ -237,7 +264,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "@money![GetPlayer.GetIncomeTaxIncome|D+=]"
+								raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.GetIncomeTaxIncome|D+=]"
 								using = tax_income_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.GetIncomeTaxIncome)]"
 							}
@@ -250,7 +277,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "@money![GetPlayer.GetPollTaxIncome|D+=]"
+								raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.GetPollTaxIncome|D+=]"
 								using = tax_poll_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.GetPollTaxIncome)]"
 							}
@@ -264,7 +291,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "@money![GetPlayer.PredictConsumptionTaxes|D+=]"
+								raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.PredictConsumptionTaxes|D+=]"
 								using = consumption_tax_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.PredictConsumptionTaxes)]"
 							}
@@ -273,15 +300,14 @@ types budget
 						flowcontainer = {
 							dynamicgridbox = {
 								flipdirection = yes
-								datamodel_wrap = 10
+								datamodel_wrap = 5
 								datamodel = "[BudgetPanel.AccessTaxedGoods]"
 								item = {		
 									button_icon_round = {
 										size = { 35 35 }
 										onclick = "[InformationPanelBar.OpenGoodsPanel(AccessPlayer.AccessFirstMarket.Self, Goods.Self)]"
 										onrightclick = "[RightClickMenuManager.ShowForGoods(Goods.AccessSelf)]"
-										tooltip = "BUDGET_CONSUMPTION_TAX_TOOLTIP"
-										using = tooltip_se
+										tooltip = "BUDGET_CONSUMPTION_TAX_TOOLTIP"													
 
 										blockoverride "icon" {
 											texture = "[Goods.GetTexture]"
@@ -309,7 +335,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "@money![GetPlayer.PredictDividendsTaxes|D+=]"
+								raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.PredictDividendsTaxes|D+=]"
 								using = dividends_tax_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.PredictDividendsTaxes)]"
 							}
@@ -322,7 +348,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "@money![GetPlayer.PredictTariffs|D+=]"
+								raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.PredictTariffs|D+=]"
 								using = tariffs_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.PredictTariffs)]"
 							}
@@ -335,7 +361,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "@money![GetPlayer.PredictMinting|D+=]"
+								raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.PredictMinting|D+=]"
 								using = minting_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.PredictMinting)]"
 							}
@@ -348,7 +374,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "@money![GetPlayer.PredictGovernmentShareDividends|D+=]"
+								raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.PredictGovernmentShareDividends|D+=]"
 								using = government_share_dividends_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.PredictGovernmentShareDividends)]"
 							}
@@ -361,7 +387,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "@money![GetPlayer.GetInvestmentIncome|D+=]"
+								raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.GetInvestmentIncome|D+=]"
 								using = investment_income_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.GetInvestmentIncome)]"
 							}
@@ -374,7 +400,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "#variable @money![GetPlayer.PredictDiplomaticPactsIncome|D+=]#!"
+								raw_text = "#variable [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.PredictDiplomaticPactsIncome|D+=]#!"
 								using = diplomatic_pacts_income_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.PredictDiplomaticPactsIncome)]"
 							}
@@ -387,7 +413,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "@money![GetPlayer.GetModifier.GetValueFor('country_tax_income_add')|D+=]"
+								raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.GetModifier.GetValueFor('country_tax_income_add')|D+=]"
 								using = additional_income_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.GetModifier.GetValueFor('country_tax_income_add'))]"
 							}
@@ -397,7 +423,7 @@ types budget
 
 				#NATIONAL EXPENSES
 				flowcontainer = {
-					name = "tutorial_highilight_national_expenses"
+					name = "tutorial_highlight_national_expenses"
 					direction = vertical
 
 					default_header_2texts = {
@@ -405,7 +431,7 @@ types budget
 							text = "NATIONAL_EXPENSES"
 						}
 						blockoverride "text2" {
-							raw_text = "#bold #N @money!-[GetPlayer.GetWeeklyExpenses|D-]#!"
+							raw_text = "#bold #N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.GetWeeklyExpenses|D-]#!"
 							using = total_expenses_tooltip_with_graph
 						}
 					}
@@ -423,7 +449,7 @@ types budget
 
 							blockoverride "text_money" {
 								alpha = "[TransparentIfZero(GetPlayer.GetConstructionGoodsExpenses)]"
-								raw_text = "#N @money!-[GetPlayer.GetConstructionGoodsExpenses|D-]"
+								raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.GetConstructionGoodsExpenses|D-]"
 								using = construction_goods_expense_tooltip_with_graph
 							}
 
@@ -439,7 +465,7 @@ types budget
 									margin_bottom = 10
 									flowcontainer = {
 										direction = horizontal
-										spacing = 20
+										spacing = 10
 										
 										flowcontainer = {
 											direction = vertical
@@ -449,7 +475,7 @@ types budget
 												name = "tutorial_highlight_pause_all_construction"
 
 												using = default_button_action
-												size = { 210 35 }
+												size = { 190 35 }
 												text = "PAUSE_ALL_CONSTRUCTION_BUTTON"
 												onclick = "[Execute(PauseAllConstruction)]"
 												enabled = "[IsValid(PauseAllConstruction)]"
@@ -461,7 +487,7 @@ types budget
 
 											button = {
 												using = default_button_action
-												size = { 210 35 }
+												size = { 190 35 }
 												text = "RESUME_ALL_CONSTRUCTION_BUTTON"
 												onclick = "[Execute(ResumeAllConstruction)]"
 												enabled = "[IsValid(ResumeAllConstruction)]"
@@ -480,13 +506,13 @@ types budget
 											
 											item = {
 												widget = {
-													size = { 46 52 }
+													size = { 45 52 }
 													tooltip = "[ChangeAllConstructionSpeedTooltip(ProductionMethod.Self)]"
 													using = tooltip_above
 													
 													button_icon_round_action = {
 														visible = "[Not(IsCurrentProductionMethod(ProductionMethod.Self))]"
-														size = { 46 46 }
+														size = { 45 45 }
 														onclick = "[Execute(ChangeAllConstructionSpeed(ProductionMethod.Self))]"
 														using = confirm_button_sound
 														enabled = "[IsValid(ChangeAllConstructionSpeed(ProductionMethod.Self))]"
@@ -501,7 +527,7 @@ types budget
 													
 													#selected PM
 													widget = {
-														size = { 46 46 }
+														size = { 45 45 }
 														visible = "[IsCurrentProductionMethod(ProductionMethod.Self)]"
 														using = default_fade_in_out
 
@@ -572,7 +598,7 @@ types budget
 
 						tax_exp_frame_coin = {
 
-							blockoverride "tutorial_highilight_name" {
+							blockoverride "tutorial_highlight_name" {
 								name = "tutorial_highlight_government_wages"
 							}
 
@@ -583,7 +609,7 @@ types budget
 							blockoverride "second_line" {}
 
 							blockoverride "text_money" {
-								raw_text = "#N @money!-[GetPlayer.PredictGovernmentWagesExpenses|D-]"
+								raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.PredictGovernmentWagesExpenses|D-]"
 								using = government_wages_expense_tooltip_with_graph
 							}
 
@@ -672,7 +698,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "#N @money!-[GetPlayer.GetGovernmentGoodsExpenses|D-]"
+								raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.GetGovernmentGoodsExpenses|D-]"
 								using = government_goods_expense_tooltip_with_graph
 							}
 
@@ -687,7 +713,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "#N @money!-[GetPlayer.GetGovernmentSlavesExpenses|D-]"
+								raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.GetGovernmentSlavesExpenses|D-]"
 								using = government_slaves_expense_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.GetGovernmentSlavesExpenses)]"
 							}
@@ -697,7 +723,7 @@ types budget
 						
 						tax_exp_frame_coin = {
 
-							blockoverride "tutorial_highilight_name" {
+							blockoverride "tutorial_highlight_name" {
 								name = "tutorial_highlight_military_wages"
 							}
 
@@ -708,7 +734,7 @@ types budget
 							blockoverride "second_line" {}
 
 							blockoverride "text_money" {
-								raw_text = "#N @money!-[GetPlayer.PredictMilitaryWagesExpenses|D-]"
+								raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.PredictMilitaryWagesExpenses|D-]"
 								using = military_wages_expense_tooltip_with_graph
 							}
 
@@ -796,7 +822,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "#N @money!-[GetPlayer.GetMilitaryGoodsExpenses|D-]"
+								raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.GetMilitaryGoodsExpenses|D-]"
 								using = military_goods_expense_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.GetMilitaryGoodsExpenses)]"
 							}
@@ -812,7 +838,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "#N @money!-[GetPlayer.GetMilitarySlavesExpenses|D-]"
+								raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.GetMilitarySlavesExpenses|D-]"
 								using = military_slaves_expense_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.GetMilitarySlavesExpenses)]"
 							}
@@ -827,7 +853,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "#N @money!-[GetPlayer.GetWelfarePaymentsExpenses|D-]"
+								raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.GetWelfarePaymentsExpenses|D-]"
 								using = welfare_payments_expense_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.GetWelfarePaymentsExpenses)]"
 							}
@@ -840,7 +866,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "#N @money!-[GetPlayer.GetSubsidiesExpenses|D-]"
+								raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.GetSubsidiesExpenses|D-]"
 								using = subsidies_expense_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.GetSubsidiesExpenses)]"
 							}
@@ -853,7 +879,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "@money![GetPlayer.PredictGovernmentShareLosses|D-]"
+								raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.PredictGovernmentShareLosses|D-]"
 								using = government_share_losses_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.PredictGovernmentShareLosses)]"
 							}
@@ -866,7 +892,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "#N @money!-[GetPlayer.PredictDiplomaticPactsExpenses|D-]"
+								raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.PredictDiplomaticPactsExpenses|D-]"
 								using = diplomatic_pacts_expense_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.PredictDiplomaticPactsExpenses)]"
 							}
@@ -879,7 +905,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "#N @money!-[GetPlayer.GetInterestPayment|D-]"
+								raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.GetInterestPayment|D-]"
 								using = interest_expense_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.GetInterestPayment)]"
 							}
@@ -892,7 +918,7 @@ types budget
 							}
 
 							blockoverride "text_2" {
-								raw_text = "#N @money!-[GetPlayer.GetModifier.GetValueFor('country_expenses_add')|D-]#!"
+								raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] -[GetPlayer.GetModifier.GetValueFor('country_expenses_add')|D-]#!"
 								using = additional_expenses_tooltip_with_graph
 								alpha = "[TransparentIfZero(GetPlayer.GetModifier.GetValueFor('country_expenses_add'))]"
 							}
@@ -909,7 +935,7 @@ types budget
 							text = "[concept_unrealized_taxes]"
 						}
 						blockoverride "text2" {
-							raw_text = "@money![GetPlayer.GetUnrealizedTaxes|D-]"
+							raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.GetUnrealizedTaxes|D-]"
 							tooltip = UNREALIZED_TAXES_BREAKDOWN
 						}
 					}
@@ -920,6 +946,410 @@ types budget
 						text = "[GetPlayer.GetAverageStateTaxCollectionMultBreakdown]"
 					}				
 				}
+			}
+
+		### Fiscal Policies
+			flowcontainer = {
+				visible = "[InformationPanel.IsTabSelected('fiscal')]"			
+				using = default_content_fade
+				direction = vertical
+				using = default_list_position
+				spacing = 10
+
+				default_header = {
+					blockoverride "text" {
+						text = "[concept_central_bank]"
+					}
+				}
+
+				flowcontainer = {
+					spacing = 10
+					direction = vertical
+					using = default_list_position
+					
+					widget = {
+						size = { @panel_width_minus_10 1100 }
+						parentanchor = hcenter
+						
+						flowcontainer = {
+							margin = { 0 0 }
+							direction = vertical
+							spacing = 20
+							flowcontainer = {
+								direction = vertical
+								margin_top = 10
+								margin_bottom = 10
+								widget = {
+									size = { @panel_width_minus_10  1000 }
+									button = { # Icon
+										parentanchor = left|top
+										position = { 20 5 }
+										icon = {
+											texture = "gfx/interface/icons/cwp_icons/central_bank.dds"
+											tooltip = "[concept_central_bank]"
+											size = { 150 150 }
+											background = {
+												using = simple_frame
+												using = dropdown_background
+											}
+										}
+									}
+									button = { # Text
+										parentanchor = right|top
+										size = { 350 40 }
+										raw_text = "[GetPlayer.GetAdjective] [concept_central_bank] | [GetPlayer.GetCustom('bank_credibility_loc')]"
+										using = expand_button_bg_no_fade
+										tooltipwidget = {
+											bank_credibility_tooltip = {}
+										}
+										onclick = "[GetVariableSystem.Toggle('banks_panel')]"
+									}
+									# Info
+									flowcontainer = {
+										parentanchor = hcenter
+										direction = vertical
+										position = { 50 50 }
+										spacing = 10
+										flowcontainer = {
+											direction = vertical
+											spacing = 25
+											textbox = {
+												using = tooltip_above			
+												raw_text = "#t [concept_bank_independence]#!"
+												using = fontsize_large
+											}
+											textbox = {
+												using = tooltip_above						
+												raw_text = "#t [GetPlayer.GetCustom('bank_independence_loc')]#!"
+												using = fontsize_large
+											}
+										}
+										tooltip = "CENTRAL_BANK_CUSTOM_LOC"
+										widget = {
+											size = { 250 20 }
+											divider_clean = {
+												parentanchor = center
+											}
+										}
+										flowcontainer = {
+											direction = vertical
+											spacing = 25
+											textbox = {
+												using = tooltip_above			
+												raw_text = "#T Currency#!"
+												using = fontsize_large
+											}
+											textbox = {
+												using = tooltip_above					
+												raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName][GetPlayer.GetCustom('currency_text_loc')] | Denomination: [GetPlayer.MakeScope.ScriptValue('country_currency_denomination')|d]"
+												using = fontsize_large
+											}
+											flowcontainer = {
+												direction = horizontal
+												spacing = 5
+												button = {
+													size = { 130 30 }
+													using = expand_button_bg_no_fade
+													raw_text = "Devalue"
+													onclick = "[GetScriptedGui('devalue_currency').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+													enabled = "[GetScriptedGui('can_alter_currency').IsShown( GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+													tooltip = "DEVALUE_CURRENCY_TOOLTIP"
+												}
+												button = {
+													size = { 130 30 }
+													using = expand_button_bg_no_fade
+													raw_text = "Revalue"
+													onclick = "[GetScriptedGui('revalue_currency').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+													enabled = "[GetScriptedGui('can_alter_currency').IsShown( GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+													tooltip = "REVALUE_CURRENCY_TOOLTIP"
+												}
+											}
+											
+											
+										}
+										button = {
+											size = { 260 30 }
+											using = expand_button_bg_no_fade
+											raw_text = "Redenominate"
+											onclick = "[GetScriptedGui('redenominate_currency').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+											enabled = "[GetScriptedGui('can_redenominate_currency').IsShown( GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+											tooltip = "REDENOMINATE_CURRENCY_TOOLTIP"
+										}
+										widget = {
+											size = { 250 20 }
+											divider_clean = {
+												parentanchor = center
+											}
+										}
+									}
+									flowcontainer = {
+										position = { 0 250 }
+										margin = { 10 10 }
+										direction = vertical
+										spacing = 10
+										hbox = {
+											flowcontainer = {
+												margin_top = 0
+												direction = vertical
+												spacing = 25
+												textbox = {
+													using = tooltip_above			
+													raw_text = "#T [concept_interest_rate]"
+													using = fontsize_large
+												}
+												textbox = {
+													using = tooltip_above				
+													text = "CURRENT_INTEREST_RATE"
+													using = fontsize_large
+												}
+												widget = {
+													size = { 250 20 }
+													divider_clean = {
+														parentanchor = center
+													}
+												}
+											}
+											flowcontainer = {
+												direction = vertical
+												spacing = 10
+												flowcontainer = {
+													margin_top = 10
+													spacing = 10
+													button = {
+														size = { 70 30 }
+														using = expand_button_bg_no_fade
+														raw_text = "-"
+														enabled = "[GetScriptedGui('can_set_interest_rates').IsShown( GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+														onclick = "[GetScriptedGui('lower_interest_rate').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+													}
+													button = {
+														size = { 70 30 }
+														using = expand_button_bg_no_fade
+														text = "[SelectLocalization(EqualTo_CFixedPoint(GetPlayer.MakeScope.ScriptValue('interest_rate'), GetPlayer.MakeScope.ScriptValue('interest_rate_gui')), 'CURRENT_INTEREST_RATE', 'TARGET_INTEREST_RATE')]"
+														enabled = "[Not(EqualTo_CFixedPoint(GetPlayer.MakeScope.ScriptValue('interest_rate'), GetPlayer.MakeScope.ScriptValue('interest_rate_gui')))]"
+														onclick = "[GetScriptedGui('submit_interest_rate').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+													}
+													button = {
+														size = { 70 30 }
+														using = expand_button_bg_no_fade
+														raw_text = "+"
+														enabled = "[GetScriptedGui('can_set_interest_rates').IsShown( GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+														onclick = "[GetScriptedGui('raise_interest_rate').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+													}
+													tooltip = "ALTER_INTEREST_RATES"
+												}
+												widget = {
+													size = { 250 20 }
+													divider_clean = {
+														parentanchor = center
+													}
+												}
+											}
+										}
+										hbox = {
+											flowcontainer = {
+												margin_top = 10
+												direction = vertical
+												spacing = 25
+												textbox = {
+													using = tooltip_above			
+													raw_text = "#T [concept_inflation_rate]"
+													using = fontsize_large
+												}
+												textbox = {			
+													raw_text = "#v [GetPlayer.MakeScope.ScriptValue('inflation_value')|d%]#! | [GetPlayer.MakeScope.ScriptValue('inflation_growth')|-Od%] per month"
+													using = fontsize_large
+												}
+												tooltipwidget = {
+													inflation_tooltip = {}
+												}
+												widget = {
+													size = { 505 20 }
+													divider_clean = {
+														parentanchor = center
+													}
+												}
+											}
+										}
+
+
+									}
+									flowcontainer = {
+										parentanchor = hcenter
+										direction = vertical
+										position = { 0 470 }
+										margin = { 10 10 }
+										spacing = 10
+										flowcontainer = {
+											direction = vertical
+											spacing = 25
+											textbox = {
+												margin_left = 15
+												using = tooltip_above			
+												raw_text = "#t [concept_monetary_policy]#!"
+												using = fontsize_large
+											}
+											flowcontainer = {
+												spacing = 10
+												button = {
+													size = { 160 30 }
+													using = expand_button_bg_no_fade
+													raw_text = "[concept_contractionary_monetary_policy]"
+													onclick = "[GetScriptedGui('set_contractionary_monetary_policy').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+													enabled = "[GetScriptedGui('can_set_contractionary').IsShown( GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+												}
+												button = {
+													size = { 160 30 }
+													using = expand_button_bg_no_fade
+													raw_text = "[concept_stable_monetary_policy]"
+													onclick = "[GetScriptedGui('set_stable_monetary_policy').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+													enabled = "[GetScriptedGui('can_set_stable').IsShown( GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+												}
+												button = {
+													size = { 160 30 }
+													using = expand_button_bg_no_fade
+													raw_text = "[concept_expansionary_monetary_policy]"
+													onclick = "[GetScriptedGui('set_expansionary_monetary_policy').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+													enabled = "[GetScriptedGui('can_set_expansionary').IsShown( GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+												}
+											}
+										}
+										widget = {
+											size = { 500 20 }
+											divider_clean = {
+												parentanchor = center
+											}
+										}
+										flowcontainer = {
+											margin = { 10 10 }
+											direction = vertical
+											spacing = 25
+											textbox = {
+												using = tooltip_above			
+												raw_text = "#T [concept_money_supply]#!  [GetPlayer.MakeScope.ScriptValue('money_supply_percentage')|d%] | [GetPlayer.MakeScope.ScriptValue('money_supply_growth_percentage')|d%] per month"
+												using = fontsize_large
+											}
+											double_direction_progressbar_gold = {
+												size = { 500 25 }
+												blockoverride "negative_min_max_values" {
+													min = "[Negate_float(FixedPointToFloat(GetPlayer.MakeScope.ScriptValue('money_supply_max')))]"
+													max = 0
+												}
+							
+												blockoverride "positive_min_max_values" {
+													min = 0
+													max = "[FixedPointToFloat(GetPlayer.MakeScope.ScriptValue('money_supply_max'))]"
+												}
+												
+												blockoverride "value_left" {
+													value = "[FixedPointToFloat(GetPlayer.MakeScope.ScriptValue('money_supply'))]"
+												}
+												blockoverride "value_right" {
+													value = "[FixedPointToFloat(GetPlayer.MakeScope.ScriptValue('money_supply'))]"
+												}
+											}
+											container = {
+												parentanchor = hcenter
+												minimumsize = { 100 30 }
+												textbox = {
+													margin_bottom = 10
+													parentanchor = center
+													align = center
+													using = tooltip_above			
+													raw_text = "[GetPlayer.MakeScope.ScriptValue('money_supply_max')|vd] Capacity | [GetPlayer.MakeScope.ScriptValue('money_supply_growth')|+0d] per month"
+													using = fontsize_large
+													
+												}
+												
+											}
+
+											tooltipwidget = {
+												money_supply_tooltip = {}
+											}
+											background = {
+												using = dropdown_background
+											}
+										}
+										flowcontainer = {
+											margin = { 10 10 }
+											direction = vertical
+											spacing = 25
+											textbox = {
+												margin_top = 90
+												using = tooltip_above			
+												raw_text = "#T Foreign Reserves#! | [GetPlayer.MakeScope.ScriptValue('foreign_reserves_value')|+0d] > #p [GetPlayer.MakeScope.ScriptValue('foreign_reserves_conversion')|+0d]#!"
+												using = fontsize_large
+											}
+											flowcontainer = {
+												parentanchor = right
+												#margin_top = -30
+												button = {
+													size = { 180 40 }
+													using = expand_button_bg_no_fade
+													raw_text = "Sell Foreign Reserves"
+													onclick = "[GetScriptedGui('sell_foreign_reserves').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+													enabled = "[GetScriptedGui('can_sell_currency').IsShown( GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+													tooltip = "FOREIGN_RESERVES_SELL_TOOLTIP"
+												}
+											}
+											gold_progressbar_horizontal = {
+												size = { 500 25 }
+												blockoverride "values" {
+													value = "[FixedPointToFloat(GetPlayer.MakeScope.ScriptValue('foreign_reserves_value'))]"
+													max = "[FixedPointToFloat(GetPlayer.MakeScope.ScriptValue('foreign_reserves_max'))]"
+												}
+												tooltipwidget = {
+													foreign_reserves_tooltip = {}
+												}
+											}
+											background = {
+												using = dropdown_background
+											}
+										}
+										widget = {
+											size = { 500 20 }
+											divider_clean = {
+												parentanchor = center
+											}
+										}
+										flowcontainer = {
+											margin = { 10 10 }
+											direction = vertical
+											spacing = 25
+											textbox = {
+												using = tooltip_above			
+												raw_text = "#T Investor Confidence#!"
+												using = fontsize_large
+											}
+											textbox = {
+												using = tooltip_above			
+												raw_text = "[GetPlayer.MakeScope.ScriptValue('investor_confidence')|+1%] due to [GetPlayer.GetCustom('bank_credibility_loc')] [concept_central_bank] credibility"
+												using = fontsize_large
+											}
+										}
+									}
+									######## Bottom
+									background = {
+										texture = "gfx/interface/illustrations/government/government_illustration.dds"
+										alpha = 0.2
+										fittype = centercrop
+										using = frame_small_mask
+										modify_texture = {
+											texture = "gfx/interface/masks/fade_horizontal_center.dds"
+											spriteType = Corneredstretched
+											spriteborder = { 100 200 }
+											blend_mode = alphamultiply
+										}
+									}
+								}
+								background = {
+									using = dropdown_background
+								}
+							}							
+						}
+					}
+
+				}			
 			}
 
 			#STATES
@@ -1027,7 +1457,7 @@ types budget
 										size = { 0 40 }
 										
 										align = right|nobaseline
-										raw_text = "@money![State.GetAverageAnnualWage|vD]"
+										raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [State.GetAverageAnnualWage|vD]"
 										tooltip = "[State.GetAverageAnnualWageDesc]"
 									}
 
@@ -1037,7 +1467,7 @@ types budget
 										size = { 0 40 }
 										
 										align = right|nobaseline
-										raw_text = "#variable @money![State.GetGovernmentExpenses|+d]#!"
+										raw_text = "#variable [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [State.GetGovernmentExpenses|+d]#!"
 										tooltip = "[State.GetGovernmentExpensesTooltip]"
 										alpha = "[TransparentIfZero(State.GetGovernmentExpenses)]"
 									}
@@ -1048,10 +1478,9 @@ types budget
 										size = { 0 40 }
 										
 										align = right|nobaseline
-										raw_text = "#variable @money![State.GetTaxationRevenue|=+D]#!"
+										raw_text = "#variable [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [State.GetTaxationRevenue|=+D]#!"
+										tooltip = "[State.GetTaxationRevenueTooltip]"
 										alpha = "[TransparentIfZero(State.GetTaxationRevenue)]"
-
-										using = state_taxation_revenue_with_table
 									}
 								}
 							}
@@ -1112,7 +1541,7 @@ types budget
 							visible = "[GreaterThan_CFixedPoint( GetPlayer.GetGoldReserveRatio, '(CFixedPoint)0' )]"
 							using = fontsize_large
 							autoresize = yes
-							raw_text = " #variable @money![GetPlayer.GetGoldReserves|K]#! ([AccessPlayer.PredictWeeklyBalanceWithEconomyHealthHint])"
+							raw_text = " #variable [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.GetGoldReserves|K]#! ([AccessPlayer.PredictWeeklyBalanceWithEconomyHealthHint])"
 							parentanchor = right|vcenter
 							align = right|nobaseline
 							margin_right = 20
@@ -1122,7 +1551,7 @@ types budget
 							visible = "[Not(GreaterThan_CFixedPoint( GetPlayer.GetGoldReserveRatio, '(CFixedPoint)0' ))]"
 							using = fontsize_large
 							autoresize = yes
-							raw_text = " #variable @money![GetPlayer.GetGoldReserves|K]#!"
+							raw_text = " #variable [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.GetGoldReserves|K]#!"
 							parentanchor = right|vcenter
 							align = right|nobaseline
 							margin_right = 20
@@ -1155,7 +1584,7 @@ types budget
 					textbox = {
 						using = fontsize_large
 						autoresize = yes
-						raw_text = "#v @money![GetPlayer.GetInvestmentPool|D+]#! ([GetPlayer.GetInvestmentPoolChange|=+D])"
+						raw_text = "#v [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.GetInvestmentPool|D+]#! ([GetPlayer.GetInvestmentPoolChange|=+D])"
 						parentanchor = right|vcenter
 						align = right|nobaseline
 						margin_right = 20
@@ -1205,7 +1634,7 @@ types budget
 				}
 				
 				widget = {
-					name = "tutorial_highilight_principal_bar"
+					name = "tutorial_highlight_principal_bar"
 					size = { @panel_width_minus_10 45 }
 					parentanchor = hcenter
 					tooltip = "CREDIT_PROGRESS"
@@ -1233,7 +1662,7 @@ types budget
 					textbox = {
 						using = fontsize_large
 						autoresize = yes
-						raw_text = "#variable @money![GetPlayer.GetPrincipal|K]#!"
+						raw_text = "#variable [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [GetPlayer.GetPrincipal|K]#!"
 						parentanchor = right|vcenter
 						align = right|nobaseline
 						margin_right = 20
@@ -1262,7 +1691,7 @@ types budget
 					textbox = {
 						using = fontsize_large
 						autoresize = yes
-						raw_text = "@money!#variable [GetPlayer.GetRemainingCredit|2*]#! / [GetPlayer.GetMaxCredit|2*]"
+						raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] #variable [GetPlayer.GetRemainingCredit|2*]#! / [GetPlayer.GetMaxCredit|2*]"
 						parentanchor = right|vcenter
 						align = right|nobaseline
 						margin_right = 20
@@ -1320,7 +1749,7 @@ types budget
 		textbox = {
 			autoresize = yes
 			block "text_money" {
-				raw_text = "@money! 0"
+				raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName]  0"
 			}
 			parentanchor = right|vcenter
 			margin_bottom = 6
@@ -1347,7 +1776,7 @@ types budget
 		textbox = {
 			autoresize = yes
 			block "text_2" {
-				raw_text = "@money! 0"
+				raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName]  0"
 			}
 			parentanchor = right|vcenter
 			margin_bottom = 6
@@ -1545,7 +1974,7 @@ types budget
 	### SET LEVEL BAR (budget tax)
 	type set_level_bar = flowcontainer {
 
-		block "tutorial_highilight_name" {
+		block "tutorial_highlight_name" {
 			name = "tutorial_highlight_name"
 		}
 			

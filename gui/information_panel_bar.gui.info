@@ -1,29 +1,25 @@
-#positions for sidepanel buttons
+#positions for sidepanel buttons 
 #(they cant be in flowcontainer because of the way the label buttons is set up to scale with the longest localized text)
-
-@politics_position = 0
 @budget_position = 50
 @buildings_position = 100
 @trade_position = 150
 @military_position = 200
-@power_bloc_position = 250
 
-@spacing_widget_1_position = 300
+@spacing_widget_1_position = 250
 @spacing_widget_size = 20
 
-@diplomatic_position = 320
-@technology_position = 360
-@culture_position = 400
-@population_position = 440
-@journal_position = 480
-@companies_position = 520
+@diplomatic_position = 270
+@international_position = 310
+@technology_position = 350
+@culture_position = 390
+@population_position = 430
+@journal_position = 470
+@outliner_position = 510
+@companies_position = 560
 
-@maplist_position = 580
+@spacing_widget_2_position = 610
 
-
-@spacing_widget_2_position = 560
-
-
+@maplist_position = 610
 
 types information_panel_bar_types {
 	type information_panel_bar = widget {
@@ -33,7 +29,7 @@ types information_panel_bar_types {
 		focuspolicy = all
 
 		position = { 0 200 }
-
+		
 		state = {
 			name = _show
 			using = default_show_properties
@@ -43,13 +39,13 @@ types information_panel_bar_types {
 			using = default_hide_properties
 			on_start = "[InformationPanelBar.ClosePanel]"
 		}
-
+		
 		### BACKGROUND FOR LABEL BUTTONS
 		widget = {
 			size = { 100% 100% }
 			using = clickthrough_blocker
 			alpha = 0
-
+			
 			background = {
 				using = dark_area
 				alpha = 1
@@ -57,7 +53,7 @@ types information_panel_bar_types {
 				margin_top = -5
 				margin_left = -25
 				margin_bottom = -5
-
+				
 				modify_texture = {
 					texture = "gfx/interface/masks/fade_horizontal_right.dds"
 					spriteType = Corneredstretched
@@ -65,7 +61,7 @@ types information_panel_bar_types {
 					blend_mode = alphamultiply
 				}
 			}
-
+			
 			state = {
 				name = show_sidebar_labels
 				alpha = 0.7
@@ -86,57 +82,14 @@ types information_panel_bar_types {
 			}
 		}
 
-		container = {
-			position = { 0 -16 }
-
-			### SIDEBAR BACKGROUND
-			flowcontainer = {
-				direction = vertical
-
-				icon = {
-					texture = "gfx/interface/main_hud/sidebar_skin_bg_1.dds"
-					size = { 50 171 }
-
-					using = hud_shiny_effect
-				}
-
-				icon = {
-					texture = "gfx/interface/main_hud/sidebar_skin_bg_2.dds"
-					size = { 50 50 }
-
-					using = hud_shiny_effect
-				}
-
-				icon = {
-					texture = "gfx/interface/main_hud/sidebar_skin_bg_2.dds"
-					size = { 50 50 }
-
-					using = hud_shiny_effect
-				}
-
-				icon = {
-					texture = "gfx/interface/main_hud/sidebar_skin_bg_3.dds"
-					size = { 50 230 }
-
-					using = hud_shiny_effect
-				}
-
-				icon = {
-					texture = "gfx/interface/main_hud/sidebar_skin_bg_4.dds"
-					size = { 50 40 }
-
-					using = hud_shiny_effect
-				}
-
-				icon = {
-					texture = "gfx/interface/main_hud/sidebar_skin_bg_5.dds"
-					size = { 50 128 }
-
-					using = hud_shiny_effect
-				}
-			}
+		### SIDEBAR BACKGROUND
+		icon = {
+			texture = "gfx/interface/main_hud/sidebar_bg.dds"
+			size = { 50 700 }
+			position = { 0 -17 }
+			
+			using = hud_shiny_effect
 		}
-
 
 		### LABEL BUTTONS
 		flowcontainer = {
@@ -146,83 +99,29 @@ types information_panel_bar_types {
 			margin_right = -8 #margin to trim the hover area for the labels
 			onmousehierarchyenter = "[PdxGuiInterruptThenTriggerAllAnimations('hide_sidebar_labels','show_sidebar_labels')]"
 			onmousehierarchyleave = "[PdxGuiInterruptThenTriggerAllAnimations('show_sidebar_labels','hide_sidebar_labels')]"
-
+			
 			container = {
-			    name = "ingame_sidebar_buttons_container" # Don't rename otherwise `UiValidityCheck`s will just pretend to work
-				### POWER BLOC
-
-
-				#two different buttons for two different onclicks
-				sidebar_label_button = {
-					name = "power_bloc_member"
-					visible = "[GetPlayer.IsInPowerBloc]"
-
-					position = { -100 @power_bloc_position }
-					blockoverride "onclick" {
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('power_bloc_panel', 'default|members|modifiers')]"
-						input_action = "open_power_bloc"
-					}
-				}
-
-				sidebar_label_button = {
-					name = "power_bloc_not_member"
-					visible = "[Not(GetPlayer.IsInPowerBloc)]"
-
-					position = { -100 @power_bloc_position }
-					blockoverride "onclick" {
-						onclick = "[InformationPanelBar.OpenPanel('power_bloc_panel')]"
-						input_action = "open_power_bloc"
-					}
-				}
-
-
-				sidebar_label_text = {
-					position = { -100 @power_bloc_position }
-					text = "POWER_BLOC"
-				}
-
-				#two different buttons for two different onclicks
-
-				power_bloc_icon_button_widget = {
-					visible = "[GetPlayer.IsInPowerBloc]"
-
-					blockoverride "bloc_onclick" {
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('power_bloc_panel', 'default|members|modifiers')]"
-					}
-				}
-
-				power_bloc_icon_button_widget = {
-					visible = "[Not(GetPlayer.IsInPowerBloc)]"
-					name = "tutorial_highlight_power_bloc_button_non_member"
-					blockoverride "bloc_onclick" {
-						onclick = "[InformationPanelBar.OpenPanel('power_bloc_panel')]"
-					}
-				}
-
-				sidebar_tooltip_area = {
-					position = { 0 @power_bloc_position }
-					tooltip = "BUTTON_POWER_BLOC"
-					input_action = "open_power_bloc"
-				}
-
-
-
-
+				name = "ingame_sidebar_buttons_container" # Do not rename otherwise `UiValidityCheck`s will just pretend to work
 				### POLITICS
 				sidebar_label_button = {
-					position = { -100 @politics_position }
+					position = { -100 0 }
 					blockoverride "onclick" {
 						onclick = "[InformationPanelBar.OpenPanelCycleTabs('politics', 'default|interest_groups|laws|institutions')]"
 						onclick = "[GetVariableSystem.Clear('politics_overview_exile_pool')]"
 						input_action = "open_politics"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 				sidebar_label_text = {
-					position = { -100 @politics_position }
+					position = { -100 0 }
 					text = "POLITICS"
 				}
 				widget = {
-					position = { 0 @politics_position }
 					name = "tutorial_highlight_politics"
 					using = clickthrough_blocker
 					using = sidebar_button_size
@@ -239,25 +138,16 @@ types information_panel_bar_types {
 						}
 						onclick = "[InformationPanelBar.OpenPanelCycleTabs('politics', 'default|interest_groups|laws|institutions')]"
 						onclick = "[GetVariableSystem.Clear('politics_overview_exile_pool')]"
-
-						### DEFAULT LAW ENACTMENT PROGRESS
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
+						
 						animated_progresspie = {
-							visible = "[Not(LessThan_int32(GetPlayer.GetGovernmentLegitimacy, '(int32)25'))]"
 							parentanchor = center
 							texture = "gfx/interface/main_hud/sidebar_progress.dds"
-							size = { 100% 100% }
-							framesize = { 100 100 }
-							frame = 2
-							datacontext = "[GetPlayer.GetLawBeingEnacted]"
-							value = "[FixedPointToFloat(GetPlayer.GetLawEnactmentProgress)]"
-							alwaystransparent = yes
-						}
-
-						### IF ILLEGITMATE GOVERNMENT - RED PROGRESS
-						animated_progresspie = {
-							visible = "[LessThan_int32(GetPlayer.GetGovernmentLegitimacy, '(int32)25')]"
-							parentanchor = center
-							texture = "gfx/interface/main_hud/sidebar_progress_red.dds"
 							size = { 100% 100% }
 							framesize = { 100 100 }
 							frame = 2
@@ -268,17 +158,23 @@ types information_panel_bar_types {
 					}
 				}
 				sidebar_tooltip_area = {
-					position = { 0 @politics_position }
+					position = { 0 0 }
 					tooltip = "BUTTON_POLITICS"
 					input_action = "open_politics"
 				}
-
+				
 				### BUDGET
 				sidebar_label_button = {
 					position = { -100 @budget_position }
 					blockoverride "onclick" {
 						onclick = "[InformationPanelBar.OpenPanelCycleTabs('budget', 'default|states|assets')]"
 						input_action = "open_budget"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 				sidebar_label_text = {
@@ -302,6 +198,12 @@ types information_panel_bar_types {
 							visible = "[InformationPanelBar.IsPanelOpen('budget')]"
 						}
 						onclick = "[InformationPanelBar.OpenPanelCycleTabs('budget', 'default|states|assets')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 				sidebar_tooltip_area = {
@@ -309,13 +211,18 @@ types information_panel_bar_types {
 					tooltip = "BUTTON_BUDGET"
 					input_action = "open_budget"
 				}
-
+				
 				### BUILDINGS
 				sidebar_label_button = {
 					position = { -100 @buildings_position }
 					blockoverride "onclick" {
-						onclick = "[InformationPanelBar.OpenCompactBuildingBrowserPanelCycleFilters( GetPlayer.Self, '|is_urban|is_rural|is_development' )]"
-						input_action = "open_buildings"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('production_methods', 'urban|rural|development|construction_queues')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 				sidebar_label_text = {
@@ -329,16 +236,22 @@ types information_panel_bar_types {
 					using = sidebar_button_size
 					using = selected_sidepanel_animation
 					blockoverride "selected_visibility" {
-						visible = "[InformationPanelBar.IsPanelOpen('compact_building_browser')]"
+						visible = "[InformationPanelBar.IsPanelOpen('production_methods')]"
 					}
 					sidepanel_button_big = {
 						blockoverride "icon" {
 							texture = "gfx/interface/main_hud/production_overview_btn.dds"
 						}
 						blockoverride "button_selected" {
-							visible = "[InformationPanelBar.IsPanelOpen('compact_building_browser')]"
+							visible = "[InformationPanelBar.IsPanelOpen('production_methods')]"
 						}
-						onclick = "[InformationPanelBar.OpenCompactBuildingBrowserPanelCycleFilters( GetPlayer.Self, '|is_urban|is_rural|is_development' )]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('production_methods', 'urban|industrial|resource|rural|development|construction_queues')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 				sidebar_tooltip_area = {
@@ -346,13 +259,19 @@ types information_panel_bar_types {
 					tooltip = "BUTTON_BUILDINGS"
 					input_action = "open_buildings"
 				}
-
+				
 				### TRADE OVERVIEW
 				sidebar_label_button = {
 					position = { -100 @trade_position }
 					blockoverride "onclick" {
 						onclick = "[InformationPanelBar.OpenMarketPanelCycleTabs(AccessPlayer.AccessFirstMarket, 'market', 'default|trade_routes|trade_suggestions|states')]"
 						input_action = "open_market"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 				sidebar_label_text = {
@@ -376,6 +295,12 @@ types information_panel_bar_types {
 							visible = "[InformationPanelBar.IsPanelOpen('market')]"
 						}
 						onclick = "[InformationPanelBar.OpenMarketPanelCycleTabs(AccessPlayer.AccessFirstMarket, 'market', 'default|trade_routes|trade_suggestions|states')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 				sidebar_tooltip_area = {
@@ -383,12 +308,19 @@ types information_panel_bar_types {
 					tooltip = "BUTTON_TRADE_OVERVIEW"
 					input_action = "open_market"
 				}
-
+				
 				### MILITARY
 				sidebar_label_button = {
 					position = { -100 @military_position }
 					blockoverride "onclick" {
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('military', 'army|mobilization|navy')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('military', 'army|navy')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
+
 						input_action = "open_military"
 					}
 				}
@@ -412,7 +344,13 @@ types information_panel_bar_types {
 						blockoverride "button_selected" {
 							visible = "[InformationPanelBar.IsPanelOpen('military')]"
 						}
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('military', 'army|mobilization|navy')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('military', 'army|navy')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 				sidebar_tooltip_area = {
@@ -420,22 +358,28 @@ types information_panel_bar_types {
 					tooltip = "BUTTON_MILITARY"
 					input_action = "open_military"
 				}
-
+				
 				### SECONDARY BUTTONS
-
+				
 				#widget needed to prevent you from clicking on the map
 				widget = {
 					using = clickthrough_blocker
 					position = { 0 @spacing_widget_1_position }
 					size = { 100% @spacing_widget_size }
 				}
-
+				
 				### DIPLOMATIC
 				sidebar_label_button_small = {
 					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 					position = { -100 @diplomatic_position }
 					blockoverride "onclick" {
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('diplomatic_overview', 'default|subjects|release_subject|country_browser')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('diplomatic_overview', 'default|release_subject')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 						input_action = "open_diplomatic"
 					}
 				}
@@ -460,13 +404,75 @@ types information_panel_bar_types {
 						blockoverride "button_selected" {
 							visible = "[InformationPanelBar.IsPanelOpen('diplomatic_overview')]"
 						}
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('diplomatic_overview', 'default|subjects|release_subject|country_browser')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('diplomatic_overview', 'default|release_subject')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 				sidebar_tooltip_area_small = {
 					position = { 0 @diplomatic_position }
 					tooltip = "BUTTON_DIPLOMATIC_OVERVIEW"
 					input_action = "open_diplomatic"
+				}
+				
+				### INTERNATIONAL
+				sidebar_label_button_small = {
+					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+					position = { -100 @international_position }
+					blockoverride "onclick" {
+						onclick = "[GetVariableSystem.Toggle('international_open')]"
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
+						onclick = "[InformationPanelBar.ClosePanel]"
+						onclick = "[MapListPanelManager.CloseCurrentPanel]"
+						onclick = "[GetScriptedGui('toggle_unsc_sgui_list').Execute( GuiScope.End )]"
+						onclick = "[GetScriptedGui('build_UN_nations_list_sgui').Execute( GuiScope.End )]"
+						onclick = "[GetScriptedGui('build_UN_observers_list_sgui').Execute( GuiScope.End )]"
+						onclick = "[GetScriptedGui('build_UN_nonmember_list_sgui').Execute( GuiScope.End )]"
+						onclick = "[GetScriptedGui('build_un_headquarters_holder_sgui').Execute( GuiScope.End )]"
+					}
+				}
+
+				sidebar_label_text_small = {
+					position = { -100 @international_position }
+					text = "INTERNATIONAL_ORGANIZATIONS"
+				}
+				widget = {
+					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+					name = "tutorial_highlight_international"
+					position = { 0 @international_position }
+					using = clickthrough_blocker
+					using = sidebar_button_size_small
+					using = selected_sidepanel_animation_small
+					blockoverride "selected_visibility" {
+						visible = "[GetVariableSystem.Exists('international_open')]"
+					}
+					sidepanel_button_small = {
+						blockoverride "icon" {
+							texture = "gfx/interface/main_hud/international_btn.dds"
+						}
+						blockoverride "button_selected" {
+							visible = "[GetVariableSystem.Exists('international_open')]"
+						}
+						onclick = "[InformationPanelBar.ClosePanel]"
+						onclick = "[MapListPanelManager.CloseCurrentPanel]"
+						onclick = "[GetVariableSystem.Toggle('international_open')]"
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
+					}
+				}
+				sidebar_tooltip_area_small = {
+					position = { 0 @international_position }
 				}
 
 				### TECHNOLOGY
@@ -475,6 +481,12 @@ types information_panel_bar_types {
 					position = { -100 @technology_position }
 					blockoverride "onclick" {
 						onclick = "[InformationPanelBar.OpenPanelCycleTabs('tech_tree', 'production|military|society')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]"  
 						input_action = "open_technology"
 					}
 				}
@@ -500,7 +512,13 @@ types information_panel_bar_types {
 							visible = "[InformationPanelBar.IsPanelOpen('tech_tree')]"
 						}
 						onclick = "[InformationPanelBar.OpenPanelCycleTabs('tech_tree', 'production|military|society')]"
-
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
+						
 						animated_progresspie = {
 							visible = "[Technology.IsValid]"
 							parentanchor = center
@@ -533,7 +551,7 @@ types information_panel_bar_types {
 					tooltip = "BUTTON_TECHNOLOGY"
 					input_action = "open_technology"
 				}
-				
+
 				### COMPANIES
 				sidebar_label_button_small = {
 					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
@@ -564,15 +582,15 @@ types information_panel_bar_types {
 						blockoverride "button_selected" {
 							visible = "[InformationPanelBar.IsPanelOpen('companies')]"
 						}
-						onclick = "[InformationPanelBar.OpenPanel('companies')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('companies', 'default|potential_companies')]"
 					}
 				}
 				sidebar_tooltip_area_small = {
 					position = { 0 @companies_position }
 					tooltip = "BUTTON_COMPANIES_OVERVIEW"
 					input_action = "open_companies"
-				}				
-
+				}
+				
 				### CULTURE
 				sidebar_label_button_small = {
 					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
@@ -580,6 +598,12 @@ types information_panel_bar_types {
 					blockoverride "onclick" {
 						onclick = "[InformationPanelBar.OpenPanelCycleTabs('culture', 'default|nation_formation')]"
 						input_action = "open_culture"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 				sidebar_label_text_small = {
@@ -604,6 +628,12 @@ types information_panel_bar_types {
 							visible = "[InformationPanelBar.IsPanelOpen('culture')]"
 						}
 						onclick = "[InformationPanelBar.OpenPanelCycleTabs('culture', 'default|nation_formation')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 				sidebar_tooltip_area_small = {
@@ -611,13 +641,19 @@ types information_panel_bar_types {
 					tooltip = "BUTTON_CULTURE_OVERVIEW"
 					input_action = "open_culture"
 				}
-
+				
 				### POPULATION
 				sidebar_label_button_small = {
 					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 					position = { -100 @population_position }
 					blockoverride "onclick" {
 						onclick = "[InformationPanelBar.OpenPanelCycleTabs('pops_overview', 'default|population_charts|pop_list')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 						input_action = "open_population"
 					}
 				}
@@ -643,6 +679,12 @@ types information_panel_bar_types {
 							visible = "[InformationPanelBar.IsPanelOpen('pops_overview')]"
 						}
 						onclick = "[InformationPanelBar.OpenPanelCycleTabs('pops_overview', 'default|population_charts|pop_list')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 				sidebar_tooltip_area_small = {
@@ -650,15 +692,27 @@ types information_panel_bar_types {
 					tooltip = "BUTTON_POPULATION"
 					input_action = "open_population"
 				}
-
+				
 				### JOURNAL
 				sidebar_label_button_small = {
 					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
 					position = { -100 @journal_position }
 					blockoverride "onclick" {
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('journal', 'default|inactive_journal_entries')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('journal', 'default|decisions')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 						input_action = "open_journal"
 					}
+				}
+				# HIDDEN DECISIONS BUTTON, JUST FOR SHORTCUT
+				button = {
+					size = { 0 0 }
+					input_action = "open_decisions"
+					onclick = "[InformationPanelBar.OpenPanelTab('journal', 'decisions')]"
 				}
 				sidebar_label_text_small = {
 					position = { -100 @journal_position }
@@ -681,11 +735,17 @@ types information_panel_bar_types {
 						blockoverride "button_selected" {
 							visible = "[InformationPanelBar.IsPanelOpen('journal')]"
 						}
-						onclick = "[InformationPanelBar.OpenPanelCycleTabs('journal', 'default|inactive_journal_entries')]"
+						onclick = "[InformationPanelBar.OpenPanelCycleTabs('journal', 'default|decisions')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 					textbox = {
 						parentanchor = right|top
-						position = { -2 2 }
+						position = { -5 5 }
 						autoresize = yes
 						raw_text = "#bold [GetDataModelSize(AccessPlayer.AccessActiveJournalEntries)]#!"
 						visible = "[GreaterThan_int32( GetDataModelSize(AccessPlayer.AccessActiveJournalEntries), '(int32)0')]"
@@ -703,6 +763,58 @@ types information_panel_bar_types {
 					input_action = "open_journal"
 				}
 
+				### OUTLINER
+				sidebar_label_button_small = {
+					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+					position = { -100 @outliner_position }
+					blockoverride "onclick" {
+						onclick = "[InformationPanelBar.OpenPanel('outliner')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
+						input_action = "open_outliner"
+					}
+				}
+
+				sidebar_label_text_small = {
+					position = { -100 @outliner_position }
+					text = "OUTLINER"
+				}
+				widget = {
+					enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+					name = "tutorial_highlight_outliner"
+					position = { 0 @outliner_position }
+					using = clickthrough_blocker
+					using = sidebar_button_size_small
+					using = selected_sidepanel_animation_small
+					blockoverride "selected_visibility" {
+						visible = "[InformationPanelBar.IsPanelOpen('outliner')]"
+					}
+					sidepanel_button_small = {
+						blockoverride "icon" {
+							texture = "gfx/interface/main_hud/outliner_btn.dds"
+						}
+						blockoverride "button_selected" {
+							visible = "[InformationPanelBar.IsPanelOpen('outliner')]"
+						}
+						onclick = "[InformationPanelBar.OpenPanel('outliner')]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
+					}
+				}
+				sidebar_tooltip_area_small = {
+					position = { 0 @outliner_position }
+					tooltip = "OUTLINER_TOOLTIP"
+					input_action = "open_outliner"
+				}
+				
 				#widget needed to prevent you from clicking on the map
 				widget = {
 					using = clickthrough_blocker
@@ -716,15 +828,21 @@ types information_panel_bar_types {
 					position = { -100 @maplist_position }
 					blockoverride "onclick" {
 						onclick = "[MapListPanelManager.ToggleCurrentPanel]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 						input_action = map_list
 					}
 				}
-
+				
 				sidebar_label_text_small = {
 					position = { -100 @maplist_position }
 					text = "MAP_LIST"
 				}
-
+				
 				widget = {
 					position = { 0 @maplist_position }
 					using = clickthrough_blocker
@@ -741,6 +859,12 @@ types information_panel_bar_types {
 							visible = "[MapListPanelManager.IsVisible]"
 						}
 						onclick = "[MapListPanelManager.ToggleCurrentPanel]"
+						onclick = "[GetVariableSystem.Clear('international_open')]" 
+						onclick = "[GetVariableSystem.Clear('un_panel')]" 
+						onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+						onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+						onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+						onclick = "[GetVariableSystem.Clear('imf_panel')]" 
 					}
 				}
 
@@ -750,40 +874,13 @@ types information_panel_bar_types {
 					input_action = map_list
 				}
 			}
-		}
-	}
-
-	type power_bloc_icon_button_widget = widget {
-
-		position = { 0 @power_bloc_position }
-		using = clickthrough_blocker
-		using = sidebar_button_size
-		using = selected_sidepanel_animation
-
-		blockoverride "selected_visibility" {
-			visible = "[InformationPanelBar.IsPanelOpen('power_bloc_panel')]"
-		}
-
-		sidepanel_button_big = {
-			blockoverride "icon" {
-				texture = "gfx/interface/main_hud/powerblocs.dds"
-			}
-
-			blockoverride "button_selected" {
-				visible = "[InformationPanelBar.IsPanelOpen('power_bloc_panel')]"
-			}
-
-			block "bloc_onclick" {
-
-			}
-
-		}
+		}	
 	}
 }
 
-template sidebar_button_size {
-	size = { 48 50 }
+template sidebar_button_size { 
+	size = { 48 50 } 
 }
-template sidebar_button_size_small {
+template sidebar_button_size_small { 
 	size = { 42 40 }
 }

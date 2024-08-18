@@ -18,16 +18,16 @@ types market_panel
 		# Empty state, is a nested mess because the alternative of doing a [And(And(And(And)))] check is even less readable
 		container = {
 			using = default_list_position
-			visible = "[Not( Market.HasPlayerImportRoutes )]"
+			visible = "[IsDataModelEmpty(Market.AccessPlayerImportRoutes)]"
 			
 			container = {
-				visible = "[Not( Market.HasOtherExportRoutes )]"
+				visible = "[IsDataModelEmpty(Market.AccessOtherExportRoutes)]"
 
 				container = {
-					visible = "[Not( Market.HasPlayerExportRoutes )]"
+					visible = "[IsDataModelEmpty(Market.AccessPlayerExportRoutes)]"
 					
 					flowcontainer = {
-						visible = "[Not( Market.HasOtherImportRoutes )]"
+						visible = "[IsDataModelEmpty(Market.AccessOtherImportRoutes)]"
 						direction = vertical
 						spacing = 40
 
@@ -100,18 +100,17 @@ types market_panel
 						tooltip = "TRADE_ROUTE_PRODUCTIVITY"
 					}
 					sort_button = {
-						size = { 95 30 }
+						size = { 100 30 }
 						text = "TRADE_ROUTES_SORT_REVENUE"
 						onclick = "[Market.SortTradeRoutes('revenue')]"
 						layoutpolicy_horizontal = expanding
 						tooltip = "TRADE_ROUTE_REVENUE"
 					}
 					sort_button = {
-						size = { 50 30 }
+						size = { 45 30 }
 						text = "TRADE_ROUTES_SORT_OWNER"
 						onclick = "[Market.SortTradeRoutes('owner')]"
 						layoutpolicy_horizontal = expanding
-						tooltip = "TRADE_ROUTE_OWNER"
 					}
 				}
 			}
@@ -216,7 +215,7 @@ types market_panel
 
 					blockoverride "right_text" {
 						section_header_right_text = {
-							raw_text = "@money![Goods.GetMarketPrice|0v] [Goods.GetCompareIconAgainstBasePrice( Goods.GetMarketPrice )] (#v [Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetMarketPrice)|%0=-]#!)"
+							raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [Goods.GetMarketPrice|0v] [Goods.GetCompareIconAgainstBasePrice( Goods.GetMarketPrice )] (#v [Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetMarketPrice)|%0=-]#!)"
 						}
 					}
 				}
@@ -503,14 +502,14 @@ types market_panel
 				minimumsize = { 130 85 }
 
 				button = {
-					size = { 120 40 }
-					datacontext = "[GetPlayer.GetDiplomaticAction( 'embargo', Country.Self )]"
 					using = default_button_action
-					using = generic_diplomatic_action_sound
+					size = { 120 40 }
 					text = "EMBARGO"
+					datacontext = "[GetPlayer.GetDiplomaticAction( 'embargo', Country.Self )]"
 					tooltip = "DIPLOMATIC_ACTION_TOOLTIP"
 					onclick = "[DiplomaticAction.ExecuteWithConfirmation]"
 					enabled = "[IsValid(DiplomaticAction.ExecuteAction)]"
+					clicksound = "[DiplomaticAction.GetSoundWithConfirmation]"
 					visible = "[Not(ObjectsEqual(GetPlayer.Self, Country.Self))]"
 
 					icon = {
@@ -520,14 +519,14 @@ types market_panel
 				}
 
 				button = {
-					size = { 120 40 }
-					datacontext = "[GetPlayer.GetDiplomaticAction( 'trade_agreement', Country.Self )]"
 					using = default_button_action
-					using = generic_diplomatic_action_sound
+					size = { 120 40 }
 					text = "TRADE_AGREEMENT"
+					datacontext = "[GetPlayer.GetDiplomaticAction( 'trade_agreement', Country.Self )]"
 					tooltip = "DIPLOMATIC_ACTION_TOOLTIP"
 					onclick = "[DiplomaticAction.ExecuteWithConfirmation]"
 					enabled = "[IsValid(DiplomaticAction.ExecuteAction)]"
+					clicksound = "[DiplomaticAction.GetSoundWithConfirmation]"
 					visible = "[Not(ObjectsEqual(GetPlayer.Self, Country.Self))]"
 					margin_right = 30
 					margin_left = 15
@@ -677,7 +676,7 @@ types market_panel
 				layoutpolicy_horizontal = preferred
 				layoutpolicy_vertical = preferred
 				size = { 70 30 }
-				raw_text = "@money!#v [TradeRoute.CalcProductivity|1+]#!"
+				raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] #v [TradeRoute.CalcProductivity|1+]#!"
 				tooltip = "[TradeRoute.GetRevenueAfterTariffBreakdown]"
 				align = left|nobaseline
 				alpha = "[TransparentIfTrue(EqualTo_CFixedPoint(TradeRoute.GetTradeQuantity, '(CFixedPoint)0'))]"
@@ -686,7 +685,7 @@ types market_panel
 				layoutpolicy_horizontal = preferred
 				layoutpolicy_vertical = preferred
 				size = { 100 30 }
-				raw_text = "@money!#v [TradeRoute.CalcRevenueAfterTariff|D+]#!"
+				raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] #v [TradeRoute.CalcRevenueAfterTariff|D+]#!"
 				tooltip = "[TradeRoute.GetRevenueAfterTariffBreakdown]"
 				align = nobaseline
 				alpha = "[TransparentIfTrue(EqualTo_CFixedPoint(TradeRoute.GetTradeQuantity, '(CFixedPoint)0'))]"

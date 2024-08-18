@@ -31,7 +31,6 @@ types goods_local_prices_panel_types
 				size = { 30 30 }
 				onclick = "[InformationPanelBar.OpenMarketPanel(GoodsLocalPricesPanel.AccessGoods.AccessMarket)]"
 				tooltip = "GO_TO_BUTTON_MARKET"
-				input_action = "go_to_details"
 			}
 		}
 		
@@ -111,7 +110,7 @@ types goods_local_prices_panel_types
 
 					textbox = {
 						using = market_price_tooltip_with_graph
-						raw_text = "[concept_market_price]: @money![Goods.GetMarketPrice|1v] [Goods.GetCompareIconAgainstBasePriceNoFormatting( Goods.GetMarketPrice )]"
+						raw_text = "[concept_market_price]: [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [Goods.GetMarketPrice|1v] [Goods.GetCompareIconAgainstBasePriceNoFormatting( Goods.GetMarketPrice )]"
 						align = right|nobaseline
 						autoresize = yes
 						using = fontsize_xxl
@@ -128,7 +127,6 @@ types goods_local_prices_panel_types
 						sort_button = {
 							align = hcenter|nobaseline
 							text = "STATE"
-							tooltip = "STATE"
 							size = { 90 20 }
 
 							onclick = "[GoodsLocalPricesPanel.Sort('state')]"
@@ -137,7 +135,6 @@ types goods_local_prices_panel_types
 						sort_button = {
 							align = hcenter|nobaseline
 							text = "concept_good_production"
-							tooltip = "[concept_good_production]"
 							size = { 50 20 }
 							margin_right = 7
 
@@ -147,7 +144,6 @@ types goods_local_prices_panel_types
 						sort_button = {
 							align = hcenter|nobaseline
 							text = "concept_good_consumption"
-							tooltip = "[concept_good_consumption]"
 							size = { 50 20 }
 							margin_right = 7
 
@@ -157,7 +153,6 @@ types goods_local_prices_panel_types
 						sort_button = {
 							align = hcenter|nobaseline
 							text = "BALANCE"
-							tooltip = "BALANCE"
 							size = { 90 20 }
 							margin_right = 7
 
@@ -167,7 +162,6 @@ types goods_local_prices_panel_types
 						sort_button = {
 							align = hcenter|nobaseline
 							text = "concept_local_price"
-							tooltip = "[concept_local_price]"
 							size = { 190 20 }
 
 							onclick = "[GoodsLocalPricesPanel.Sort('price')]"
@@ -176,7 +170,6 @@ types goods_local_prices_panel_types
 						sort_button = {
 							align = hcenter|nobaseline
 							text = "concept_building"
-							tooltip = "[concept_building]"
 							size = { 70 20 }
 
 							onclick = "[GoodsLocalPricesPanel.Sort('owner')]"
@@ -415,8 +408,7 @@ types goods_local_prices_panel_types
 														textbox = {
 															autoresize = yes
 															visible = "[Building.IsActive]"
-															text = "BUILDING_SIZE"
-															using = building_size_tooltip_with_ownership
+															text = "[Building.GetExpansionLevelDesc]"
 															using = tooltip_above
 															fontsize_min = 10
 															elide = right
@@ -432,8 +424,7 @@ types goods_local_prices_panel_types
 															autoresize = yes
 															visible = "[Not(Building.IsActive)]"
 															alpha = 0.5
-															text = "BUILDING_SIZE"
-															using = building_size_tooltip_with_ownership
+															text = "[Building.GetExpansionLevelDesc]"
 															using = tooltip_above
 															fontsize_min = 10
 															elide = right
@@ -457,10 +448,13 @@ types goods_local_prices_panel_types
 																using = tooltip_below
 															}
 
-															expand_building_button = {
-																blockoverride "button_size" {
-																	size = { 24 24 }
-																}
+															### EXPAND BUTTON
+															button_icon_plus_action = {
+																visible = "[And(Or( And( Not( Building.IsValid ), IsValid( Building.QueueConstruction ) ), Not(Building.HasReachedLevelCap) ), Not(Building.IsMilitaryBuilding))]"
+																tooltip = "[Building.GetQueueConstructionTooltip]"
+																size = { 24 24 }
+																onclick = "[Execute( Building.QueueConstruction )]"
+																enabled = "[IsValid( Building.QueueConstruction )]"
 															}
 														}
 													}

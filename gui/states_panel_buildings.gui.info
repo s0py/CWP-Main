@@ -88,7 +88,7 @@ types state_panel_types {
 					spacing = 7
 					parentanchor = right
 					textbox = {
-						raw_text = "[GetPopType('peasants').GetName]:"
+						raw_text = "[GetPopType('informal_workers').GetName]:"
 						autoresize = yes
 						align = nobaseline
 						elide = right
@@ -229,7 +229,7 @@ types state_panel_types {
 
 				widget = {
 					size = { 135 180 }
-					visible = "[GetPlayer.HasForeignInvestmentRights(State.GetOwner)]"
+					visible = "[State.GetCountry.IsLocalPlayer]"
 					enabled = "[GreaterThan_int32( StatesPanel.AccessState.GetNumConstructableUrbanBuildings,'(int32)0')]"
 					position = "[StatesPanel.CalcBuildUrbanBuildingsButtonPosition]"
 					
@@ -323,7 +323,7 @@ types state_panel_types {
 			fixedgridbox = {
 				datamodel = "[State.AccessCappedRuralBuildings]"
 				addcolumn = 135
-				addrow = 210
+				addrow = 180
 				datamodel_wrap = 4
 				flipdirection = yes
 
@@ -380,7 +380,7 @@ types state_panel_types {
 			fixedgridbox = {
 				datamodel = "[State.AccessUncappedRuralBuildings]"
 				addcolumn = 135
-				addrow = 210
+				addrow = 180
 				datamodel_wrap = 4
 				flipdirection = yes
 
@@ -432,7 +432,7 @@ types state_panel_types {
 					fixedgridbox = {
 						datamodel = "[State.AccessDevelopmentBuildings]"
 						addcolumn = 135
-						addrow = 210
+						addrow = 180
 						datamodel_wrap = 4
 						flipdirection = yes
 
@@ -520,6 +520,7 @@ types state_buildings
 				}
 
 				hbox = {
+					visible = "[Or(Building.HasAnyInputShortage, And(LessThan_CFixedPoint(Building.GetEmploymentPercentage, GetDefine('NGUI', 'BUILDING_CONSIDERED_FULLY_EMPLOYED')), Or(And(And(Not(Building.IsSubsistenceBuilding), Building.HasFailedHires), Building.IsActive), And(And(Not(Building.IsSubsistenceBuilding), Not(Building.HasFailedHires)), Building.IsActive))))]"
 					layoutpolicy_horizontal = expanding
 					layoutpolicy_vertical = expanding
 
@@ -534,8 +535,41 @@ types state_buildings
 						texture = "gfx/interface/icons/generic_icons/goods_shortage.dds"
 						tooltip = "GOODS_OUTPUT_PENALTY_TOOLTIP"
 					}
+								
+					### EMPLOYMENT WARNING
+					container = {
+						visible = "[LessThan_CFixedPoint(Building.GetEmploymentPercentage, GetDefine('NGUI', 'BUILDING_CONSIDERED_FULLY_EMPLOYED'))]"
+						
+						### EMPLOYMENT WARNING
+						icon = {
+							visible = "[And(Building.ShouldShowAsUnableToHire,Building.HasFailedHires)]"
+							size = { 30 30 }
+							texture = "gfx/interface/icons/generic_icons/employment_not_full.dds"
+							tooltip = "NOT_FULLY_EMPLOYED"
+						}
+						
+						icon = {
+							visible = "[And(Building.ShouldShowAsUnableToHire,Not(Building.HasFailedHires))]"
+							size = { 30 30 }
+							texture = "gfx/interface/icons/generic_icons/employment_not_full.dds"
+							tooltip = "NOT_HIRING"
+						}
+						
 
-					employment_indicator_icon = {}
+						icon = {
+							visible = "[Building.ShouldShowAsUnwillingToHire]"
+							size = { 30 30 }
+							texture = "gfx/interface/icons/generic_icons/employment_not_hiring.dds"
+							tooltip = "NOT_FULLY_EMPLOYED"
+						}
+						
+						icon = {
+							visible = "[Building.ShouldShowAsHiring]"
+							size = { 30 30 }
+							texture = "gfx/interface/icons/generic_icons/employment_not_full_hiring.dds"
+							tooltip = "TOOLTIP_BUILDING_HIRING"
+						}
+					}
 				}
 			}
 		}
@@ -567,8 +601,7 @@ types state_buildings
 						textbox = {
 							layoutpolicy_horizontal = expanding
 							visible = "[Building.IsActive]"
-							text = "BUILDING_SIZE"
-							using = building_size_tooltip_with_ownership
+							text = "[Building.GetExpansionLevelDesc]"
 							using = tooltip_above
 							fontsize_min = 10
 							elide = right
@@ -579,8 +612,7 @@ types state_buildings
 							layoutpolicy_horizontal = expanding
 							visible = "[Not(Building.IsActive)]"
 							alpha = 0.5
-							text = "BUILDING_SIZE"
-							using = building_size_tooltip_with_ownership
+							text = "[Building.GetExpansionLevelDesc]"
 							using = tooltip_above
 							fontsize_min = 10
 							elide = right
@@ -590,7 +622,7 @@ types state_buildings
 						textbox = {
 							layoutpolicy_horizontal = expanding
 							alpha = "[TransparentIfFalse(Building.IsActive)]"
-							raw_text = "#v @money![Building.GetAverageAnnualEarningsPerEmployeeFormatted|1+]#!"
+							raw_text = "#v [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [Building.GetAverageAnnualEarningsPerEmployeeFormatted|1+]#!"
 							tooltip = "TOOLTIP_BUILDING_PRODUCTIVITY"
 							tooltipwidget = {
 								GraphTooltip_Productivity = {}
@@ -626,7 +658,7 @@ types state_buildings
 						
 						textbox = {
 							datacontext = "[Building]"
-							raw_text = "#N @money!#bold -[Building.GetSubsidies|D]#!"
+							raw_text = "#N [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] #bold -[Building.GetSubsidies|D]#!"
 							tooltip = "[Building.GetSubsidiesDesc]"
 							autoresize = yes
 							position = { 0 0 }
@@ -777,7 +809,7 @@ types state_buildings
 					### CANCEL CONSTRUCTION
 					button_icon_minus_action = {
 						parentanchor = left|vcenter
-						size = { 30 30 }
+						size = { 29 29 }
 						tooltip = "[Building.GetCancelConstructionTooltip]"
 						visible = "[And(IsValid( Building.CancelConstruction ), Not(Building.IsMilitaryBuilding))]"
 						onclick = "[Execute( Building.CancelConstruction )]"
@@ -785,11 +817,13 @@ types state_buildings
 					}
 
 					### EXPAND BUTTON
-					expand_building_button = {
+					button_icon_plus_action = {
 						parentanchor = right|vcenter
-						blockoverride "button_size" {
-							size = { 30 30 }
-						}
+						visible = "[And(Or( And( Not( Building.IsValid ), IsValid( Building.QueueConstruction ) ), Not(Building.HasReachedLevelCap) ), Not(Building.IsMilitaryBuilding))]"
+						tooltip = "[Building.GetQueueConstructionTooltip]"
+						size = { 29 29 }
+						onclick = "[Execute( Building.QueueConstruction )]"
+						enabled = "[IsValid( Building.QueueConstruction )]"
 					}
 				}
 			}

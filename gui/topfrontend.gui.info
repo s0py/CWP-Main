@@ -45,7 +45,7 @@ types topfrontend_types {
 			using = hud_visibility
 			using = default_fade_in_out
 			spacing = 5
-			margin_left = 15
+			margin_left = 80
 			filter_mouse = right
 
 			### CURRENT SITUATION
@@ -151,12 +151,10 @@ types topfrontend_types {
 								position_y = -40
 								duration = 0
 								alpha = 0
-								
 								start_sound = {
 									soundeffect = "event:/SFX/UI/Alerts/warning_fist_appear"
 								}
 							}
-
 							state = {
 								name = Add1
 								next = Add2
@@ -165,21 +163,17 @@ types topfrontend_types {
 								alpha = 1
 								using = Animation_Curve_Default
 							}
-
 							state = {
 								name = Add2
 								next = Add3
 								position_y = -2
 								duration = 0.08
-								alpha = 1
 								using = Animation_Curve_Default
 							}
-
 							state = {
 								name = Add3
 								position_y = 0
 								duration = 0.08
-								alpha = 1
 								using = Animation_Curve_Default
 								on_finish = "[Alert.AddingFinished]"
 							}
@@ -194,7 +188,7 @@ types topfrontend_types {
 							}
 
 							state = {
-								trigger_when = "[Alert.IsRemovalRequested]"
+								trigger_when = "[Alert.IsRemoving]"
 								name = Remove0
 								next = Remove1
 								position = { 0 0 }
@@ -205,30 +199,18 @@ types topfrontend_types {
 								position_y = -40
 								duration = 0.3
 								alpha = 0
-								on_start = "[Alert.StartRemoving]"
 								on_finish = "[Alert.RemovingFinished]"
 							}	
 							
 							### ALERT BUTTON
 							button = {
 								size = { 100% 100% }
-								texture = "gfx/interface/icons/alert_icons/alert_button_background_brighter.png"
-								color = "[Alert.GetColor]"
-								
-
+								texture = "gfx/interface/icons/alert_icons/alert_button.dds"
 								effectname = "NoHighlight"
 								using = current_situation_button_sound
 								onclick = "[PopupManager.OpenAlert(Alert.AccessSelf)]"
-								onrightclick = "[Alert.MarkAsHidden]"
 								tooltip = "[Alert.GetToolTip]"
-								onmousehierarchyenter = "[SetCanOpenRightClickContextMenu( '(bool)no' )]"
-								onmousehierarchyleave = "[SetCanOpenRightClickContextMenu( '(bool)yes' )]"
 								using = tooltip_below
-
-								icon = {
-									size = { 100% 100% }
-									texture = "gfx/interface/icons/alert_icons/alert_button_rim.png"
-								}
 								
 								### ALERT VFX - NEW
 								vfx = {
@@ -286,7 +268,6 @@ types topfrontend_types {
 									alpha = 0
 									rotate_uv = 0
 								}
-
 								modify_texture = {
 									name = "mouse_press"
 									texture = "gfx/interface/buttons/default_button_mousepress.dds"
@@ -299,7 +280,7 @@ types topfrontend_types {
 								### show
 								state = {
 									name = _show
-									on_start = "[PdxGuiWidget.FindChild('icon').TriggerAnimation('show')]"
+									on_start = "[PdxGuiWidget.AccessChild('icon').TriggerAnimation('show')]"
 									position = { 0 0 }
 									using = button_animation_duration
 									
@@ -317,7 +298,7 @@ types topfrontend_types {
 								### enter
 								state = {
 									name = _mouse_enter
-									on_start = "[PdxGuiWidget.FindChild('icon').TriggerAnimation('enter')]"
+									on_start = "[PdxGuiWidget.AccessChild('icon').TriggerAnimation('enter')]"
 									position = { 0 0 }
 									using = button_animation_duration
 									
@@ -335,7 +316,7 @@ types topfrontend_types {
 								### leave
 								state = {
 									name = _mouse_leave
-									on_start = "[PdxGuiWidget.FindChild('icon').InterruptThenTriggerAnimation('enter','leave')]"
+									on_start = "[PdxGuiWidget.AccessChild('icon').InterruptThenTriggerAnimation('enter','leave')]"
 									position = { 0 0 }
 									using = button_animation_duration
 									
@@ -353,7 +334,7 @@ types topfrontend_types {
 								### press
 								state = {
 									name = _mouse_press
-									on_start = "[PdxGuiWidget.FindChild('icon').TriggerAnimation('press')]"
+									on_start = "[PdxGuiWidget.AccessChild('icon').TriggerAnimation('press')]"
 									position = { 1 2 }
 									using = button_animation_duration
 									
@@ -371,7 +352,7 @@ types topfrontend_types {
 								### release
 								state = {
 									name = _mouse_release
-									on_start = "[PdxGuiWidget.FindChild('icon').TriggerAnimation('release')]"
+									on_start = "[PdxGuiWidget.AccessChild('icon').TriggerAnimation('release')]"
 									position = { 0 0 }
 									using = button_animation_duration
 									
@@ -387,11 +368,12 @@ types topfrontend_types {
 								}
 								
 								### ALERT ICON INSIDE THE BUTTON
-								icon = { 
-									size = { 63 63 }
+								icon = {
 									name = icon
 									parentanchor = center
-
+									size = { 90% 90% }
+									texture = "[Alert.GetTexture]"
+									
 									### button states
 									modify_texture = {
 										name = "mouse_enter"
@@ -470,6 +452,7 @@ types topfrontend_types {
 									### press
 									state = {
 										name = press
+										position = { 1 2 }
 										using = button_animation_duration
 										scale = 1.1
 										
@@ -501,23 +484,6 @@ types topfrontend_types {
 											rotate_uv = 0
 										}
 									}
-
-									alert_icon = {
-										visible = "[Not(Alert.HasScopeTexture)]"
-									}
-
-									alert_icon = {
-										visible = "[Alert.HasScopeTexture]"
-										size = { 100% 100% }
-										texture = "[Alert.GetScopeTexture]"
-									}
-
-									alert_icon = {
-										visible = "[Alert.HasScopeTexture]"
-										size = { 50% 50% }
-										parentanchor = bottom|right
-										position = { 0 3 }
-									}
 								}
 
 								### ALERT VFX - IDLE
@@ -545,8 +511,6 @@ types topfrontend_types {
 				maximumsize = { -1 113 }
 				datamodel = "[TopFrontend.AccessProposals]"
 				visible = "[Not(IsDataModelEmpty(TopFrontend.AccessProposals))]"
-				
-				expand = {}
 				
 				item = {
 					container = {
@@ -803,7 +767,7 @@ types topfrontend_types {
 		# text 
 		textbox = {
 			name = "text"
-			raw_text = "#v [TopFrontend.GetCurrentSituationSetting]#!"
+			raw_text = "#v [TopFrontend.GetTotalNumOfImportantActionGroups]#!"
 			size = { 100% 100% }
 			using = fontsize_large
 			align = center|nobaseline
@@ -836,7 +800,7 @@ types topfrontend_types {
 		# text mouse over
 		textbox = {
 			name = "text_mouse_over"
-			raw_text = "#v [TopFrontend.GetCurrentSituationSetting]#!"
+			raw_text = "#v [TopFrontend.GetTotalNumOfImportantActionGroups]#!"
 			size = { 100% 100% }
 			using = fontsize_large
 			align = center|nobaseline
@@ -869,11 +833,5 @@ types topfrontend_types {
 				position_y = 0
 			}
 		}
-	}
-
-	type alert_icon = icon {
-		parentanchor = center
-		size = { 100% 100% }
-		texture = "[Alert.GetTexture]"
 	}
 }

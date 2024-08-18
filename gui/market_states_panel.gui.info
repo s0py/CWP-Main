@@ -196,6 +196,7 @@ types market_states_panel
 				}
 			}
 
+			
 			textbox = {
 				size = { 90 30 }
 				text = "MARKET_ACCESS_WITH_WARNING"
@@ -206,7 +207,7 @@ types market_states_panel
 
 			textbox = {
 				size = { 100 30 }
-				raw_text = "@money!#v [State.GetGDPContribution|0K]#!"
+				raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] #v [State.GetGDPContribution|0K]#!"
 				tooltip = "CURRENT_GDP_STATE"
 				align = right|nobaseline
 				margin_right = 5
