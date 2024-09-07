@@ -88,7 +88,6 @@ mm_default = {
 	map_tooltip_offset = state
 
 	is_visible = no 					# special behaviour, overriden in code
-	show_occupation = yes
 	show_formation_movement_arrows = no
 
 	gradient_border_settings = default
@@ -102,7 +101,6 @@ mm_ongoing_diplo_play = {
 	map_tooltip_offset = state
 
 	is_visible = no 					# special behaviour, overriden in code
-	show_occupation = yes
 	show_formation_movement_arrows = yes
 
 	gradient_border_settings = default
@@ -136,8 +134,6 @@ mm_theater = {
 	map_markers = { city_marker strategic_objective_marker sea_node_marker }
 	map_tooltip_offset = theater
 
-	show_occupation = yes
-
 	gradient_border_settings = default
 }
 
@@ -149,7 +145,6 @@ mm_military = {
 
 	gradient_border_settings = mapmode_extra
 	is_visible = yes
-	show_occupation = yes
 	show_formation_movement_arrows = yes
 
 	# Texture usage
@@ -177,7 +172,6 @@ mm_player_military_access = {
 
 	gradient_border_settings = mapmode_extra
 	is_visible = no # Hidden!
-	show_occupation = yes
 	show_formation_movement_arrows = yes
 
 	# Texture usage
@@ -200,7 +194,6 @@ mm_military_with_past_battles = {
 
 	gradient_border_settings = mapmode_extra
 	is_visible = no
-	show_occupation = yes
 	show_formation_movement_arrows = yes
 
 	# Texture usage
@@ -227,7 +220,6 @@ mm_peace_deal = {
 
 	gradient_border_settings = mapmode_extra
 	is_visible = no
-	show_occupation = yes
 	show_formation_movement_arrows = yes
 
 	# Texture usage
@@ -407,7 +399,6 @@ mm_country_attitude = {
 	gradient_border_settings = mapmode_extra
 	is_visible = yes
 	is_visible_to_countryless_observer = no
-	show_occupation = no
 	has_fog_of_war = no
 
 	# Texture usage
@@ -436,7 +427,6 @@ mm_country_relations = {
 	gradient_border_settings = mapmode_extra
 	is_visible = yes
 	is_visible_to_countryless_observer = no
-	show_occupation = no
 	has_fog_of_war = no
 
 	# Texture usage
@@ -506,7 +496,6 @@ mm_theater_interaction = {
 	map_markers = { hq_marker sea_node_marker }
 
 	gradient_border_settings = interactive
-	show_occupation = yes
 	has_fog_of_war = no
 
 	# Texture usage
@@ -966,7 +955,6 @@ mm_budget = {
 	map_names = countries
 	map_markers = { city_marker state_budget_balance_marker }
 
-	show_occupation = yes
 
 	gradient_border_settings = default
 }
@@ -977,7 +965,6 @@ mm_political = {
 	map_markers = { city_marker interestgroup_marker decree_marker revolutionary_movement_marker }
 
 	gradient_border_settings = heatmap
-	show_occupation = yes
 
 	has_fog_of_war = no
 }
@@ -1005,7 +992,6 @@ mm_diplomatic = {
 	gradient_border_settings = mapmode_extra
 	is_visible = no
 	is_visible_to_countryless_observer = no
-	show_occupation = yes
 	has_fog_of_war = no
 
 	# Texture usage

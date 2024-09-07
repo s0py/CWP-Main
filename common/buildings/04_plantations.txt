@@ -40,25 +40,11 @@ building_opium_plantation = {
 		pmg_ownership_plantation
 	}
 	can_build_government = {
-		error_check = {
-			severity = fail
-			owner = {
-				NOT = {
-					is_banning_goods = g:opium
-				}
-			}
-		}
+		owner = { NOT = { is_banning_goods = g:opium } }
 	}
 	can_build_private = {
-		error_check = {
-			severity = fail
-			owner = {
-				NOT = {
-					is_banning_goods = g:opium
-				}
-			}
-		}
-	}
+		owner = { NOT = { is_banning_goods = g:opium } }
+	}	
 }
 
 building_tea_plantation = {
@@ -88,25 +74,11 @@ building_tobacco_plantation = {
 		pmg_ownership_plantation
 	}
 	can_build_government = {
-		error_check = {
-			severity = fail
-			owner = {
-				NOT = {
-					is_banning_goods = g:tobacco
-				}
-			}
-		}
+		owner = { NOT = { is_banning_goods = g:tobacco } }
 	}
 	can_build_private = {
-		error_check = {
-			severity = fail
-			owner = {
-				NOT = {
-					is_banning_goods = g:tobacco
-				}
-			}
-		}
-	}
+		owner = { NOT = { is_banning_goods = g:tobacco } }
+	}	
 }
 
 building_sugar_plantation = {
