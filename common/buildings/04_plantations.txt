@@ -9,8 +9,8 @@ building_coffee_plantation = {
 		pmg_base_building_coffee_plantation
 		pmg_harvesting_process_coffee_plantation
 		pmg_transportation_plantation
-		pmg_ownership_plantation
 	}
+	ownership_type = self
 }
 
 building_cotton_plantation = {
@@ -23,8 +23,8 @@ building_cotton_plantation = {
 		pmg_base_building_cotton_plantation
 		pmg_harvesting_process_cotton_plantation
 		pmg_transportation_plantation
-		pmg_ownership_plantation
 	}
+	ownership_type = self
 }
 
 building_opium_plantation = {
@@ -37,7 +37,6 @@ building_opium_plantation = {
 		pmg_base_building_opium_plantation
 		pmg_harvesting_process_opium_plantation
 		pmg_transportation_plantation
-		pmg_ownership_plantation
 	}
 	can_build_government = {
 		owner = { NOT = { is_banning_goods = g:opium } }
@@ -45,6 +44,7 @@ building_opium_plantation = {
 	can_build_private = {
 		owner = { NOT = { is_banning_goods = g:opium } }
 	}	
+	ownership_type = self
 }
 
 building_tea_plantation = {
@@ -57,8 +57,8 @@ building_tea_plantation = {
 		pmg_base_building_tea_plantation
 		pmg_harvesting_process_tea_plantation
 		pmg_transportation_plantation
-		pmg_ownership_plantation
 	}
+	ownership_type = self
 }
 
 building_tobacco_plantation = {
@@ -71,7 +71,6 @@ building_tobacco_plantation = {
 		pmg_base_building_tobacco_plantation
 		pmg_harvesting_process_tobacco
 		pmg_transportation_plantation
-		pmg_ownership_plantation
 	}
 	can_build_government = {
 		owner = { NOT = { is_banning_goods = g:tobacco } }
@@ -79,6 +78,7 @@ building_tobacco_plantation = {
 	can_build_private = {
 		owner = { NOT = { is_banning_goods = g:tobacco } }
 	}	
+	ownership_type = self
 }
 
 building_sugar_plantation = {
@@ -91,8 +91,8 @@ building_sugar_plantation = {
 		pmg_base_building_sugar_plantation
 		pmg_harvesting_process_sugar_plantation
 		pmg_transportation_plantation
-		pmg_ownership_plantation
 	}
+	ownership_type = self
 }
 
 building_banana_plantation = {
@@ -105,8 +105,8 @@ building_banana_plantation = {
 		pmg_base_building_banana_plantation
 		pmg_harvesting_process_banana_plantation
 		pmg_transportation_plantation
-		pmg_ownership_plantation
 	}
+	ownership_type = self
 }
 
 building_silk_plantation = {
@@ -119,6 +119,6 @@ building_silk_plantation = {
 		pmg_base_building_silk_plantation
 		pmg_harvesting_process_silk_plantation
 		pmg_transportation_plantation
-		pmg_ownership_plantation
 	}
+	ownership_type = self
 }
