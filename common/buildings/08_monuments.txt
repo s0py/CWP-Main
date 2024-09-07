@@ -23,12 +23,7 @@
 	}
 	required_construction = construction_cost_monument
 	possible = {
-		error_check = {
-			severity = invalid
-			this = {
-				state_region = s:STATE_ILE_DE_FRANCE
-			}
-		}
+		state_region = s:STATE_ILE_DE_FRANCE
 	}
 	ai_value = 10000
 }
@@ -57,12 +52,7 @@ building_angkor_wat = {
 		pmg_base_building_angkor_wat
 	}
 	possible = {
-		error_check = {
-			severity = invalid
-			this = {
-				state_region = s:STATE_CAMBODIA
-			}
-		}
+		state_region = s:STATE_CAMBODIA
 	}
 	required_construction = construction_cost_monument
 }
@@ -92,12 +82,7 @@ building_big_ben = {
 	}
 	required_construction = construction_cost_monument
 	possible = {
-		error_check = {
-			severity = invalid
-			this = {
-				state_region = s:STATE_HOME_COUNTIES
-			}
-		}
+		state_region = s:STATE_HOME_COUNTIES
 	}
 	ai_value = 10000
 }
@@ -126,12 +111,7 @@ building_forbidden_city = {
 		pmg_base_building_forbidden_city
 	}
 	possible = {
-		error_check = {
-			severity = invalid
-			this = {
-				state_region = s:STATE_BEIJING
-			}
-		}
+		state_region = s:STATE_BEIJING
 	}
 	required_construction = construction_cost_monument
 }
@@ -160,12 +140,7 @@ building_hagia_sophia = {
 		pmg_base_building_hagia_sophia
 	}
 	possible = {
-		error_check = {
-			severity = invalid
-			this = {
-				state_region = s:STATE_EASTERN_THRACE
-			}
-		}
+		state_region = s:STATE_EASTERN_THRACE
 	}
 	required_construction = construction_cost_monument
 }
@@ -195,12 +170,7 @@ building_mosque_of_djenne = {
 	}
 	required_construction = construction_cost_monument
 	possible = {
-		error_check = {
-			severity = invalid
-			this = {
-				state_region = s:STATE_EASTERN_MALI
-			}
-		}
+		state_region = s:STATE_EASTERN_MALI
 	}
 	ai_value = 10000
 }
@@ -229,12 +199,7 @@ building_red_square = {
 		pmg_base_building_saint_basils_cathedral
 	}
 	possible = {
-		error_check = {
-			severity = invalid
-			this = {
-				state_region = s:STATE_MOSCOW
-			}
-		}
+		state_region = s:STATE_MOSCOW
 	}
 	required_construction = construction_cost_monument
 }
@@ -264,12 +229,7 @@ building_statue_of_liberty = {
 	}
 	required_construction = construction_cost_monument
 	possible = {
-		error_check = {
-			severity = invalid
-			this = {
-				state_region = s:STATE_NEW_YORK
-			}
-		}
+		state_region = s:STATE_NEW_YORK
 	}
 	ai_value = 10000
 }
@@ -298,13 +258,9 @@ building_taj_mahal = {
 		pmg_base_building_taj_mahal
 	}
 	possible = {
-		error_check = {
-			severity = invalid
-			this = {
 				#todo validate state_region name
 				state_region = s:STATE_UTTAR_PRADESH
-			}
-		}
+
 	}
 	required_construction = construction_cost_monument
 }
@@ -333,12 +289,7 @@ building_vatican_city = {
 		pmg_base_building_vatican_city
 	}
 	possible = {
-		error_check = {
-			severity = invalid
-			this = {
 				state_region = s:STATE_LAZIO
-			}
-		}
 	}
 	required_construction = construction_cost_monument
 }
@@ -367,12 +318,7 @@ building_white_house = {
 		pmg_base_building_white_house
 	}
 	possible = {
-		error_check = {
-			severity = invalid
-			this = {
 				state_region = s:STATE_CHESAPEAKE
-			}
-		}
 	}
 	required_construction = construction_cost_monument
 }

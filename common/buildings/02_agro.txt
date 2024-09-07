@@ -9,10 +9,10 @@ building_rye_farm = {
 		pmg_secondary_building_rye_farm
 		pmg_sugar_beets_rye_farm
 		pmg_harvesting_process_rye_farm
-		pmg_ownership_rye_farm
 	}
 	required_construction = construction_cost_low
 	terrain_manipulator = farmland_rye
+	ownership_type = self
 }
 
 building_wheat_farm = {
@@ -25,10 +25,10 @@ building_wheat_farm = {
 		pmg_secondary_building_wheat_farm
 		pmg_honey_building_wheat_farm
 		pmg_harvesting_process_wheat_farm
-		pmg_ownership_wheat_farm
 	}
 	required_construction = construction_cost_low
 	terrain_manipulator = farmland_wheat
+	ownership_type = self
 }
 
 building_rice_farm = {
@@ -41,10 +41,10 @@ building_rice_farm = {
 		pmg_secondary_building_rice_farm
 		pmg_honey_building_rice_farm
 		pmg_harvesting_process_rice_farm
-		pmg_ownership_rice_farm
 	}
 	required_construction = construction_cost_low
 	terrain_manipulator = farmland_rice
+	ownership_type = self
 }
 
 building_maize_farm = {
@@ -57,10 +57,10 @@ building_maize_farm = {
 		pmg_secondary_building_maize_farm
 		pmg_corn_syrup_building_maize_farm
 		pmg_harvesting_process_maize_farm
-		pmg_ownership_maize_farm
 	}
 	required_construction = construction_cost_low
 	terrain_manipulator = farmland_maize
+	ownership_type = self
 }
 
 building_millet_farm = {
@@ -73,10 +73,10 @@ building_millet_farm = {
 		pmg_secondary_building_millet_farm
 		pmg_honey_building_millet_farm
 		pmg_harvesting_process_millet_farm
-		pmg_ownership_millet_farm
 	}
 	required_construction = construction_cost_low
 	terrain_manipulator = farmland_millet
+	ownership_type = self
 }
 
 building_livestock_ranch = {
@@ -89,8 +89,8 @@ building_livestock_ranch = {
 		pmg_secondary_livestock_ranch
 		pmg_fencing_livestock_ranch
 		pmg_packaging_livestock_ranch
-		pmg_ownership_livestock_ranch
 	}
 	required_construction = construction_cost_low
 	terrain_manipulator = pasture
+	ownership_type = self
 }

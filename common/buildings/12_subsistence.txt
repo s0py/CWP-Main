@@ -5,12 +5,12 @@ building_subsistence_farms = {
 	production_method_groups = {
 		pmg_base_building_subsistence_farms
 		pmg_home_workshops_building_subsistence_farms
-		pmg_ownership_building_subsistence
 	}
 	buildable = no
 	expandable = no
 	downsizeable = no
 	min_raise_to_hire = 0.3
+	ownership_type = self
 }
 
 building_subsistence_orchards = {
@@ -19,12 +19,12 @@ building_subsistence_orchards = {
 	production_method_groups = {
 		pmg_base_building_subsistence_orchards
 		pmg_home_workshops_building_subsistence_orchards
-		pmg_ownership_building_subsistence
 	}
 	buildable = no
 	expandable = no
 	downsizeable = no
 	min_raise_to_hire = 0.3
+	ownership_type = self
 }
 
 building_subsistence_pastures = {
@@ -33,12 +33,12 @@ building_subsistence_pastures = {
 	production_method_groups = {
 		pmg_base_building_subsistence_pastures
 		pmg_home_workshops_building_subsistence_pastures
-		pmg_ownership_building_subsistence
 	}
 	buildable = no
 	expandable = no
 	downsizeable = no
 	min_raise_to_hire = 0.3
+	ownership_type = self
 }
 
 building_subsistence_fishing_villages = {
@@ -47,12 +47,12 @@ building_subsistence_fishing_villages = {
 	production_method_groups = {
 		pmg_base_building_subsistence_fishing_villages
 		pmg_home_workshops_building_subsistence_fishing_villages
-		pmg_ownership_building_subsistence
 	}
 	buildable = no
 	expandable = no
 	downsizeable = no
 	min_raise_to_hire = 0.3
+	ownership_type = self
 }
 
 building_subsistence_rice_paddies = {
@@ -61,10 +61,10 @@ building_subsistence_rice_paddies = {
 	production_method_groups = {
 		pmg_base_building_subsistence_rice_paddies
 		pmg_home_workshops_building_subsistence_rice_paddies
-		pmg_ownership_building_subsistence
 	}
 	buildable = no
 	expandable = no
 	downsizeable = no
 	min_raise_to_hire = 0.3
+	ownership_type = self
 }
