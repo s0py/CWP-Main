@@ -84,4 +84,7 @@
 	building_banana_plantation = {
 		"latin_farm_plantation_01_mesh"
 	}
+	building_manor_house = {
+		"latin_rural_manorhouse_01_mesh"
+	}
 }

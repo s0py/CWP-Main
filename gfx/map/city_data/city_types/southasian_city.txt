@@ -95,4 +95,5 @@
 	building_tourism_industry = {"arabic_factory_02_mesh"}
 	building_financial_services = {"arabic_factory_02_mesh"}
 	building_hospitals = {"arabic_factory_02_mesh"}
+	building_financial_district = {"arabic_city_tradecenter_01_mesh"}
 }

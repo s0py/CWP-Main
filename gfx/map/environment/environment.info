@@ -30,10 +30,10 @@ levels_max = hsv{ 0.0 0.0 1.0 }	# Can be used for color/value control (levels)
 
 # Tonemap reference (Choose one)
 #tonemap_function = "Reinhard"
-#tonemap_function = "Filmic_Hable"			# Old Hable filmic formula
+tonemap_function = "Filmic_Hable"			# Old Hable filmic formula
 #tonemap_function = "FilmicACES_Narkowicz"	# Seems to have the most fitting balance
 #tonemap_function = "FilmicACES_Hill"		# Similar to Narkowicz, whites are less saturated and brighter
-tonemap_function = "Uncharted"				# Custom tonemap, Uses curve variables below
+#tonemap_function = "Uncharted"				# Custom tonemap, Uses curve variables below
 tonemap_curve = {
 	shoulder_strength = 0.318
 	linear_strength = 0.145
@@ -66,9 +66,9 @@ tree_sway_world_direction = { -1 0 -1 }
 
 ######## Graphics ########
 # Bloom
-bloom_strength = 0.113
-bloom_steepness = 1.49
-bloom_threshold = 0.15
+bloom_width = 3.0
+bloom_scale = 0.8
+bright_threshold = 1.0
 
 # Map global SSAO settings
 ssao = {
